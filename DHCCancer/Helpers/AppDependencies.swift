@@ -30,6 +30,7 @@ final class AppDependencies {
         self.registerProfileViewController(to: container)
         self.registerMyInformationViewController(to: container)
         self.registerLogHistoryViewController(to: container)
+        self.registerQuickLogViewController(to: container)
     }
     
     // MARK: - Private methods
@@ -151,6 +152,12 @@ final class AppDependencies {
     private func registerMainTabBarController(to container: Container) {
         container.register(MainTabBarController.self, factory: { _ in
             return MainTabBarController(container: container)
+        })
+    }
+    
+    private func registerQuickLogViewController(to container: Container) {
+        container.register(QuickLogViewController.self, factory: { _ in
+            return QuickLogViewController(networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!, container: container)
         })
     }
 }

@@ -72,7 +72,7 @@ final class MainTabBarController: UITabBarController {
     // MARK: - Control events
     
     @objc func addButtonTapped(_ sender: UIButton) {
-        let quickLogView = UINavigationController(rootViewController: UIViewController())
+        let quickLogView = UINavigationController(rootViewController: self.container.resolve(QuickLogViewController.self)!)
         quickLogView.modalPresentationStyle = .fullScreen
         self.present(quickLogView, animated: true, completion: nil)
         

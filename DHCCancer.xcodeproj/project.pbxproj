@@ -10,6 +10,14 @@
 		4F48B17D1887EA9031F51912 /* Pods_DHCCancer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5955B669A6395C4BEEBDF19 /* Pods_DHCCancer.framework */; };
 		70280980235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028097F235BC6A800E1D362 /* FirstOnboardingViewController.xib */; };
 		70280981235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028097F235BC6A800E1D362 /* FirstOnboardingViewController.xib */; };
+		70280983235BCA5E00E1D362 /* QuickLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280982235BCA5E00E1D362 /* QuickLogViewController.swift */; };
+		70280984235BCA5E00E1D362 /* QuickLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280982235BCA5E00E1D362 /* QuickLogViewController.swift */; };
+		70280986235BCC3F00E1D362 /* QuickLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70280985235BCC3F00E1D362 /* QuickLogViewController.xib */; };
+		70280987235BCC3F00E1D362 /* QuickLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70280985235BCC3F00E1D362 /* QuickLogViewController.xib */; };
+		7028098A235BD22E00E1D362 /* QuickLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280989235BD22E00E1D362 /* QuickLogCell.swift */; };
+		7028098B235BD22E00E1D362 /* QuickLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280989235BD22E00E1D362 /* QuickLogCell.swift */; };
+		7028098D235BD24100E1D362 /* QuickLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028098C235BD24100E1D362 /* QuickLogCell.xib */; };
+		7028098E235BD24100E1D362 /* QuickLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028098C235BD24100E1D362 /* QuickLogCell.xib */; };
 		7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */; };
@@ -193,6 +201,10 @@
 		0CDBEBE5276D6DB6CEFD85F6 /* Pods-DHCCancer-mock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.debug.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.debug.xcconfig"; sourceTree = "<group>"; };
 		5F0FE5E8A488E521DF464F4D /* Pods-DHCCancer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer/Pods-DHCCancer.release.xcconfig"; sourceTree = "<group>"; };
 		7028097F235BC6A800E1D362 /* FirstOnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstOnboardingViewController.xib; sourceTree = "<group>"; };
+		70280982235BCA5E00E1D362 /* QuickLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogViewController.swift; sourceTree = "<group>"; };
+		70280985235BCC3F00E1D362 /* QuickLogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogViewController.xib; sourceTree = "<group>"; };
+		70280989235BD22E00E1D362 /* QuickLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogCell.swift; sourceTree = "<group>"; };
+		7028098C235BD24100E1D362 /* QuickLogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogCell.xib; sourceTree = "<group>"; };
 		7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -321,9 +333,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		70280988235BD20A00E1D362 /* QuickLogCell */ = {
+			isa = PBXGroup;
+			children = (
+				70280989235BD22E00E1D362 /* QuickLogCell.swift */,
+				7028098C235BD24100E1D362 /* QuickLogCell.xib */,
+			);
+			path = QuickLogCell;
+			sourceTree = "<group>";
+		};
 		7045FA09235B599900675101 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				70280988235BD20A00E1D362 /* QuickLogCell */,
 				AC53B661235BBB18000221BE /* LogTableViewCell */,
 				AC365E9F235B9D44003922EA /* MyInformationTableViewCell */,
 				AC52A8B9235B9AAA009D56C7 /* MyInformationHeaderView */,
@@ -401,6 +423,7 @@
 				AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */,
 				AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */,
 				AC365EAB235BAE67003922EA /* LogHistoryViewController.swift */,
+				70280982235BCA5E00E1D362 /* QuickLogViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -541,6 +564,7 @@
 				AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */,
 				AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */,
 				AC365EAC235BAE67003922EA /* LogHistoryViewController.xib */,
+				70280985235BCC3F00E1D362 /* QuickLogViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -670,7 +694,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7028098D235BD24100E1D362 /* QuickLogCell.xib in Resources */,
 				7045FA38235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
+				70280986235BCC3F00E1D362 /* QuickLogViewController.xib in Resources */,
 				7045FA5B235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				AC365EA4235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
@@ -716,7 +742,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7028098E235BD24100E1D362 /* QuickLogCell.xib in Resources */,
 				7045FA39235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
+				70280987235BCC3F00E1D362 /* QuickLogViewController.xib in Resources */,
 				7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1D235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				AC365EA5235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
@@ -890,12 +918,14 @@
 				70859BFD235B23BF00628DFC /* FakeCurrentUserProvider.swift in Sources */,
 				70859BE5235B232000628DFC /* ValidatorProtocol.swift in Sources */,
 				70859BCA235B230100628DFC /* Date+RemainingDays.swift in Sources */,
+				7028098A235BD22E00E1D362 /* QuickLogCell.swift in Sources */,
 				70859BD2235B230100628DFC /* UIViewController+HandleError.swift in Sources */,
 				AC53B65F235BB1EA000221BE /* Entry.swift in Sources */,
 				AC52A8A6235B869D009D56C7 /* ProfileHeaderView.swift in Sources */,
 				70859C03235B27F000628DFC /* AuthenticationResponse.swift in Sources */,
 				70859BD6235B230100628DFC /* UIViewController+IssueAlert.swift in Sources */,
 				7045FA55235B950500675101 /* CancerCell.swift in Sources */,
+				70280983235BCA5E00E1D362 /* QuickLogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,12 +977,14 @@
 				70859BE9235B235700628DFC /* Validator.swift in Sources */,
 				70859BFE235B23BF00628DFC /* FakeCurrentUserProvider.swift in Sources */,
 				70859BE6235B232000628DFC /* ValidatorProtocol.swift in Sources */,
+				7028098B235BD22E00E1D362 /* QuickLogCell.swift in Sources */,
 				70859BCB235B230100628DFC /* Date+RemainingDays.swift in Sources */,
 				AC53B660235BB1EA000221BE /* Entry.swift in Sources */,
 				70859BD3235B230100628DFC /* UIViewController+HandleError.swift in Sources */,
 				70859C04235B27F000628DFC /* AuthenticationResponse.swift in Sources */,
 				70859BD7235B230100628DFC /* UIViewController+IssueAlert.swift in Sources */,
 				7045FA56235B950500675101 /* CancerCell.swift in Sources */,
+				70280984235BCA5E00E1D362 /* QuickLogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
