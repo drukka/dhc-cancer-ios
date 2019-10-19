@@ -52,6 +52,8 @@ final class FirstOnboardingViewController: UIViewController {
         self.jumpToTheNextViewController()
     }
     
+    
+    
     // MARK: - UIResponder methods
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

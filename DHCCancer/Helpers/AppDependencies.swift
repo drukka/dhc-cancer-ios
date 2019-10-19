@@ -21,6 +21,7 @@ final class AppDependencies {
         self.registerFirstOnboardingViewController(to: container)
         self.registerLoginViewController(to: container)
         self.registerSecondOnboardingViewController(to: container)
+        self.registerThirdOnboardingViewController(to: container)
     }
     
     // MARK: - Private methods
@@ -77,6 +78,12 @@ final class AppDependencies {
     private func registerSecondOnboardingViewController(to container: Container) {
         container.register(SecondOnboardingViewController.self, factory: { _, onboardingPageViewController in
             return SecondOnboardingViewController(onboardingPageViewController: onboardingPageViewController)
+        })
+    }
+    
+    private func registerThirdOnboardingViewController(to container: Container) {
+        container.register(ThirdOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return ThirdOnboardingViewController(onboardingPageViewController: onboardingPageViewController)
         })
     }
 }

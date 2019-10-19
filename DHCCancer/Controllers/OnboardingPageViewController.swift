@@ -95,7 +95,8 @@ final class OnboardingPageViewController: UIPageViewController, KeyboardDucking 
     private func setupControllers() {
         self.controllers = [
             self.container.resolve(FirstOnboardingViewController.self, argument: self)!,
-            self.container.resolve(SecondOnboardingViewController.self, argument: self)!
+            self.container.resolve(SecondOnboardingViewController.self, argument: self)!,
+            self.container.resolve(ThirdOnboardingViewController.self, argument: self)!
         ]
         
         self.setViewControllers([self.controllers.first!], direction: .forward, animated: false, completion: nil)

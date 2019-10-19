@@ -175,6 +175,9 @@
                     <state key="normal" title="skip for now">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="O6I-G5-7qI"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="By8-py-QMa" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
                     <rect key="frame" x="142" y="728" width="130" height="36"/>
@@ -200,6 +203,9 @@
                             <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="hmh-H2-Pjx"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-Mx-R8c">
                     <rect key="frame" x="20" y="551.5" width="374" height="110"/>

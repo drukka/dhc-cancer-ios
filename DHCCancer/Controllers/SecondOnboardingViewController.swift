@@ -134,6 +134,10 @@ final class SecondOnboardingViewController: UIViewController {
         self.weightTextField.addTarget(self, action: #selector(weightTextFieldEditingChanged(_:)), for: .editingChanged)
     }
     
+    private func jumpToTheNextViewController() {
+        self.onboardingPageViewController.jumpToViewControllerAt(2)
+    }
+    
     // MARK: - Control events
     
     @IBAction private func selectionButtonTapped(_ sender: UIButton) {
@@ -170,6 +174,16 @@ final class SecondOnboardingViewController: UIViewController {
     @objc private func weightTextFieldEditingChanged(_ sender: UITextField) {
         guard let weight = Int(sender.text ?? "0") else { return }
         self.currentWeight = weight
+    }
+    
+    @IBAction private func nextButtonTapped(_ sender: UIButton) {
+        // TODO
+        self.jumpToTheNextViewController()
+    }
+    
+    @IBAction private func skipButtonTapped(_ sender: UIButton) {
+        // TODO
+        self.jumpToTheNextViewController()
     }
 }
 
