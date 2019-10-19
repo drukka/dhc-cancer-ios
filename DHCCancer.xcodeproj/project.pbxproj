@@ -64,6 +64,8 @@
 		7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */; };
 		70742276235BB37100B30C5C /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70742275235BB37100B30C5C /* BorderedButton.swift */; };
 		70742277235BB37100B30C5C /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70742275235BB37100B30C5C /* BorderedButton.swift */; };
+		70742279235BB70900B30C5C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70742278235BB70900B30C5C /* MainTabBarController.swift */; };
+		7074227A235BB70900B30C5C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70742278235BB70900B30C5C /* MainTabBarController.swift */; };
 		70859B7B235B168800628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
 		70859B84235B168900628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 		70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
@@ -182,6 +184,7 @@
 		7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthOnboardingViewController.swift; sourceTree = "<group>"; };
 		7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthOnboardingViewController.xib; sourceTree = "<group>"; };
 		70742275235BB37100B30C5C /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		70742278235BB70900B30C5C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		70859B77235B168800628DFC /* DHCCancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHCCancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70859B7A235B168800628DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70859B83235B168900628DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -335,6 +338,7 @@
 				70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */,
 				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 				AC3D784E235B5B4500CEED61 /* SignUpViewController.swift */,
+				70742278235BB70900B30C5C /* MainTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -743,6 +747,7 @@
 				70859BCC235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBB235B223300628DFC /* User.swift in Sources */,
 				70859BF1235B236900628DFC /* AppDependencies.swift in Sources */,
+				70742279235BB70900B30C5C /* MainTabBarController.swift in Sources */,
 				70859C06235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
 				70859BE8235B235700628DFC /* Validator.swift in Sources */,
 				70859BFD235B23BF00628DFC /* FakeCurrentUserProvider.swift in Sources */,
@@ -790,6 +795,7 @@
 				70859BCD235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBC235B223300628DFC /* User.swift in Sources */,
 				70859BF2235B236900628DFC /* AppDependencies.swift in Sources */,
+				7074227A235BB70900B30C5C /* MainTabBarController.swift in Sources */,
 				70859C07235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
 				70859BE9235B235700628DFC /* Validator.swift in Sources */,
 				70859BFE235B23BF00628DFC /* FakeCurrentUserProvider.swift in Sources */,
