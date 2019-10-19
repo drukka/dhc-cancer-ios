@@ -49,7 +49,15 @@ final class SecondOnboardingViewController: UIViewController {
             self.genderButton.setTitle(gender.rawValue, for: .normal)
         }
     }
-    private var currentHeight: Double?
+    private var currentHeight: Int? {
+        didSet {
+            guard let height = self.currentHeight else {
+                self.heightButton.setTitle(NSLocalizedString("Select", comment: ""), for: .normal)
+                return
+            }
+            self.heightButton.setTitle("\(height) cm", for: .normal)
+        }
+    }
     private var currentWeight: Double?
     
     // MARK: - Initialization
@@ -103,6 +111,10 @@ final class SecondOnboardingViewController: UIViewController {
         self.genderPickerView.delegate = self
         self.genderTextField.inputView = self.genderPickerView
         self.genderTextField.inputAccessoryView = toolbar
+        
+        self.heightTextField.keyboardType = .decimalPad
+        self.heightTextField.inputAccessoryView = toolbar
+        self.heightTextField.addTarget(self, action: #selector(heightTextFieldEditingChanged(_:)), for: .editingChanged)
     }
     
     // MARK: - Control events
@@ -131,6 +143,11 @@ final class SecondOnboardingViewController: UIViewController {
     
     @objc private func birthdateDatePickerValueChanged(_ sender: UIDatePicker) {
         self.currentBirthdate = sender.date
+    }
+    
+    @objc private func heightTextFieldEditingChanged(_ sender: UITextField) {
+        guard let height = Int(sender.text ?? "0") else { return }
+        self.currentHeight = height
     }
 }
 
