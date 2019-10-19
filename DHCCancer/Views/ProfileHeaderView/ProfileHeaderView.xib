@@ -30,16 +30,16 @@
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9eA-ba-Xkh">
-                    <rect key="frame" x="146" y="50" width="206" height="58"/>
+                    <rect key="frame" x="146" y="55" width="206" height="48"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0q-LL-sIa">
-                            <rect key="frame" x="0.0" y="0.0" width="206" height="29"/>
+                            <rect key="frame" x="0.0" y="0.0" width="206" height="24"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your profile is 50% completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7M-Kj-xhB">
-                            <rect key="frame" x="0.0" y="29" width="206" height="29"/>
+                            <rect key="frame" x="0.0" y="24" width="206" height="24"/>
                             <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -53,9 +53,9 @@
                 <constraint firstItem="TrQ-Hp-RS9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="B15-7a-6Hv"/>
                 <constraint firstItem="9eA-ba-Xkh" firstAttribute="leading" secondItem="TrQ-Hp-RS9" secondAttribute="trailing" constant="8" id="H4l-HM-ChV"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TrQ-Hp-RS9" secondAttribute="bottom" constant="20" id="NeX-my-sba"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9eA-ba-Xkh" secondAttribute="bottom" constant="50" id="agA-mZ-YXi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9eA-ba-Xkh" secondAttribute="bottom" constant="55" id="agA-mZ-YXi"/>
                 <constraint firstItem="TrQ-Hp-RS9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="eai-xI-eb7"/>
-                <constraint firstItem="9eA-ba-Xkh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="jA1-56-OaC"/>
+                <constraint firstItem="9eA-ba-Xkh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55" id="jA1-56-OaC"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

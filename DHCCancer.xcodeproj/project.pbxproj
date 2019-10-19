@@ -94,6 +94,10 @@
 		AC52A8A7235B869D009D56C7 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8A5235B869D009D56C7 /* ProfileHeaderView.swift */; };
 		AC52A8A9235B86AE009D56C7 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */; };
 		AC52A8AA235B86AE009D56C7 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */; };
+		AC52A8AF235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */; };
+		AC52A8B0235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */; };
+		AC52A8B1235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */; };
+		AC52A8B2235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */; };
 		AC7BE753235B7CD600D617B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */; };
 		AC7BE754235B7CD600D617B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */; };
 		AC7BE755235B7CD600D617B6 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */; };
@@ -151,6 +155,8 @@
 		AC3D784F235B5B4500CEED61 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		AC52A8A5235B869D009D56C7 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer_mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,6 +296,7 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC52A8AC235B9364009D56C7 /* ProfileTableViewCell */,
 				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
 				AC3D784D235B540C00CEED61 /* Xibs */,
 				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
@@ -347,6 +354,15 @@
 				AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */,
 			);
 			path = ProfileHeaderView;
+			sourceTree = "<group>";
+		};
+		AC52A8AC235B9364009D56C7 /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */,
+				AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */,
+			);
+			path = ProfileTableViewCell;
 			sourceTree = "<group>";
 		};
 		F1E0258D1AEA33D98665FAE6 /* Frameworks */ = {
@@ -447,6 +463,7 @@
 				70859B84235B168900628DFC /* Assets.xcassets in Resources */,
 				AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */,
 				AC3D7848235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
+				AC52A8B1235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */,
 				AC52A8A9235B86AE009D56C7 /* ProfileHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +481,7 @@
 				70859B94235B1C9600628DFC /* Assets.xcassets in Resources */,
 				AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */,
 				AC3D7849235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
+				AC52A8B2235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */,
 				AC52A8AA235B86AE009D56C7 /* ProfileHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +595,7 @@
 				70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */,
+				AC52A8AF235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */,
 				70859BB5235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCC235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBB235B223300628DFC /* User.swift in Sources */,
@@ -619,6 +638,7 @@
 				70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */,
+				AC52A8B0235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */,
 				70859BB6235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCD235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBC235B223300628DFC /* User.swift in Sources */,

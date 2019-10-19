@@ -37,10 +37,13 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Profile"
-//        setUpTableHeaderView()
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Profile"
         
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        self.tableView.register(UINib(nibName: String(describing: ProfileTableViewCell.self), bundle: nil), forCellReuseIdentifier: ProfileTableViewCell.reuseIdentifier)
     }
     
     override func viewWillLayoutSubviews() {
@@ -57,5 +60,29 @@ class ProfileViewController: UIViewController {
         tableHeaderView = Bundle.main.loadNibNamed(String(describing: ProfileHeaderView.self), owner: nil, options: nil)?.first as! ProfileHeaderView
         tableHeaderView.frame.size = CGSize(width: view.bounds.width, height: ProfileHeaderView.height)
         self.tableView.tableHeaderView = tableHeaderView
+    }
+}
+
+extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.reuseIdentifier, for: indexPath) as! ProfileTableViewCell
+        
+        if indexPath.section == 0 {
+            cell.textLabel?.text = "My information"
+        } else if indexPath.section == 1 {
+            cell.textLabel?.text = "Medical documents"
+        } else {
+            cell.textLabel?.text = "Log history"
+        }
+        
+        return cell
     }
 }
