@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		70859B7B235B168800628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
-		70859B7D235B168800628DFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7C235B168800628DFC /* SceneDelegate.swift */; };
-		70859B7F235B168800628DFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7E235B168800628DFC /* ViewController.swift */; };
-		70859B82235B168800628DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B80235B168800628DFC /* Main.storyboard */; };
 		70859B84235B168900628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 		70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +15,6 @@
 /* Begin PBXFileReference section */
 		70859B77235B168800628DFC /* DHCCancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHCCancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70859B7A235B168800628DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70859B7C235B168800628DFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		70859B7E235B168800628DFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		70859B81235B168800628DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70859B83235B168900628DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70859B86235B168900628DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70859B88235B168900628DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				70859B7A235B168800628DFC /* AppDelegate.swift */,
-				70859B7C235B168800628DFC /* SceneDelegate.swift */,
-				70859B7E235B168800628DFC /* ViewController.swift */,
-				70859B80235B168800628DFC /* Main.storyboard */,
 				70859B83235B168900628DFC /* Assets.xcassets */,
 				70859B85235B168900628DFC /* LaunchScreen.storyboard */,
 				70859B88235B168900628DFC /* Info.plist */,
@@ -127,7 +118,6 @@
 			files = (
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
 				70859B84235B168900628DFC /* Assets.xcassets in Resources */,
-				70859B82235B168800628DFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +128,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70859B7F235B168800628DFC /* ViewController.swift in Sources */,
 				70859B7B235B168800628DFC /* AppDelegate.swift in Sources */,
-				70859B7D235B168800628DFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		70859B80235B168800628DFC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70859B81235B168800628DFC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		70859B85235B168900628DFC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +267,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NKATU7J47;
 				INFOPLIST_FILE = DHCCancer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.drukkadigitals.dev.ios.DHCCancer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +286,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3NKATU7J47;
 				INFOPLIST_FILE = DHCCancer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.drukkadigitals.dev.ios.DHCCancer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
