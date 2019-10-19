@@ -14,6 +14,8 @@ final class FirstOnboardingViewController: UIViewController {
     
     private let onboardingPageViewController: OnboardingPageViewController
     
+    // MARK: - Initialization
+    
     init(onboardingPageViewController: OnboardingPageViewController) {
         self.onboardingPageViewController = onboardingPageViewController
         super.init(nibName: nil, bundle: nil)

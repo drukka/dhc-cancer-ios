@@ -51,7 +51,7 @@ final class AppDependencies {
     
     private func registerOnboardingPageViewController(to container: Container) {
         container.register(OnboardingPageViewController.self, factory: { _ in
-            return OnboardingPageViewController(networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!)
+            return OnboardingPageViewController(networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!, container: container)
         })
     }
     

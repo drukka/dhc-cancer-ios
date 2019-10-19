@@ -72,8 +72,8 @@
 		70859C07235B44B800628DFC /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C05235B44B800628DFC /* OnboardingPageViewController.swift */; };
 		70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
 		70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
-		70859C0C235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */; };
-		70859C0D235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */; };
+		70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
+		70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
 		CBCFCAF47715C675F6AA3FF4 /* Pods_DHCCancer_mock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,7 +115,7 @@
 		70859C02235B27F000628DFC /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 		70859C05235B44B800628DFC /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		70859C08235B467300628DFC /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
-		70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstOnboardingScreenViewController.xib; sourceTree = "<group>"; };
+		70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstOnboardingViewController.xib; sourceTree = "<group>"; };
 		7C2DA47C687ED737044C633A /* Pods-DHCCancer-mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.release.xcconfig"; sourceTree = "<group>"; };
 		AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer_mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5955B669A6395C4BEEBDF19 /* Pods_DHCCancer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,7 +251,7 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */,
+				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -366,7 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70859C0C235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */,
+				70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
 				70859B84235B168900628DFC /* Assets.xcassets in Resources */,
 			);
@@ -376,7 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70859C0D235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */,
+				70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
 				70859B94235B1C9600628DFC /* Assets.xcassets in Resources */,
 			);
