@@ -129,4 +129,9 @@ final class APIClient: Networking {
         let url = self.createURL(withEndpoint: "/docs/#/user/getProfile")
         return self.buildPromiseWithResponse(url: url, method: .get, successStatus: .OK, headers: self.createHeaders(withToken: token))
     }
+    
+    func fetchEntries(token: String) -> Promise<[Entry]> {
+        let url = self.createURL(withEndpoint: "/time-entries")
+        return self.buildPromiseWithResponse(url: url, method: .get, successStatus: .OK, headers: self.createHeaders(withToken: token))
+    }
 }

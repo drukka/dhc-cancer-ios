@@ -40,4 +40,12 @@ final class FakeAPIClient: Networking {
         
         return Promise(error: NetworkingError.serviceError(.unauthorized))
     }
+    
+    func fetchEntries(token: String) -> Promise<[Entry]> {
+        if token == authenticationToken {
+            return Promise.value([Entry(type: .temperature, time: Date(), weight: nil, temperature: 34, startTime: nil, length: nil, awake: nil, rem: nil, light: nil, deep: nil)])
+        }
+        
+        return Promise(error: NetworkingError.serviceError(.unauthorized))
+    }
 }
