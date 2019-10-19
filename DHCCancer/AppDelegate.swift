@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupDefaultNavigationBarAppearance() {
-        UINavigationBar.appearance().barStyle = .black
+        /*UINavigationBar.appearance().barStyle = .black
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().backgroundColor = UIColor(named: "Shark")
         UINavigationBar.appearance().barTintColor = UIColor(named: "Shark")
@@ -75,7 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().largeTitleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor(named: "Twine") ?? UIColor.white,
             NSAttributedString.Key.font: UIFont(name: "PlayfairDisplay-Regular", size: 40) ?? UIFont.systemFont(ofSize: 17, weight: .regular)
-        ]
+        ]*/
     }
 
     // MARK: - Public methods
