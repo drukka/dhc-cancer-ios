@@ -10,5 +10,5 @@ import Foundation
 import PromiseKit
 
 protocol Networking {
-    // TODO
+    func logIn(email: String, password: String) -> Promise<AuthenticationResponse>
 }
