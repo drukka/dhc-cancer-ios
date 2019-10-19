@@ -17,6 +17,7 @@ final class AppDependencies {
         self.registerNetworking(to: container)
         self.registerCurrentUserProvider(to: container)
         self.registerValidator(to: container)
+        self.registerOnboardingPageViewController(to: container)
     }
     
     // MARK: - Private methods
@@ -44,6 +45,12 @@ final class AppDependencies {
     private func registerValidator(to container: Container) {
         container.register(ValidatorProtocol.self, factory: { _ in
             return Validator()
+        })
+    }
+    
+    private func registerOnboardingPageViewController(to container: Container) {
+        container.register(OnboardingPageViewController.self, factory: { _ in
+            return OnboardingPageViewController(networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!)
         })
     }
     
