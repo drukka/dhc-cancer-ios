@@ -19,7 +19,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondOnboardingViewController" customModule="DHCCancer" customModuleProvider="target">
             <connections>
+                <outlet property="birthdateButton" destination="9Mx-YM-l7H" id="xEh-Cn-aKL"/>
+                <outlet property="genderButton" destination="I7K-Og-U2i" id="7Ck-cb-JOo"/>
+                <outlet property="heightButton" destination="ylT-aj-CGu" id="KWN-S4-sYD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="3NT-UM-f3n"/>
+                <outlet property="weightButton" destination="KN0-D1-bHY" id="MGj-jV-K9C"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -28,29 +32,35 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A few more details..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtX-qj-eK2">
-                    <rect key="frame" x="16" y="104" width="382" height="30.5"/>
+                    <rect key="frame" x="16" y="104" width="382" height="29.5"/>
                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="25"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDB-vk-GX8">
-                    <rect key="frame" x="20" y="174.5" width="374" height="110"/>
+                    <rect key="frame" x="20" y="173.5" width="374" height="110"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your date of birth?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQj-AR-pVR">
-                            <rect key="frame" x="8" y="8" width="358" height="22"/>
+                            <rect key="frame" x="8" y="8" width="358" height="21"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mx-YM-l7H">
-                            <rect key="frame" x="163.5" y="46" width="47" height="31"/>
+                            <rect key="frame" x="122" y="45" width="130" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="5qe-4S-qFm"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                             <state key="normal" title="Select">
                                 <color key="titleColor" name="SweetCorn"/>
                             </state>
+                            <connections>
+                                <action selector="selectionButtonTapped:" destination="-1" eventType="touchUpInside" id="idz-57-VeG"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Utf-bs-WIb">
-                            <rect key="frame" x="342" y="57" width="20" height="14"/>
+                            <rect key="frame" x="342" y="56" width="20" height="14"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="14" id="MKn-mi-67f"/>
@@ -72,23 +82,29 @@
                     <viewLayoutGuide key="safeArea" id="EwR-jT-XQC"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uuf-zr-Es8">
-                    <rect key="frame" x="20" y="300.5" width="374" height="110"/>
+                    <rect key="frame" x="20" y="299.5" width="374" height="110"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your date of birth?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN0-qm-755">
-                            <rect key="frame" x="8" y="8" width="358" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your gender?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN0-qm-755">
+                            <rect key="frame" x="8" y="8" width="358" height="21"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7K-Og-U2i">
-                            <rect key="frame" x="163.5" y="46" width="47" height="31"/>
+                            <rect key="frame" x="122" y="45" width="130" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="xwW-b2-Oxp"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                             <state key="normal" title="Select">
                                 <color key="titleColor" name="SweetCorn"/>
                             </state>
+                            <connections>
+                                <action selector="selectionButtonTapped:" destination="-1" eventType="touchUpInside" id="OdZ-yg-4eL"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="DQg-gZ-fp8">
-                            <rect key="frame" x="342" y="57" width="20" height="14"/>
+                            <rect key="frame" x="342" y="56" width="20" height="14"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="FgZ-mF-XGv"/>
@@ -110,23 +126,29 @@
                     <viewLayoutGuide key="safeArea" id="Iby-dL-4Pu"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-Gq-boN">
-                    <rect key="frame" x="20" y="426.5" width="374" height="110"/>
+                    <rect key="frame" x="20" y="425.5" width="374" height="110"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your date of birth?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-gv-gGP">
-                            <rect key="frame" x="8" y="8" width="358" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your height?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLw-gv-gGP">
+                            <rect key="frame" x="8" y="8" width="358" height="21"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylT-aj-CGu">
-                            <rect key="frame" x="163.5" y="46" width="47" height="31"/>
+                            <rect key="frame" x="122" y="45" width="130" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="KQU-R7-lnt"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                             <state key="normal" title="Select">
                                 <color key="titleColor" name="SweetCorn"/>
                             </state>
+                            <connections>
+                                <action selector="selectionButtonTapped:" destination="-1" eventType="touchUpInside" id="4DF-Mk-PEb"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="4Om-aL-T13">
-                            <rect key="frame" x="342" y="57" width="20" height="14"/>
+                            <rect key="frame" x="342" y="56" width="20" height="14"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="4rg-ra-8K9"/>
@@ -148,14 +170,14 @@
                     <viewLayoutGuide key="safeArea" id="8Fx-hj-NoH"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjj-h0-eP3">
-                    <rect key="frame" x="162" y="771" width="90" height="31"/>
+                    <rect key="frame" x="165.5" y="772" width="83" height="30"/>
                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
                     <state key="normal" title="skip for now">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="By8-py-QMa" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
-                    <rect key="frame" x="142" y="727" width="130" height="36"/>
+                    <rect key="frame" x="142" y="728" width="130" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="95i-Fe-1uL"/>
                         <constraint firstAttribute="width" constant="130" id="bBk-3N-3QD"/>
@@ -180,23 +202,29 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-Mx-R8c">
-                    <rect key="frame" x="20" y="552.5" width="374" height="110"/>
+                    <rect key="frame" x="20" y="551.5" width="374" height="110"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your date of birth?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaZ-Vv-Gcp">
-                            <rect key="frame" x="8" y="8" width="358" height="22"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your weight?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaZ-Vv-Gcp">
+                            <rect key="frame" x="8" y="8" width="358" height="21"/>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KN0-D1-bHY">
-                            <rect key="frame" x="163.5" y="46" width="47" height="31"/>
+                            <rect key="frame" x="122" y="45" width="130" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="2AB-Hf-xbU"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                             <state key="normal" title="Select">
                                 <color key="titleColor" name="SweetCorn"/>
                             </state>
+                            <connections>
+                                <action selector="selectionButtonTapped:" destination="-1" eventType="touchUpInside" id="yRk-t8-Xd8"/>
+                            </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="29T-bz-Z6k">
-                            <rect key="frame" x="342" y="57" width="20" height="14"/>
+                            <rect key="frame" x="342" y="56" width="20" height="14"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="14" id="46K-al-Dib"/>

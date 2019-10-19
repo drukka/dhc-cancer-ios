@@ -268,8 +268,8 @@
 			children = (
 				70859C05235B44B800628DFC /* OnboardingPageViewController.swift */,
 				70859C08235B467300628DFC /* FirstOnboardingViewController.swift */,
-				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 				7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */,
+				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -387,8 +387,8 @@
 			isa = PBXGroup;
 			children = (
 				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
-				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 				7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */,
+				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
