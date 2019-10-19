@@ -31,15 +31,12 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
-            <color key="backgroundColor" name="Hibiscus"/>
+            <color key="backgroundColor" red="0.65490196078431373" green="0.14117647058823529" blue="0.38039215686274508" alpha="0.80446742957746475" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" name="SweetCorn"/>
             <point key="canvasLocation" x="132" y="98"/>
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="Hibiscus">
-            <color red="0.65490196078431373" green="0.14117647058823529" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="SweetCorn">
             <color red="0.97647058823529409" green="0.8784313725490196" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
