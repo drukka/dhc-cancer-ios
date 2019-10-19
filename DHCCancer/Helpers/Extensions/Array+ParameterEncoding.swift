@@ -1,6 +1,6 @@
 //
 //  Array+ParameterEncoding.swift
-//  Servee
+//  DHCCancer
 //
 //  Created by Németh Barna on 2019. 07. 16..
 //  Copyright © 2019. Drukka digitals. All rights reserved.
