@@ -106,9 +106,9 @@ final class APIClient: Networking {
     }
 
     private func createHeaders(withToken token: String? = nil) -> HTTPHeaders {
-        var headers: HTTPHeaders = ["Mobile-Os": "ios", "Mobile-Device-Id": self.deviceID, "Mobile-Device-Name": self.deviceName, "Content-Type": "application/json", "DeviceType": "mobile"]
+        var headers: HTTPHeaders = [:]
         if let token = token {
-            headers["Authorization"] = token
+            headers["Authorization"] = "bearer \(token)"
         }
         return headers
     }
@@ -123,6 +123,11 @@ final class APIClient: Networking {
     func signUp(email: String, password: String) -> Promise<AuthenticationResponse> {
         let parameters: Parameters = ["email": email, "password": password]
         return self.buildPromiseWithResponse(url: self.createURL(withEndpoint: "/auth/signUp"), method: .post, successStatus: .OK, headers: self.createHeaders(), parameters: parameters)
+    }
+    
+    func fetchUserData(token: String) -> Promise<User> {
+        let url = self.createURL(withEndpoint: "/docs/#/user/getProfile")
+        return self.buildPromiseWithResponse(url: url, method: .get, successStatus: .OK, headers: self.createHeaders(withToken: token))
     }
 
     func updateUserData(request: UpdateUserRequest, token: String) -> Promise<Void?> {

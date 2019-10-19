@@ -14,5 +14,11 @@ struct User: Codable {
     
     let id: Int
     let email: String
-    
+    var fullname: String?
+    var username: String?
+    var typeOfCancer: String?
+    var currentStage: String?
+    var birthdate: Date?
+    var gender: String?
+    var anonymousShare: Bool?    
 }

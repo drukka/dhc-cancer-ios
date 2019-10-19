@@ -7,6 +7,7 @@
 	<key>LSApplicationCategoryType</key>
 	<array>
 		<string>Montserrat-Medium.otf</string>
+		<string>Montserrat-Light.otf</string>
 		<string>Montserrat-Regular.otf</string>
 		<string>Montserrat-Light.ttf</string>
 	</array>
@@ -29,7 +30,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>ServiceAddress</key>
-	<string>https://api.api.com</string>
+	<string>http://192.168.10.247:8000</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -21,12 +21,18 @@ final class AppDependencies {
         self.registerFirstOnboardingViewController(to: container)
         self.registerLoginViewController(to: container)
         self.registerSignUpViewController(to: container)
+<<<<<<< HEAD
         self.registerSecondOnboardingViewController(to: container)
         self.registerThirdOnboardingViewController(to: container)
         self.registerCancerSelectionViewController(to: container)
         self.registerFourthOnboardingViewController(to: container)
         self.registerFifthOnboardingViewController(to: container)
         self.registerMainTabBarController(to: container)
+=======
+        self.registerProfileViewController(to: container)
+        self.registerMyInformationViewController(to: container)
+        self.registerLogHistoryViewController(to: container)
+>>>>>>> profile
     }
     
     // MARK: - Private methods
@@ -90,8 +96,32 @@ final class AppDependencies {
             )
         })
     }
+    
+    private func registerProfileViewController(to container: Container) {
+        container.register(ProfileViewController.self, factory: { _ in
+            return ProfileViewController(networking: container.resolve(Networking.self)!,
+                currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!,
+                container: container)
+        })
+    }
+    
+    private func registerMyInformationViewController(to container: Container) {
+        container.register(MyInformationViewController.self, factory: { _ in
+            return MyInformationViewController(networking: container.resolve(Networking.self)!,
+                currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!,
+                container: container)
+        })
+    }
+    
+    private func registerLogHistoryViewController(to container: Container) {
+        container.register(LogHistoryViewController.self, factory: { _ in
+            return LogHistoryViewController(networking: container.resolve(Networking.self)!,
+                currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!,
+                container: container)
+        })
+    }
 
-    private func registerSecondOnboardingViewController(to container: Container) {
+        private func registerSecondOnboardingViewController(to container: Container) {
         container.register(SecondOnboardingViewController.self, factory: { _, onboardingPageViewController in
             return SecondOnboardingViewController(onboardingPageViewController: onboardingPageViewController)
         })

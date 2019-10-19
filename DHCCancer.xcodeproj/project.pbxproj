@@ -138,10 +138,24 @@
 		70E0E45E235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
 		70E0E460235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */; };
 		70E0E461235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */; };
+		AC21019A235B811000918539 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC210199235B811000918539 /* Montserrat-Light.otf */; };
+		AC21019B235B811000918539 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC210199235B811000918539 /* Montserrat-Light.otf */; };
 		AC29BDEF235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
 		AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
+		AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
+		AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
+		AC365EA2235B9D6E003922EA /* MyInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC365EA0235B9D6E003922EA /* MyInformationTableViewCell.swift */; };
+		AC365EA3235B9D6E003922EA /* MyInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC365EA0235B9D6E003922EA /* MyInformationTableViewCell.swift */; };
+		AC365EA4235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC365EA1235B9D6E003922EA /* MyInformationTableViewCell.xib */; };
+		AC365EA5235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC365EA1235B9D6E003922EA /* MyInformationTableViewCell.xib */; };
+		AC365EA9235BAABC003922EA /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8A5235B869D009D56C7 /* ProfileHeaderView.swift */; };
+		AC365EAA235BAC97003922EA /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */; };
+		AC365EAD235BAE67003922EA /* LogHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC365EAB235BAE67003922EA /* LogHistoryViewController.swift */; };
+		AC365EAE235BAE67003922EA /* LogHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC365EAB235BAE67003922EA /* LogHistoryViewController.swift */; };
+		AC365EAF235BAE67003922EA /* LogHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC365EAC235BAE67003922EA /* LogHistoryViewController.xib */; };
+		AC365EB0235BAE67003922EA /* LogHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC365EAC235BAE67003922EA /* LogHistoryViewController.xib */; };
 		AC3D7848235B492D00CEED61 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */; };
 		AC3D7849235B492D00CEED61 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */; };
 		AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */; };
@@ -150,6 +164,30 @@
 		AC3D7851235B5B4500CEED61 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D784E235B5B4500CEED61 /* SignUpViewController.swift */; };
 		AC3D7852235B5B4500CEED61 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3D784F235B5B4500CEED61 /* SignUpViewController.xib */; };
 		AC3D7853235B5B4500CEED61 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3D784F235B5B4500CEED61 /* SignUpViewController.xib */; };
+		AC52A8A6235B869D009D56C7 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8A5235B869D009D56C7 /* ProfileHeaderView.swift */; };
+		AC52A8A9235B86AE009D56C7 /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */; };
+		AC52A8AF235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */; };
+		AC52A8B0235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */; };
+		AC52A8B1235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */; };
+		AC52A8B2235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */; };
+		AC52A8B5235B9788009D56C7 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */; };
+		AC52A8B6235B9788009D56C7 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */; };
+		AC52A8B7235B9788009D56C7 /* MyInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */; };
+		AC52A8B8235B9788009D56C7 /* MyInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */; };
+		AC52A8BB235B9AC4009D56C7 /* MyInformationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8BA235B9AC4009D56C7 /* MyInformationHeaderView.swift */; };
+		AC52A8BC235B9AC4009D56C7 /* MyInformationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8BA235B9AC4009D56C7 /* MyInformationHeaderView.swift */; };
+		AC52A8BE235B9AD1009D56C7 /* MyInformationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8BD235B9AD1009D56C7 /* MyInformationHeaderView.xib */; };
+		AC52A8BF235B9AD1009D56C7 /* MyInformationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8BD235B9AD1009D56C7 /* MyInformationHeaderView.xib */; };
+		AC53B65F235BB1EA000221BE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53B65E235BB1EA000221BE /* Entry.swift */; };
+		AC53B660235BB1EA000221BE /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53B65E235BB1EA000221BE /* Entry.swift */; };
+		AC53B664235BBB45000221BE /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53B662235BBB45000221BE /* LogTableViewCell.swift */; };
+		AC53B665235BBB45000221BE /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC53B662235BBB45000221BE /* LogTableViewCell.swift */; };
+		AC53B666235BBB45000221BE /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC53B663235BBB45000221BE /* LogTableViewCell.xib */; };
+		AC53B667235BBB45000221BE /* LogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC53B663235BBB45000221BE /* LogTableViewCell.xib */; };
+		AC7BE753235B7CD600D617B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */; };
+		AC7BE754235B7CD600D617B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */; };
+		AC7BE755235B7CD600D617B6 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */; };
+		AC7BE756235B7CD600D617B6 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */; };
 		CBCFCAF47715C675F6AA3FF4 /* Pods_DHCCancer_mock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */; };
 /* End PBXBuildFile section */
 
@@ -225,12 +263,31 @@
 		70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthOnboardingViewController.xib; sourceTree = "<group>"; };
 		70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRequest.swift; sourceTree = "<group>"; };
 		7C2DA47C687ED737044C633A /* Pods-DHCCancer-mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.release.xcconfig"; sourceTree = "<group>"; };
+		AC210199235B811000918539 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		AC29BDED235B40FD00C8208B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC29BDEE235B40FD00C8208B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AC29BDF3235B45F400C8208B /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		AC365EA0235B9D6E003922EA /* MyInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationTableViewCell.swift; sourceTree = "<group>"; };
+		AC365EA1235B9D6E003922EA /* MyInformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInformationTableViewCell.xib; sourceTree = "<group>"; };
+		AC365EAB235BAE67003922EA /* LogHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHistoryViewController.swift; sourceTree = "<group>"; };
+		AC365EAC235BAE67003922EA /* LogHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogHistoryViewController.xib; sourceTree = "<group>"; };
 		AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		AC3D784E235B5B4500CEED61 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AC3D784F235B5B4500CEED61 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		AC52A8A5235B869D009D56C7 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
+		AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInformationViewController.xib; sourceTree = "<group>"; };
+		AC52A8BA235B9AC4009D56C7 /* MyInformationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationHeaderView.swift; sourceTree = "<group>"; };
+		AC52A8BD235B9AD1009D56C7 /* MyInformationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInformationHeaderView.xib; sourceTree = "<group>"; };
+		AC53B65E235BB1EA000221BE /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		AC53B662235BBB45000221BE /* LogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
+		AC53B663235BBB45000221BE /* LogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogTableViewCell.xib; sourceTree = "<group>"; };
+		AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer_mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5955B669A6395C4BEEBDF19 /* Pods_DHCCancer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB5995B3BB3C51684048EAC /* Pods-DHCCancer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer.debug.xcconfig"; path = "Target Support Files/Pods-DHCCancer/Pods-DHCCancer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -339,6 +396,9 @@
 				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 				AC3D784E235B5B4500CEED61 /* SignUpViewController.swift */,
 				70742278235BB70900B30C5C /* MainTabBarController.swift */,
+				AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */,
+				AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */,
+				AC365EAB235BAE67003922EA /* LogHistoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -393,6 +453,7 @@
 				70859C02235B27F000628DFC /* AuthenticationResponse.swift */,
 				70859BBA235B223300628DFC /* User.swift */,
 				70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */,
+				AC53B65E235BB1EA000221BE /* Entry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -402,6 +463,14 @@
 			children = (
 				AC3D784D235B540C00CEED61 /* Xibs */,
 				7045FA09235B599900675101 /* UIElements */,
+				AC53B661235BBB18000221BE /* LogTableViewCell */,
+				AC365E9F235B9D44003922EA /* MyInformationTableViewCell */,
+				AC52A8B9235B9AAA009D56C7 /* MyInformationHeaderView */,
+				AC52A8AC235B9364009D56C7 /* ProfileTableViewCell */,
+				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
+				AC3D784D235B540C00CEED61 /* Xibs */,
+				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
+				AC52A8AB235B88C8009D56C7 /* ProfileHeaderView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -429,6 +498,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		AC365E9F235B9D44003922EA /* MyInformationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC365EA0235B9D6E003922EA /* MyInformationTableViewCell.swift */,
+				AC365EA1235B9D6E003922EA /* MyInformationTableViewCell.xib */,
+			);
+			path = MyInformationTableViewCell;
+			sourceTree = "<group>";
+		};
 		AC3D7846235B48DA00CEED61 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +528,7 @@
 				7045FA18235B5A7000675101 /* Montserrat-ThinItalic.ttf */,
 				AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */,
 				AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */,
+				AC210199235B811000918539 /* Montserrat-Light.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -465,8 +544,47 @@
 				70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */,
 				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 				AC3D784F235B5B4500CEED61 /* SignUpViewController.xib */,
+				AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */,
+				AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */,
+				AC365EAC235BAE67003922EA /* LogHistoryViewController.xib */,
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		AC52A8AB235B88C8009D56C7 /* ProfileHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				AC52A8A5235B869D009D56C7 /* ProfileHeaderView.swift */,
+				AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */,
+			);
+			path = ProfileHeaderView;
+			sourceTree = "<group>";
+		};
+		AC52A8AC235B9364009D56C7 /* ProfileTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */,
+				AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */,
+			);
+			path = ProfileTableViewCell;
+			sourceTree = "<group>";
+		};
+		AC52A8B9235B9AAA009D56C7 /* MyInformationHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				AC52A8BA235B9AC4009D56C7 /* MyInformationHeaderView.swift */,
+				AC52A8BD235B9AD1009D56C7 /* MyInformationHeaderView.xib */,
+			);
+			path = MyInformationHeaderView;
+			sourceTree = "<group>";
+		};
+		AC53B661235BBB18000221BE /* LogTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC53B662235BBB45000221BE /* LogTableViewCell.swift */,
+				AC53B663235BBB45000221BE /* LogTableViewCell.xib */,
+			);
+			path = LogTableViewCell;
 			sourceTree = "<group>";
 		};
 		F1E0258D1AEA33D98665FAE6 /* Frameworks */ = {
@@ -561,6 +679,7 @@
 				7045FA38235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
 				7045FA5B235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
+				AC365EA4235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
 				70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				7045FA4D235B932F00675101 /* Cancers.json in Resources */,
 				7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
@@ -568,12 +687,18 @@
 				7045FA44235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
 				7045FA2C235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
+				AC7BE755235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
+				AC365EAF235BAE67003922EA /* LogHistoryViewController.xib in Resources */,
+				AC52A8B7235B9788009D56C7 /* MyInformationViewController.xib in Resources */,
 				AC3D7852235B5B4500CEED61 /* SignUpViewController.xib in Resources */,
 				70E0E45D235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */,
 				AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				7045FA28235B5A7000675101 /* Montserrat-Bold.ttf in Resources */,
 				7045FA36235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */,
 				7045FA30235B5A7000675101 /* Montserrat-LightItalic.ttf in Resources */,
+				AC52A8BE235B9AD1009D56C7 /* MyInformationHeaderView.xib in Resources */,
+				AC21019A235B811000918539 /* Montserrat-Light.otf in Resources */,
+				AC53B666235BBB45000221BE /* LogTableViewCell.xib in Resources */,
 				70859B84235B168900628DFC /* Assets.xcassets in Resources */,
 				7045FA32235B5A7100675101 /* Montserrat-SemiBold.ttf in Resources */,
 				AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */,
@@ -588,6 +713,8 @@
 				7045FA34235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				7045FA3E235B609200675101 /* SecondOnboardingViewController.xib in Resources */,
 				7045FA20235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
+				AC52A8B1235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */,
+				AC52A8A9235B86AE009D56C7 /* ProfileHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +725,7 @@
 				7045FA39235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
 				7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1D235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
+				AC365EA5235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
 				70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				7045FA4E235B932F00675101 /* Cancers.json in Resources */,
 				7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
@@ -605,12 +733,19 @@
 				7045FA45235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
 				7045FA2D235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
+				AC7BE756235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
+				AC365EB0235BAE67003922EA /* LogHistoryViewController.xib in Resources */,
+				AC52A8B8235B9788009D56C7 /* MyInformationViewController.xib in Resources */,
+				AC365EAA235BAC97003922EA /* ProfileHeaderView.xib in Resources */,
 				AC3D7853235B5B4500CEED61 /* SignUpViewController.xib in Resources */,
 				70E0E45E235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */,
 				AC3D784C235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				7045FA29235B5A7000675101 /* Montserrat-Bold.ttf in Resources */,
 				7045FA37235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */,
 				7045FA31235B5A7000675101 /* Montserrat-LightItalic.ttf in Resources */,
+				AC52A8BF235B9AD1009D56C7 /* MyInformationHeaderView.xib in Resources */,
+				AC53B667235BBB45000221BE /* LogTableViewCell.xib in Resources */,
+				AC21019B235B811000918539 /* Montserrat-Light.otf in Resources */,
 				70859B94235B1C9600628DFC /* Assets.xcassets in Resources */,
 				7045FA33235B5A7100675101 /* Montserrat-SemiBold.ttf in Resources */,
 				AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */,
@@ -625,6 +760,7 @@
 				7045FA35235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				7045FA3F235B609200675101 /* SecondOnboardingViewController.xib in Resources */,
 				7045FA21235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
+				AC52A8B2235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,6 +852,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC53B664235BBB45000221BE /* LogTableViewCell.swift in Sources */,
 				AC3D7850235B5B4500CEED61 /* SignUpViewController.swift in Sources */,
 				70859BD4235B230100628DFC /* Encodable+ParametersDictionary.swift in Sources */,
 				7045FA3B235B603D00675101 /* SecondOnboardingViewController.swift in Sources */,
@@ -724,12 +861,15 @@
 				70859BDA235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
 				7045FA4A235B864200675101 /* CancerSelectionViewController.swift in Sources */,
 				70859C00235B246A00628DFC /* Errors.swift in Sources */,
+				AC52A8B5235B9788009D56C7 /* MyInformationViewController.swift in Sources */,
+				AC52A8BB235B9AC4009D56C7 /* MyInformationHeaderView.swift in Sources */,
 				70859BB8235B220600628DFC /* CurrentUserProviderProtocol.swift in Sources */,
 				70859BFB235B23BF00628DFC /* CurrentUserProvider.swift in Sources */,
 				70859BE2235B230100628DFC /* NetworkingError+LocalizedError.swift in Sources */,
 				70859BD8235B230100628DFC /* Date+YearMonthDayFormat.swift in Sources */,
 				70859BD0235B230100628DFC /* UserDefaults+IsFirstLaunch.swift in Sources */,
 				70859B7B235B168800628DFC /* AppDelegate.swift in Sources */,
+				AC365EA2235B9D6E003922EA /* MyInformationTableViewCell.swift in Sources */,
 				70859BF7235B23BF00628DFC /* APIClient.swift in Sources */,
 				70859BF9235B23BF00628DFC /* FakeAPIClient.swift in Sources */,
 				70859BEB235B235D00628DFC /* Enums.swift in Sources */,
@@ -737,15 +877,19 @@
 				7045FA41235B7F4A00675101 /* ThirdOnboardingViewController.swift in Sources */,
 				70859BEE235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
 				70859BDC235B230100628DFC /* UITextField+Validatable.swift in Sources */,
+				AC365EAD235BAE67003922EA /* LogHistoryViewController.swift in Sources */,
 				70859BE0235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
 				70E0E45A235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */,
 				70E0E460235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
 				7045FA58235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
+				AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */,
+				AC52A8AF235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */,
 				70859BB5235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCC235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBB235B223300628DFC /* User.swift in Sources */,
+				AC7BE753235B7CD600D617B6 /* ProfileViewController.swift in Sources */,
 				70859BF1235B236900628DFC /* AppDependencies.swift in Sources */,
 				70742279235BB70900B30C5C /* MainTabBarController.swift in Sources */,
 				70859C06235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
@@ -754,6 +898,8 @@
 				70859BE5235B232000628DFC /* ValidatorProtocol.swift in Sources */,
 				70859BCA235B230100628DFC /* Date+RemainingDays.swift in Sources */,
 				70859BD2235B230100628DFC /* UIViewController+HandleError.swift in Sources */,
+				AC53B65F235BB1EA000221BE /* Entry.swift in Sources */,
+				AC52A8A6235B869D009D56C7 /* ProfileHeaderView.swift in Sources */,
 				70859C03235B27F000628DFC /* AuthenticationResponse.swift in Sources */,
 				70859BD6235B230100628DFC /* UIViewController+IssueAlert.swift in Sources */,
 				7045FA55235B950500675101 /* CancerCell.swift in Sources */,
@@ -764,6 +910,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC53B665235BBB45000221BE /* LogTableViewCell.swift in Sources */,
 				AC3D7851235B5B4500CEED61 /* SignUpViewController.swift in Sources */,
 				70859BD5235B230100628DFC /* Encodable+ParametersDictionary.swift in Sources */,
 				7045FA3C235B603D00675101 /* SecondOnboardingViewController.swift in Sources */,
@@ -772,18 +919,23 @@
 				70859BDB235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
 				7045FA4B235B864200675101 /* CancerSelectionViewController.swift in Sources */,
 				70859C01235B246A00628DFC /* Errors.swift in Sources */,
+				AC52A8B6235B9788009D56C7 /* MyInformationViewController.swift in Sources */,
+				AC52A8BC235B9AC4009D56C7 /* MyInformationHeaderView.swift in Sources */,
 				70859BB9235B220600628DFC /* CurrentUserProviderProtocol.swift in Sources */,
 				70859BFC235B23BF00628DFC /* CurrentUserProvider.swift in Sources */,
 				70859BE3235B230100628DFC /* NetworkingError+LocalizedError.swift in Sources */,
 				70859BD9235B230100628DFC /* Date+YearMonthDayFormat.swift in Sources */,
 				70859BD1235B230100628DFC /* UserDefaults+IsFirstLaunch.swift in Sources */,
 				70859B90235B1C9600628DFC /* AppDelegate.swift in Sources */,
+				AC365EA3235B9D6E003922EA /* MyInformationTableViewCell.swift in Sources */,
 				70859BF8235B23BF00628DFC /* APIClient.swift in Sources */,
 				70859BFA235B23BF00628DFC /* FakeAPIClient.swift in Sources */,
 				70859BEC235B235D00628DFC /* Enums.swift in Sources */,
 				AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */,
 				7045FA42235B7F4A00675101 /* ThirdOnboardingViewController.swift in Sources */,
 				70859BEF235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
+				AC365EA9235BAABC003922EA /* ProfileHeaderView.swift in Sources */,
+				AC365EAE235BAE67003922EA /* LogHistoryViewController.swift in Sources */,
 				70859BDD235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE1235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
@@ -791,9 +943,12 @@
 				70E0E461235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
 				7045FA59235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
+				AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */,
+				AC52A8B0235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */,
 				70859BB6235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCD235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBC235B223300628DFC /* User.swift in Sources */,
+				AC7BE754235B7CD600D617B6 /* ProfileViewController.swift in Sources */,
 				70859BF2235B236900628DFC /* AppDependencies.swift in Sources */,
 				7074227A235BB70900B30C5C /* MainTabBarController.swift in Sources */,
 				70859C07235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
@@ -801,6 +956,7 @@
 				70859BFE235B23BF00628DFC /* FakeCurrentUserProvider.swift in Sources */,
 				70859BE6235B232000628DFC /* ValidatorProtocol.swift in Sources */,
 				70859BCB235B230100628DFC /* Date+RemainingDays.swift in Sources */,
+				AC53B660235BB1EA000221BE /* Entry.swift in Sources */,
 				70859BD3235B230100628DFC /* UIViewController+HandleError.swift in Sources */,
 				70859C04235B27F000628DFC /* AuthenticationResponse.swift in Sources */,
 				70859BD7235B230100628DFC /* UIViewController+IssueAlert.swift in Sources */,
