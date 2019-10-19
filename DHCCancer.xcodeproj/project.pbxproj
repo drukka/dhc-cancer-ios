@@ -72,6 +72,16 @@
 		70859C01235B246A00628DFC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BFF235B246A00628DFC /* Errors.swift */; };
 		70859C03235B27F000628DFC /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C02235B27F000628DFC /* AuthenticationResponse.swift */; };
 		70859C04235B27F000628DFC /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C02235B27F000628DFC /* AuthenticationResponse.swift */; };
+		AC29BDEF235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
+		AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
+		AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
+		AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
+		AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
+		AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
+		AC3D7848235B492D00CEED61 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */; };
+		AC3D7849235B492D00CEED61 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */; };
+		AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */; };
+		AC3D784C235B493800CEED61 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */; };
 		CBCFCAF47715C675F6AA3FF4 /* Pods_DHCCancer_mock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +124,11 @@
 		70859BFF235B246A00628DFC /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		70859C02235B27F000628DFC /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 		7C2DA47C687ED737044C633A /* Pods-DHCCancer-mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.release.xcconfig"; sourceTree = "<group>"; };
+		AC29BDED235B40FD00C8208B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC29BDEE235B40FD00C8208B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AC29BDF3235B45F400C8208B /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer_mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5955B669A6395C4BEEBDF19 /* Pods_DHCCancer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB5995B3BB3C51684048EAC /* Pods-DHCCancer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer.debug.xcconfig"; path = "Target Support Files/Pods-DHCCancer/Pods-DHCCancer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				70859B9B235B1F7700628DFC /* Controllers.swift */,
+				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,7 +263,9 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 				70859BAC235B206300628DFC /* Views.swift */,
+				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,11 +284,21 @@
 		70859BB3235B209400628DFC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC3D7846235B48DA00CEED61 /* Fonts */,
 				70859B85235B168900628DFC /* LaunchScreen.storyboard */,
 				70859B83235B168900628DFC /* Assets.xcassets */,
 				70859B88235B168900628DFC /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC3D7846235B48DA00CEED61 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */,
+				AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F1E0258D1AEA33D98665FAE6 /* Frameworks */ = {
@@ -363,7 +391,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
+				AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				70859B84235B168900628DFC /* Assets.xcassets in Resources */,
+				AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */,
+				AC3D7848235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
+				AC3D784C235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				70859B94235B1C9600628DFC /* Assets.xcassets in Resources */,
+				AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */,
+				AC3D7849235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +511,12 @@
 				70859BF7235B23BF00628DFC /* APIClient.swift in Sources */,
 				70859BF9235B23BF00628DFC /* FakeAPIClient.swift in Sources */,
 				70859BEB235B235D00628DFC /* Enums.swift in Sources */,
+				AC29BDEF235B40FD00C8208B /* LoginViewController.swift in Sources */,
 				70859BEE235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
 				70859BDC235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE0235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
+				AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */,
 				70859BB5235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCC235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBB235B223300628DFC /* User.swift in Sources */,
@@ -514,10 +550,12 @@
 				70859BF8235B23BF00628DFC /* APIClient.swift in Sources */,
 				70859BFA235B23BF00628DFC /* FakeAPIClient.swift in Sources */,
 				70859BEC235B235D00628DFC /* Enums.swift in Sources */,
+				AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */,
 				70859BEF235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
 				70859BDD235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE1235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
+				AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */,
 				70859BB6235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCD235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBC235B223300628DFC /* User.swift in Sources */,
