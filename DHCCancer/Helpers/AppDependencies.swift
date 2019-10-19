@@ -20,6 +20,7 @@ final class AppDependencies {
         self.registerOnboardingPageViewController(to: container)
         self.registerFirstOnboardingViewController(to: container)
         self.registerLoginViewController(to: container)
+        self.registerSecondOnboardingViewController(to: container)
     }
     
     // MARK: - Private methods
@@ -70,6 +71,12 @@ final class AppDependencies {
                 validator: container.resolve(ValidatorProtocol.self)!,
                 container: container
             )
+        })
+    }
+    
+    private func registerSecondOnboardingViewController(to container: Container) {
+        container.register(SecondOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return SecondOnboardingViewController(onboardingPageViewController: onboardingPageViewController)
         })
     }
 }
