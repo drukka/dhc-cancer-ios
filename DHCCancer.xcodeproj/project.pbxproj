@@ -58,6 +58,10 @@
 		7045FA53235B947800675101 /* CancerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA51235B947800675101 /* CancerCell.xib */; };
 		7045FA55235B950500675101 /* CancerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA54235B950500675101 /* CancerCell.swift */; };
 		7045FA56235B950500675101 /* CancerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA54235B950500675101 /* CancerCell.swift */; };
+		7045FA58235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */; };
+		7045FA59235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */; };
+		7045FA5B235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */; };
+		7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */; };
 		70859B7B235B168800628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
 		70859B84235B168900628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 		70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
@@ -124,6 +128,10 @@
 		70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
 		70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
 		70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
+		70E0E45A235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */; };
+		70E0E45B235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */; };
+		70E0E45D235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
+		70E0E45E235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
 		AC29BDEF235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
@@ -165,6 +173,8 @@
 		7045FA4C235B932F00675101 /* Cancers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cancers.json; sourceTree = "<group>"; };
 		7045FA51235B947800675101 /* CancerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancerCell.xib; sourceTree = "<group>"; };
 		7045FA54235B950500675101 /* CancerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerCell.swift; sourceTree = "<group>"; };
+		7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthOnboardingViewController.swift; sourceTree = "<group>"; };
+		7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthOnboardingViewController.xib; sourceTree = "<group>"; };
 		70859B77235B168800628DFC /* DHCCancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHCCancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70859B7A235B168800628DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70859B83235B168900628DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -201,6 +211,8 @@
 		70859C05235B44B800628DFC /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		70859C08235B467300628DFC /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
 		70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstOnboardingViewController.xib; sourceTree = "<group>"; };
+		70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthOnboardingViewController.swift; sourceTree = "<group>"; };
+		70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthOnboardingViewController.xib; sourceTree = "<group>"; };
 		7C2DA47C687ED737044C633A /* Pods-DHCCancer-mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.release.xcconfig"; sourceTree = "<group>"; };
 		AC29BDED235B40FD00C8208B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC29BDEE235B40FD00C8208B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -310,6 +322,8 @@
 				7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */,
 				7045FA40235B7F4A00675101 /* ThirdOnboardingViewController.swift */,
 				7045FA49235B864200675101 /* CancerSelectionViewController.swift */,
+				7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */,
+				70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */,
 				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 			);
 			path = Controllers;
@@ -432,6 +446,8 @@
 				7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */,
 				7045FA43235B7FDF00675101 /* ThirdOnboardingViewController.xib */,
 				7045FA46235B85E900675101 /* CancerSelectionViewController.xib */,
+				7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */,
+				70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */,
 				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 			);
 			path = Xibs;
@@ -527,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7045FA38235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
+				7045FA5B235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				7045FA4D235B932F00675101 /* Cancers.json in Resources */,
@@ -535,6 +552,7 @@
 				7045FA44235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
 				7045FA2C235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
+				70E0E45D235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */,
 				AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				7045FA28235B5A7000675101 /* Montserrat-Bold.ttf in Resources */,
 				7045FA36235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */,
@@ -561,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7045FA39235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
+				7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1D235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				7045FA4E235B932F00675101 /* Cancers.json in Resources */,
@@ -569,6 +588,7 @@
 				7045FA45235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
 				7045FA2D235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
+				70E0E45E235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */,
 				AC3D784C235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				7045FA29235B5A7000675101 /* Montserrat-Bold.ttf in Resources */,
 				7045FA37235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */,
@@ -699,6 +719,8 @@
 				70859BDC235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE0235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
+				70E0E45A235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */,
+				7045FA58235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */,
 				70859BB5235B21C500628DFC /* Networking.swift in Sources */,
@@ -742,6 +764,8 @@
 				70859BDD235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE1235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
+				70E0E45B235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */,
+				7045FA59235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */,
 				70859BB6235B21C500628DFC /* Networking.swift in Sources */,

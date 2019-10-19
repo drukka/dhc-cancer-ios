@@ -94,7 +94,7 @@ final class ThirdOnboardingViewController: UIViewController {
     }
     
     private func jumpToTheNextViewController() {
-        self.onboardingPageViewController.jumpToViewControllerAt(2)
+        self.onboardingPageViewController.jumpToViewControllerAt(3)
     }
     
     // MARK: - Control events

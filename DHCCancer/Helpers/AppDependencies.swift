@@ -23,6 +23,8 @@ final class AppDependencies {
         self.registerSecondOnboardingViewController(to: container)
         self.registerThirdOnboardingViewController(to: container)
         self.registerCancerSelectionViewController(to: container)
+        self.registerFourthOnboardingViewController(to: container)
+        self.registerFifthOnboardingViewController(to: container)
     }
     
     // MARK: - Private methods
@@ -91,6 +93,18 @@ final class AppDependencies {
     private func registerCancerSelectionViewController(to container: Container) {
         container.register(CancerSelectionViewController.self, factory: { _ in
             return CancerSelectionViewController()
+        })
+    }
+    
+    private func registerFourthOnboardingViewController(to container: Container) {
+        container.register(FourthOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return FourthOnboardingViewController(onboardingPageViewController: onboardingPageViewController, container: container)
+        })
+    }
+    
+    private func registerFifthOnboardingViewController(to container: Container) {
+        container.register(FifthOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return FifthOnboardingViewController(onboardingPageViewController: onboardingPageViewController, networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!)
         })
     }
 }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FifthOnboardingViewController" customModule="DHCCancer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Vj7-nf-aVR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FifthOnboardingImage" translatesAutoresizingMaskIntoConstraints="NO" id="AmA-Jy-hXc">
+                    <rect key="frame" x="73" y="176" width="268" height="255"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="268" id="EKP-cv-TSa"/>
+                        <constraint firstAttribute="height" constant="255" id="dbu-Br-d7v"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for joining our community!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCp-oy-K82">
+                    <rect key="frame" x="20" y="447" width="374" height="61"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your sensitive data is safe with us, you are completely in control!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGd-0d-KfO">
+                    <rect key="frame" x="20" y="540" width="374" height="44"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v73-cH-4v8" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
+                    <rect key="frame" x="83" y="616" width="248" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="PqY-yn-0GU"/>
+                        <constraint firstAttribute="width" constant="248" id="rXy-WE-add"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                    <state key="normal" title="Start using the app">
+                        <color key="titleColor" name="CabSav"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" name="SweetCorn"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AmA-Jy-hXc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="132" id="8Yv-4p-KZ0"/>
+                <constraint firstItem="v73-cH-4v8" firstAttribute="top" secondItem="rGd-0d-KfO" secondAttribute="bottom" constant="32" id="Mdx-KM-OtK"/>
+                <constraint firstItem="AmA-Jy-hXc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QBU-yp-mxO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rGd-0d-KfO" secondAttribute="trailing" constant="20" id="TBL-7a-ch4"/>
+                <constraint firstItem="rGd-0d-KfO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="dFP-Cu-0sZ"/>
+                <constraint firstAttribute="trailing" secondItem="cCp-oy-K82" secondAttribute="trailing" constant="20" id="i94-fC-dXh"/>
+                <constraint firstItem="v73-cH-4v8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lQS-ve-bh5"/>
+                <constraint firstItem="rGd-0d-KfO" firstAttribute="top" secondItem="cCp-oy-K82" secondAttribute="bottom" constant="32" id="q5C-wb-llu"/>
+                <constraint firstItem="cCp-oy-K82" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="wUK-RC-Uuc"/>
+                <constraint firstItem="cCp-oy-K82" firstAttribute="top" secondItem="AmA-Jy-hXc" secondAttribute="bottom" constant="16" id="zUz-aM-oAD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FifthOnboardingImage" width="268" height="255"/>
+        <namedColor name="CabSav">
+            <color red="0.25882352941176473" green="0.031372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SweetCorn">
+            <color red="0.97647058823529409" green="0.8784313725490196" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
