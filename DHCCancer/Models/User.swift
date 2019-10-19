@@ -1,5 +1,5 @@
 //
-//  Stores.swift
+//  User.swift
 //  DHCCancer
 //
 //  Created by Németh Barna on 2019. 10. 19..
@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct User: Codable {
+    
+    // MARK: - Properties
+    
+    let id: Int
+    let email: String
+    
+}

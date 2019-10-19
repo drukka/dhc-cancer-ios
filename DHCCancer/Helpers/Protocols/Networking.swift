@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  Networking.swift
 //  DHCCancer
 //
 //  Created by Németh Barna on 2019. 10. 19..
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import PromiseKit
+
+protocol Networking {
+    // TODO
+}
