@@ -46,3 +46,9 @@ enum ValidationResult {
     case invalid(ValidationRule)
 }
 
+enum Gender: String {
+    case male = "Male"
+    case female = "Female"
+    case other = "Other"
+}
+

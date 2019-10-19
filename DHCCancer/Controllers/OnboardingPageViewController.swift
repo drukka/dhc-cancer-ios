@@ -8,8 +8,9 @@
 
 import UIKit
 import Swinject
+import KeyboardDucker
 
-final class OnboardingPageViewController: UIPageViewController {
+final class OnboardingPageViewController: UIPageViewController, KeyboardDucking {
 
     // MARK: - Properties
     
@@ -19,6 +20,8 @@ final class OnboardingPageViewController: UIPageViewController {
     
     private let pageControl = UIPageControl()
     private var controllers = [UIViewController]()
+    
+    var updateUserRequest: UpdateUserRequest = UpdateUserRequest()
     
     // MARK: - Initialization
     
@@ -43,6 +46,16 @@ final class OnboardingPageViewController: UIPageViewController {
         self.setupControllers()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.startDuckingKeyboard()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.stopDuckingKeyboard()
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -63,6 +76,8 @@ final class OnboardingPageViewController: UIPageViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         self.navigationController?.navigationBar.barStyle = .black
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     private func setupPageControl() {
@@ -81,11 +96,23 @@ final class OnboardingPageViewController: UIPageViewController {
     
     private func setupControllers() {
         self.controllers = [
-            self.container.resolve(FirstOnboardingViewController.self, argument: self)!
+            self.container.resolve(FirstOnboardingViewController.self, argument: self)!,
+            self.container.resolve(SecondOnboardingViewController.self, argument: self)!,
+            self.container.resolve(ThirdOnboardingViewController.self, argument: self)!,
+            self.container.resolve(FourthOnboardingViewController.self, argument: self)!,
+            self.container.resolve(FifthOnboardingViewController.self, argument: self)!
         ]
         
         self.setViewControllers([self.controllers.first!], direction: .forward, animated: false, completion: nil)
         self.pageControl.currentPage = 0
+    }
+    
+    // MARK: - Public methods
+    
+    func jumpToViewControllerAt(_ index: Int) {
+        guard let viewController = self.controllers[safe: index] else { return }
+        self.setViewControllers([viewController], direction: .forward, animated: true, completion: nil)
+        self.pageControl.currentPage = index
     }
 
 }

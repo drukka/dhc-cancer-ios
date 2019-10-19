@@ -21,6 +21,11 @@ final class AppDependencies {
         self.registerFirstOnboardingViewController(to: container)
         self.registerLoginViewController(to: container)
         self.registerSignUpViewController(to: container)
+        self.registerSecondOnboardingViewController(to: container)
+        self.registerThirdOnboardingViewController(to: container)
+        self.registerCancerSelectionViewController(to: container)
+        self.registerFourthOnboardingViewController(to: container)
+        self.registerFifthOnboardingViewController(to: container)
     }
     
     // MARK: - Private methods
@@ -82,6 +87,36 @@ final class AppDependencies {
                 validator: container.resolve(ValidatorProtocol.self)!,
                 container: container
             )
+        })
+    }
+
+    private func registerSecondOnboardingViewController(to container: Container) {
+        container.register(SecondOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return SecondOnboardingViewController(onboardingPageViewController: onboardingPageViewController)
+        })
+    }
+    
+    private func registerThirdOnboardingViewController(to container: Container) {
+        container.register(ThirdOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return ThirdOnboardingViewController(onboardingPageViewController: onboardingPageViewController, container: container)
+        })
+    }
+    
+    private func registerCancerSelectionViewController(to container: Container) {
+        container.register(CancerSelectionViewController.self, factory: { _ in
+            return CancerSelectionViewController()
+        })
+    }
+    
+    private func registerFourthOnboardingViewController(to container: Container) {
+        container.register(FourthOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return FourthOnboardingViewController(onboardingPageViewController: onboardingPageViewController, container: container)
+        })
+    }
+    
+    private func registerFifthOnboardingViewController(to container: Container) {
+        container.register(FifthOnboardingViewController.self, factory: { _, onboardingPageViewController in
+            return FifthOnboardingViewController(onboardingPageViewController: onboardingPageViewController, networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!)
         })
     }
 }

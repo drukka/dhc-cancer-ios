@@ -8,6 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		4F48B17D1887EA9031F51912 /* Pods_DHCCancer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5955B669A6395C4BEEBDF19 /* Pods_DHCCancer.framework */; };
+		7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
+		7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
+		7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */; };
+		7045FA1D235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */; };
+		7045FA1E235B5A7000675101 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */; };
+		7045FA1F235B5A7000675101 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */; };
+		7045FA20235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0D235B5A6F00675101 /* Montserrat-ExtraLight.ttf */; };
+		7045FA21235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0D235B5A6F00675101 /* Montserrat-ExtraLight.ttf */; };
+		7045FA22235B5A7000675101 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0E235B5A6F00675101 /* Montserrat-Black.ttf */; };
+		7045FA23235B5A7000675101 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0E235B5A6F00675101 /* Montserrat-Black.ttf */; };
+		7045FA24235B5A7000675101 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0F235B5A6F00675101 /* Montserrat-Italic.ttf */; };
+		7045FA25235B5A7000675101 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0F235B5A6F00675101 /* Montserrat-Italic.ttf */; };
+		7045FA26235B5A7000675101 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA10235B5A6F00675101 /* Montserrat-ExtraBold.ttf */; };
+		7045FA27235B5A7000675101 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA10235B5A6F00675101 /* Montserrat-ExtraBold.ttf */; };
+		7045FA28235B5A7000675101 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA11235B5A6F00675101 /* Montserrat-Bold.ttf */; };
+		7045FA29235B5A7000675101 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA11235B5A6F00675101 /* Montserrat-Bold.ttf */; };
+		7045FA2A235B5A7000675101 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA12235B5A6F00675101 /* Montserrat-Thin.ttf */; };
+		7045FA2B235B5A7000675101 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA12235B5A6F00675101 /* Montserrat-Thin.ttf */; };
+		7045FA2C235B5A7000675101 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA13235B5A7000675101 /* Montserrat-Light.ttf */; };
+		7045FA2D235B5A7000675101 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA13235B5A7000675101 /* Montserrat-Light.ttf */; };
+		7045FA2E235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA14235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf */; };
+		7045FA2F235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA14235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf */; };
+		7045FA30235B5A7000675101 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA15235B5A7000675101 /* Montserrat-LightItalic.ttf */; };
+		7045FA31235B5A7000675101 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA15235B5A7000675101 /* Montserrat-LightItalic.ttf */; };
+		7045FA32235B5A7100675101 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA16235B5A7000675101 /* Montserrat-SemiBold.ttf */; };
+		7045FA33235B5A7100675101 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA16235B5A7000675101 /* Montserrat-SemiBold.ttf */; };
+		7045FA34235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA17235B5A7000675101 /* Montserrat-SemiBoldItalic.ttf */; };
+		7045FA35235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA17235B5A7000675101 /* Montserrat-SemiBoldItalic.ttf */; };
+		7045FA36235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA18235B5A7000675101 /* Montserrat-ThinItalic.ttf */; };
+		7045FA37235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA18235B5A7000675101 /* Montserrat-ThinItalic.ttf */; };
+		7045FA38235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA19235B5A7000675101 /* Montserrat-MediumItalic.ttf */; };
+		7045FA39235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA19235B5A7000675101 /* Montserrat-MediumItalic.ttf */; };
+		7045FA3B235B603D00675101 /* SecondOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */; };
+		7045FA3C235B603D00675101 /* SecondOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */; };
+		7045FA3E235B609200675101 /* SecondOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */; };
+		7045FA3F235B609200675101 /* SecondOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */; };
+		7045FA41235B7F4A00675101 /* ThirdOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA40235B7F4A00675101 /* ThirdOnboardingViewController.swift */; };
+		7045FA42235B7F4A00675101 /* ThirdOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA40235B7F4A00675101 /* ThirdOnboardingViewController.swift */; };
+		7045FA44235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA43235B7FDF00675101 /* ThirdOnboardingViewController.xib */; };
+		7045FA45235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA43235B7FDF00675101 /* ThirdOnboardingViewController.xib */; };
+		7045FA47235B85E900675101 /* CancerSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA46235B85E900675101 /* CancerSelectionViewController.xib */; };
+		7045FA48235B85E900675101 /* CancerSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA46235B85E900675101 /* CancerSelectionViewController.xib */; };
+		7045FA4A235B864200675101 /* CancerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA49235B864200675101 /* CancerSelectionViewController.swift */; };
+		7045FA4B235B864200675101 /* CancerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA49235B864200675101 /* CancerSelectionViewController.swift */; };
+		7045FA4D235B932F00675101 /* Cancers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA4C235B932F00675101 /* Cancers.json */; };
+		7045FA4E235B932F00675101 /* Cancers.json in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA4C235B932F00675101 /* Cancers.json */; };
+		7045FA52235B947800675101 /* CancerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA51235B947800675101 /* CancerCell.xib */; };
+		7045FA53235B947800675101 /* CancerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA51235B947800675101 /* CancerCell.xib */; };
+		7045FA55235B950500675101 /* CancerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA54235B950500675101 /* CancerCell.swift */; };
+		7045FA56235B950500675101 /* CancerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA54235B950500675101 /* CancerCell.swift */; };
+		7045FA58235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */; };
+		7045FA59235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */; };
+		7045FA5B235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */; };
+		7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */; };
+		70742276235BB37100B30C5C /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70742275235BB37100B30C5C /* BorderedButton.swift */; };
+		70742277235BB37100B30C5C /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70742275235BB37100B30C5C /* BorderedButton.swift */; };
 		70859B7B235B168800628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
 		70859B84235B168900628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 		70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
@@ -74,12 +130,16 @@
 		70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
 		70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
 		70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
+		70E0E45A235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */; };
+		70E0E45B235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */; };
+		70E0E45D235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
+		70E0E45E235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
+		70E0E460235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */; };
+		70E0E461235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */; };
 		AC29BDEF235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
 		AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
-		AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
-		AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
 		AC3D7848235B492D00CEED61 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */; };
 		AC3D7849235B492D00CEED61 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */; };
 		AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */; };
@@ -94,6 +154,34 @@
 /* Begin PBXFileReference section */
 		0CDBEBE5276D6DB6CEFD85F6 /* Pods-DHCCancer-mock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.debug.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.debug.xcconfig"; sourceTree = "<group>"; };
 		5F0FE5E8A488E521DF464F4D /* Pods-DHCCancer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer/Pods-DHCCancer.release.xcconfig"; sourceTree = "<group>"; };
+		7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		7045FA0D235B5A6F00675101 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7045FA0E235B5A6F00675101 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		7045FA0F235B5A6F00675101 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		7045FA10235B5A6F00675101 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7045FA11235B5A6F00675101 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		7045FA12235B5A6F00675101 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		7045FA13235B5A7000675101 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		7045FA14235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7045FA15235B5A7000675101 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		7045FA16235B5A7000675101 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		7045FA17235B5A7000675101 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7045FA18235B5A7000675101 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7045FA19235B5A7000675101 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingViewController.swift; sourceTree = "<group>"; };
+		7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondOnboardingViewController.xib; sourceTree = "<group>"; };
+		7045FA40235B7F4A00675101 /* ThirdOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdOnboardingViewController.swift; sourceTree = "<group>"; };
+		7045FA43235B7FDF00675101 /* ThirdOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdOnboardingViewController.xib; sourceTree = "<group>"; };
+		7045FA46235B85E900675101 /* CancerSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancerSelectionViewController.xib; sourceTree = "<group>"; };
+		7045FA49235B864200675101 /* CancerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerSelectionViewController.swift; sourceTree = "<group>"; };
+		7045FA4C235B932F00675101 /* Cancers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cancers.json; sourceTree = "<group>"; };
+		7045FA51235B947800675101 /* CancerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CancerCell.xib; sourceTree = "<group>"; };
+		7045FA54235B950500675101 /* CancerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerCell.swift; sourceTree = "<group>"; };
+		7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthOnboardingViewController.swift; sourceTree = "<group>"; };
+		7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthOnboardingViewController.xib; sourceTree = "<group>"; };
+		70742275235BB37100B30C5C /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		70859B77235B168800628DFC /* DHCCancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHCCancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70859B7A235B168800628DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70859B83235B168900628DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,10 +218,12 @@
 		70859C05235B44B800628DFC /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		70859C08235B467300628DFC /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
 		70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstOnboardingViewController.xib; sourceTree = "<group>"; };
+		70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthOnboardingViewController.swift; sourceTree = "<group>"; };
+		70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthOnboardingViewController.xib; sourceTree = "<group>"; };
+		70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRequest.swift; sourceTree = "<group>"; };
 		7C2DA47C687ED737044C633A /* Pods-DHCCancer-mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.release.xcconfig"; sourceTree = "<group>"; };
 		AC29BDED235B40FD00C8208B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC29BDEE235B40FD00C8208B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		AC29BDF3235B45F400C8208B /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		AC3D784E235B5B4500CEED61 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +264,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7045FA09235B599900675101 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				7045FA50235B946200675101 /* BorderedButton */,
+				7045FA4F235B945900675101 /* CancerCell */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		7045FA4F235B945900675101 /* CancerCell */ = {
+			isa = PBXGroup;
+			children = (
+				7045FA51235B947800675101 /* CancerCell.xib */,
+				7045FA54235B950500675101 /* CancerCell.swift */,
+			);
+			path = CancerCell;
+			sourceTree = "<group>";
+		};
+		7045FA50235B946200675101 /* BorderedButton */ = {
+			isa = PBXGroup;
+			children = (
+				70742275235BB37100B30C5C /* BorderedButton.swift */,
+			);
+			path = BorderedButton;
+			sourceTree = "<group>";
+		};
 		70859B6E235B168800628DFC = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +328,11 @@
 			children = (
 				70859C05235B44B800628DFC /* OnboardingPageViewController.swift */,
 				70859C08235B467300628DFC /* FirstOnboardingViewController.swift */,
+				7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */,
+				7045FA40235B7F4A00675101 /* ThirdOnboardingViewController.swift */,
+				7045FA49235B864200675101 /* CancerSelectionViewController.swift */,
+				7045FA57235B9D9600675101 /* FourthOnboardingViewController.swift */,
+				70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */,
 				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 				AC3D784E235B5B4500CEED61 /* SignUpViewController.swift */,
 			);
@@ -267,6 +388,7 @@
 			children = (
 				70859C02235B27F000628DFC /* AuthenticationResponse.swift */,
 				70859BBA235B223300628DFC /* User.swift */,
+				70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,9 +396,8 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
 				AC3D784D235B540C00CEED61 /* Xibs */,
-				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
+				7045FA09235B599900675101 /* UIElements */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,6 +420,7 @@
 				70859B85235B168900628DFC /* LaunchScreen.storyboard */,
 				70859B83235B168900628DFC /* Assets.xcassets */,
 				70859B88235B168900628DFC /* Info.plist */,
+				7045FA4C235B932F00675101 /* Cancers.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -306,6 +428,22 @@
 		AC3D7846235B48DA00CEED61 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				7045FA0E235B5A6F00675101 /* Montserrat-Black.ttf */,
+				7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */,
+				7045FA11235B5A6F00675101 /* Montserrat-Bold.ttf */,
+				7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */,
+				7045FA10235B5A6F00675101 /* Montserrat-ExtraBold.ttf */,
+				7045FA14235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf */,
+				7045FA0D235B5A6F00675101 /* Montserrat-ExtraLight.ttf */,
+				7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */,
+				7045FA0F235B5A6F00675101 /* Montserrat-Italic.ttf */,
+				7045FA13235B5A7000675101 /* Montserrat-Light.ttf */,
+				7045FA15235B5A7000675101 /* Montserrat-LightItalic.ttf */,
+				7045FA19235B5A7000675101 /* Montserrat-MediumItalic.ttf */,
+				7045FA16235B5A7000675101 /* Montserrat-SemiBold.ttf */,
+				7045FA17235B5A7000675101 /* Montserrat-SemiBoldItalic.ttf */,
+				7045FA12235B5A6F00675101 /* Montserrat-Thin.ttf */,
+				7045FA18235B5A7000675101 /* Montserrat-ThinItalic.ttf */,
 				AC3D784A235B493800CEED61 /* Montserrat-Medium.otf */,
 				AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */,
 			);
@@ -315,6 +453,12 @@
 		AC3D784D235B540C00CEED61 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
+				7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */,
+				7045FA43235B7FDF00675101 /* ThirdOnboardingViewController.xib */,
+				7045FA46235B85E900675101 /* CancerSelectionViewController.xib */,
+				7045FA5A235B9DA900675101 /* FourthOnboardingViewController.xib */,
+				70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */,
 				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 				AC3D784F235B5B4500CEED61 /* SignUpViewController.xib */,
 			);
@@ -410,13 +554,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7045FA38235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
+				7045FA5B235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
+				7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
+				7045FA4D235B932F00675101 /* Cancers.json in Resources */,
+				7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
+				7045FA24235B5A7000675101 /* Montserrat-Italic.ttf in Resources */,
+				7045FA44235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
+				7045FA2C235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
 				AC3D7852235B5B4500CEED61 /* SignUpViewController.xib in Resources */,
+				70E0E45D235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */,
 				AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
+				7045FA28235B5A7000675101 /* Montserrat-Bold.ttf in Resources */,
+				7045FA36235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */,
+				7045FA30235B5A7000675101 /* Montserrat-LightItalic.ttf in Resources */,
 				70859B84235B168900628DFC /* Assets.xcassets in Resources */,
+				7045FA32235B5A7100675101 /* Montserrat-SemiBold.ttf in Resources */,
 				AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */,
+				7045FA26235B5A7000675101 /* Montserrat-ExtraBold.ttf in Resources */,
+				7045FA2A235B5A7000675101 /* Montserrat-Thin.ttf in Resources */,
+				7045FA2E235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				7045FA22235B5A7000675101 /* Montserrat-Black.ttf in Resources */,
 				AC3D7848235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
+				7045FA52235B947800675101 /* CancerCell.xib in Resources */,
+				7045FA1E235B5A7000675101 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				7045FA47235B85E900675101 /* CancerSelectionViewController.xib in Resources */,
+				7045FA34235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				7045FA3E235B609200675101 /* SecondOnboardingViewController.xib in Resources */,
+				7045FA20235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +591,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7045FA39235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */,
+				7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
+				7045FA1D235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
+				7045FA4E235B932F00675101 /* Cancers.json in Resources */,
+				7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
+				7045FA25235B5A7000675101 /* Montserrat-Italic.ttf in Resources */,
+				7045FA45235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
+				7045FA2D235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
 				AC3D7853235B5B4500CEED61 /* SignUpViewController.xib in Resources */,
+				70E0E45E235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */,
 				AC3D784C235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
+				7045FA29235B5A7000675101 /* Montserrat-Bold.ttf in Resources */,
+				7045FA37235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */,
+				7045FA31235B5A7000675101 /* Montserrat-LightItalic.ttf in Resources */,
 				70859B94235B1C9600628DFC /* Assets.xcassets in Resources */,
+				7045FA33235B5A7100675101 /* Montserrat-SemiBold.ttf in Resources */,
 				AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */,
+				7045FA27235B5A7000675101 /* Montserrat-ExtraBold.ttf in Resources */,
+				7045FA2B235B5A7000675101 /* Montserrat-Thin.ttf in Resources */,
+				7045FA2F235B5A7000675101 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				7045FA23235B5A7000675101 /* Montserrat-Black.ttf in Resources */,
 				AC3D7849235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
+				7045FA53235B947800675101 /* CancerCell.xib in Resources */,
+				7045FA1F235B5A7000675101 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				7045FA48235B85E900675101 /* CancerSelectionViewController.xib in Resources */,
+				7045FA35235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				7045FA3F235B609200675101 /* SecondOnboardingViewController.xib in Resources */,
+				7045FA21235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,8 +714,11 @@
 			files = (
 				AC3D7850235B5B4500CEED61 /* SignUpViewController.swift in Sources */,
 				70859BD4235B230100628DFC /* Encodable+ParametersDictionary.swift in Sources */,
+				7045FA3B235B603D00675101 /* SecondOnboardingViewController.swift in Sources */,
 				70859BCE235B230100628DFC /* Date+TimePassedSince.swift in Sources */,
+				70742276235BB37100B30C5C /* BorderedButton.swift in Sources */,
 				70859BDA235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
+				7045FA4A235B864200675101 /* CancerSelectionViewController.swift in Sources */,
 				70859C00235B246A00628DFC /* Errors.swift in Sources */,
 				70859BB8235B220600628DFC /* CurrentUserProviderProtocol.swift in Sources */,
 				70859BFB235B23BF00628DFC /* CurrentUserProvider.swift in Sources */,
@@ -537,12 +730,15 @@
 				70859BF9235B23BF00628DFC /* FakeAPIClient.swift in Sources */,
 				70859BEB235B235D00628DFC /* Enums.swift in Sources */,
 				AC29BDEF235B40FD00C8208B /* LoginViewController.swift in Sources */,
+				7045FA41235B7F4A00675101 /* ThirdOnboardingViewController.swift in Sources */,
 				70859BEE235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
 				70859BDC235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE0235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
+				70E0E45A235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */,
+				70E0E460235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
+				7045FA58235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
-				AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */,
 				70859BB5235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCC235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBB235B223300628DFC /* User.swift in Sources */,
@@ -555,6 +751,7 @@
 				70859BD2235B230100628DFC /* UIViewController+HandleError.swift in Sources */,
 				70859C03235B27F000628DFC /* AuthenticationResponse.swift in Sources */,
 				70859BD6235B230100628DFC /* UIViewController+IssueAlert.swift in Sources */,
+				7045FA55235B950500675101 /* CancerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,8 +761,11 @@
 			files = (
 				AC3D7851235B5B4500CEED61 /* SignUpViewController.swift in Sources */,
 				70859BD5235B230100628DFC /* Encodable+ParametersDictionary.swift in Sources */,
+				7045FA3C235B603D00675101 /* SecondOnboardingViewController.swift in Sources */,
 				70859BCF235B230100628DFC /* Date+TimePassedSince.swift in Sources */,
+				70742277235BB37100B30C5C /* BorderedButton.swift in Sources */,
 				70859BDB235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
+				7045FA4B235B864200675101 /* CancerSelectionViewController.swift in Sources */,
 				70859C01235B246A00628DFC /* Errors.swift in Sources */,
 				70859BB9235B220600628DFC /* CurrentUserProviderProtocol.swift in Sources */,
 				70859BFC235B23BF00628DFC /* CurrentUserProvider.swift in Sources */,
@@ -577,12 +777,15 @@
 				70859BFA235B23BF00628DFC /* FakeAPIClient.swift in Sources */,
 				70859BEC235B235D00628DFC /* Enums.swift in Sources */,
 				AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */,
+				7045FA42235B7F4A00675101 /* ThirdOnboardingViewController.swift in Sources */,
 				70859BEF235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
 				70859BDD235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE1235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
+				70E0E45B235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */,
+				70E0E461235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
+				7045FA59235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
-				AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */,
 				70859BB6235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCD235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBC235B223300628DFC /* User.swift in Sources */,
@@ -595,6 +798,7 @@
 				70859BD3235B230100628DFC /* UIViewController+HandleError.swift in Sources */,
 				70859C04235B27F000628DFC /* AuthenticationResponse.swift in Sources */,
 				70859BD7235B230100628DFC /* UIViewController+IssueAlert.swift in Sources */,
+				7045FA56235B950500675101 /* CancerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

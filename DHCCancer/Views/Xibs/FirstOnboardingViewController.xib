@@ -8,9 +8,22 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstOnboardingViewController" customModule="DHCCancer" customModuleProvider="target">
             <connections>
+                <outlet property="nameTextField" destination="5IL-lk-GGm" id="slY-SD-EgI"/>
+                <outlet property="nicknameTextField" destination="u1F-as-bZk" id="PVr-SS-xqS"/>
                 <outlet property="view" destination="iN0-l3-epB" id="SLy-n1-wZk"/>
             </connections>
         </placeholder>
@@ -27,38 +40,82 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Cancell!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMa-8o-gvE">
-                    <rect key="frame" x="16" y="312" width="382" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <rect key="frame" x="16" y="312" width="382" height="29.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We would like to get to know you!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx2-RY-scj">
-                    <rect key="frame" x="82" y="358" width="250" height="43"/>
+                    <rect key="frame" x="82" y="357.5" width="250" height="42"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="GIz-pW-Qbi"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is your name?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IL-lk-GGm">
-                    <rect key="frame" x="18" y="455" width="378" height="44"/>
+                    <rect key="frame" x="18" y="453.5" width="378" height="44"/>
                     <color key="tintColor" name="AtomicTangerine"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="FKa-Wt-tuh"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="YDn-Zb-fYd"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How can we address you?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u1F-as-bZk">
-                    <rect key="frame" x="16" y="519" width="382" height="44"/>
+                    <rect key="frame" x="16" y="517.5" width="382" height="44"/>
                     <color key="tintColor" name="AtomicTangerine"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="P3F-Li-uND"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="kWO-zX-pCG"/>
+                    </connections>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qz1-Md-560" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
+                    <rect key="frame" x="142" y="728" width="130" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="Tw9-Vw-sg2"/>
+                        <constraint firstAttribute="width" constant="130" id="pg7-Sm-tf8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" name="CabSav"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" name="SweetCorn"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="EuE-A1-YW4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8F-zr-g7Z">
+                    <rect key="frame" x="165.5" y="772" width="83" height="30"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                    <state key="normal" title="skip for now">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="ZLh-lW-wcI"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -72,6 +129,10 @@
                 <constraint firstItem="PMa-8o-gvE" firstAttribute="top" secondItem="dZ5-JG-jpG" secondAttribute="bottom" constant="36" id="XMF-zA-qq5"/>
                 <constraint firstItem="Zx2-RY-scj" firstAttribute="top" secondItem="PMa-8o-gvE" secondAttribute="bottom" constant="16" id="cBj-BB-Wqy"/>
                 <constraint firstItem="Zx2-RY-scj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g9S-76-BzW"/>
+                <constraint firstItem="Qz1-Md-560" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iOh-yl-mno"/>
+                <constraint firstItem="B8F-zr-g7Z" firstAttribute="top" secondItem="Qz1-Md-560" secondAttribute="bottom" constant="8" id="kVk-Wf-n5t"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B8F-zr-g7Z" secondAttribute="bottom" constant="60" id="p9z-nA-plG"/>
+                <constraint firstItem="B8F-zr-g7Z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qsR-sI-DPK"/>
                 <constraint firstItem="dZ5-JG-jpG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="64" id="sSk-7V-cq8"/>
                 <constraint firstItem="u1F-as-bZk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="xlW-cX-h0W"/>
                 <constraint firstItem="u1F-as-bZk" firstAttribute="top" secondItem="5IL-lk-GGm" secondAttribute="bottom" constant="20" id="yvf-MJ-AaM"/>
@@ -84,6 +145,12 @@
         <image name="OnboardingHeaderImage" width="222" height="168"/>
         <namedColor name="AtomicTangerine">
             <color red="1" green="0.57647058823529407" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CabSav">
+            <color red="0.25882352941176473" green="0.031372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SweetCorn">
+            <color red="0.97647058823529409" green="0.8784313725490196" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
