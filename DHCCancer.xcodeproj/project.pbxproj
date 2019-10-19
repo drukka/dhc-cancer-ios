@@ -10,6 +10,9 @@
 		70859B7B235B168800628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
 		70859B84235B168900628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 		70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
+		70859B90235B1C9600628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
+		70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
+		70859B94235B1C9600628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +21,18 @@
 		70859B83235B168900628DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70859B86235B168900628DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70859B88235B168900628DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70859B98235B1C9600628DFC /* DHCCancer-mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DHCCancer-mock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		70859B74235B168800628DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70859B91235B1C9600628DFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				70859B77235B168800628DFC /* DHCCancer.app */,
+				70859B98235B1C9600628DFC /* DHCCancer-mock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +90,23 @@
 			productReference = 70859B77235B168800628DFC /* DHCCancer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		70859B8E235B1C9600628DFC /* DHCCancer-mock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70859B95235B1C9600628DFC /* Build configuration list for PBXNativeTarget "DHCCancer-mock" */;
+			buildPhases = (
+				70859B8F235B1C9600628DFC /* Sources */,
+				70859B91235B1C9600628DFC /* Frameworks */,
+				70859B92235B1C9600628DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DHCCancer-mock";
+			productName = DHCCancer;
+			productReference = 70859B98235B1C9600628DFC /* DHCCancer-mock.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +136,7 @@
 			projectRoot = "";
 			targets = (
 				70859B76235B168800628DFC /* DHCCancer */,
+				70859B8E235B1C9600628DFC /* DHCCancer-mock */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +151,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70859B92235B1C9600628DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
+				70859B94235B1C9600628DFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -129,6 +168,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				70859B7B235B168800628DFC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70859B8F235B1C9600628DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70859B90235B1C9600628DFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -250,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -298,6 +345,45 @@
 			};
 			name = Release;
 		};
+		70859B96235B1C9600628DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NKATU7J47;
+				INFOPLIST_FILE = DHCCancer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drukkadigitals.dev.ios.DHCCancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG MOCK";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		70859B97235B1C9600628DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NKATU7J47;
+				INFOPLIST_FILE = DHCCancer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drukkadigitals.dev.ios.DHCCancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -315,6 +401,15 @@
 			buildConfigurations = (
 				70859B8C235B168900628DFC /* Debug */,
 				70859B8D235B168900628DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70859B95235B1C9600628DFC /* Build configuration list for PBXNativeTarget "DHCCancer-mock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70859B96235B1C9600628DFC /* Debug */,
+				70859B97235B1C9600628DFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

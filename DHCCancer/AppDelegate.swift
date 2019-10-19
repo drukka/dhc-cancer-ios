@@ -21,7 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let viewController = UIViewController()
-        viewController.view.backgroundColor = UIColor.orange
+        #if MOCK
+        viewController.view.backgroundColor = UIColor.blue
+        #else
+        viewController.view.backgroundColor = UIColor.red
+        #endif
         self.window?.rootViewController = viewController
         self.window?.makeKeyAndVisible()
         
