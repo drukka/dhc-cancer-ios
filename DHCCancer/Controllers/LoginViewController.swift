@@ -7,8 +7,31 @@
 //
 
 import UIKit
+import Swinject
+import PromiseKit
+import NVActivityIndicatorView
 
 class LoginViewController: UIViewController {
+    
+    private let networking: Networking
+    private let currentUserProvider: CurrentUserProviderProtocol
+    private let validator: ValidatorProtocol
+    private let container: Container
+    
+    // MARK: - Initialization
+    
+    init(networking: Networking, currentUserProvider: CurrentUserProviderProtocol, validator: ValidatorProtocol, container: Container) {
+        self.networking = networking
+        self.currentUserProvider = currentUserProvider
+        self.validator = validator
+        self.container = container
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
