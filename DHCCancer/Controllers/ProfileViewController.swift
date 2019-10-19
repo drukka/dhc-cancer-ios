@@ -130,7 +130,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 1 {
             // Navigate to medical documents
         } else {
-            // Navigate to log history
+            let logHistoryViewController = self.container.resolve(LogHistoryViewController.self)!
+            self.navigationController?.pushViewController(logHistoryViewController, animated: true)
         }
         
         self.tableView.deselectRow(at: indexPath, animated: true)

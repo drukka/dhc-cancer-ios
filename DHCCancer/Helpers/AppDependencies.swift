@@ -23,6 +23,7 @@ final class AppDependencies {
         self.registerSignUpViewController(to: container)
         self.registerProfileViewController(to: container)
         self.registerMyInformationViewController(to: container)
+        self.registerLogHistoryViewController(to: container)
     }
     
     // MARK: - Private methods
@@ -98,6 +99,14 @@ final class AppDependencies {
     private func registerMyInformationViewController(to container: Container) {
         container.register(MyInformationViewController.self, factory: { _ in
             return MyInformationViewController(networking: container.resolve(Networking.self)!,
+                currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!,
+                container: container)
+        })
+    }
+    
+    private func registerLogHistoryViewController(to container: Container) {
+        container.register(LogHistoryViewController.self, factory: { _ in
+            return LogHistoryViewController(networking: container.resolve(Networking.self)!,
                 currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!,
                 container: container)
         })
