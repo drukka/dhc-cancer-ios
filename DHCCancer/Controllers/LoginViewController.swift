@@ -46,6 +46,7 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
         
         self.assignDelegates()
         self.setupValidator()
+        self.hideNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,6 +74,10 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
         self.validator.add(self.passwordTextField, withValidationRule: .notNilOrEmpty)
     }
     
+    private func hideNavigationBar() {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     private func validateFields() -> Bool {
         let validationResult = self.validator.validate()
         guard case .invalid(let rule) = validationResult else { return true }
@@ -93,6 +98,7 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
         }).done({ [weak self] authenticationResponse in
             guard let self = self else { return }
             self.currentUserProvider.save(with: authenticationResponse.user, authenticationToken: authenticationResponse.token)
+            
             let onboardingPageViewController = self.container.resolve(OnboardingPageViewController.self)!
             self.present(onboardingPageViewController, animated: true, completion: nil)
         }).catch({ [weak self] error in
@@ -114,8 +120,8 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
     }
     
     @IBAction private func signUpTapped(_ sender: BorderedButton) {
-        
-        // TODO: Navigate to sign up view controller
+        let signUpViewController = self.container.resolve(SignUpViewController.self)!
+        self.navigationController?.pushViewController(signUpViewController, animated: true)
     }
     
     // MARK: - UIResponder methods

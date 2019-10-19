@@ -11,4 +11,5 @@ import PromiseKit
 
 protocol Networking {
     func logIn(email: String, password: String) -> Promise<AuthenticationResponse>
+    func signUp(email: String, password: String) -> Promise<AuthenticationResponse>
 }

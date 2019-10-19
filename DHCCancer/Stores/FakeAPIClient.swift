@@ -24,4 +24,12 @@ final class FakeAPIClient: Networking {
         
         return Promise(error: NetworkingError.serviceError(.unauthorized))
     }
+    
+    func signUp(email: String, password: String) -> Promise<AuthenticationResponse> {
+        if email == self.email && password == self.password {
+            return Promise.value(AuthenticationResponse(user: self.user, token: self.authenticationToken))
+        }
+        
+        return Promise(error: NetworkingError.serviceError(.conflict))
+    }
 }
