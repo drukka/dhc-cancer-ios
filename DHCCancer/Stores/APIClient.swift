@@ -119,4 +119,9 @@ final class APIClient: Networking {
         let parameters: Parameters = ["email": email, "password": password]
         return self.buildPromiseWithResponse(url: self.createURL(withEndpoint: "/auth/login"), method: .post, successStatus: .OK, headers: self.createHeaders(), parameters: parameters)
     }
+    
+    func updateUserData(request: UpdateUserRequest, token: String) -> Promise<Void?> {
+        let parameters: Parameters = request.parametersDictionary
+        return self.buildPromiseWithoutResponse(url: self.createURL(withEndpoint: "/users/me"), method: .put, successStatus: .OK, headers: self.createHeaders(withToken: token), parameters: parameters)
+    }
 }

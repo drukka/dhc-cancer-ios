@@ -43,12 +43,12 @@ final class FourthOnboardingViewController: UIViewController {
     // MARK: - Control events
     
     @IBAction private func yesButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.onboardingPageViewController.updateUserRequest.anonymousShare = true
         self.jumpToTheNextViewController()
     }
     
     @IBAction private func noButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.onboardingPageViewController.updateUserRequest.anonymousShare = false
         self.jumpToTheNextViewController()
     }
     

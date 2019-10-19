@@ -35,19 +35,19 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for joining our community!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCp-oy-K82">
-                    <rect key="frame" x="20" y="447" width="374" height="61"/>
+                    <rect key="frame" x="20" y="447" width="374" height="58.5"/>
                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="25"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your sensitive data is safe with us, you are completely in control!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGd-0d-KfO">
-                    <rect key="frame" x="20" y="540" width="374" height="44"/>
+                    <rect key="frame" x="20" y="537.5" width="374" height="42"/>
                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v73-cH-4v8" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
-                    <rect key="frame" x="83" y="616" width="248" height="36"/>
+                    <rect key="frame" x="83" y="611.5" width="248" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="PqY-yn-0GU"/>
                         <constraint firstAttribute="width" constant="248" id="rXy-WE-add"/>
@@ -67,6 +67,9 @@
                             <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="startButtonTapped:" destination="-1" eventType="touchUpInside" id="xJM-7S-BWG"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

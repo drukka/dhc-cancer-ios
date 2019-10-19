@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import PromiseKit
+import NVActivityIndicatorView
 
-final class FifthOnboardingViewController: UIViewController {
+final class FifthOnboardingViewController: UIViewController, NVActivityIndicatorViewable {
 
     // MARK: - Properties
     
@@ -38,5 +40,23 @@ final class FifthOnboardingViewController: UIViewController {
     
     // MARK: - Private methods
     
+    private func updateUserData() {
+        guard let token = self.currentUserProvider.authenticationToken else { return }
+        self.startAnimating()
+        firstly(execute: {
+            self.networking.updateUserData(request: self.onboardingPageViewController.updateUserRequest, token: token)
+        }).ensure({
+            self.stopAnimating()
+        }).done({ [weak self] _ in
+            guard let self = self else { return }
+            self.dismiss(animated: true, completion: nil)
+        }).cauterize()
+    }
+    
+    // MARK: - Control events
+    
+    @IBAction private func startButtonTapped(_ sender: UIButton) {
+        self.updateUserData()
+    }
     
 }

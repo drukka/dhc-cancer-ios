@@ -40,15 +40,20 @@ final class FirstOnboardingViewController: UIViewController {
         self.onboardingPageViewController.jumpToViewControllerAt(1)
     }
     
+    private func updateUpdateUserRequest() {
+        self.onboardingPageViewController.updateUserRequest.fullname = self.nameTextField.text
+        self.onboardingPageViewController.updateUserRequest.username = self.nicknameTextField.text
+    }
+    
     // MARK: - Control events
     
     @IBAction private func nextButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.updateUpdateUserRequest()
         self.jumpToTheNextViewController()
     }
     
     @IBAction private func skipButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.updateUpdateUserRequest()
         self.jumpToTheNextViewController()
     }
     

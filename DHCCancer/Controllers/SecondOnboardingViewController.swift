@@ -138,6 +138,13 @@ final class SecondOnboardingViewController: UIViewController {
         self.onboardingPageViewController.jumpToViewControllerAt(2)
     }
     
+    private func updateUpdateUserRequest() {
+        self.onboardingPageViewController.updateUserRequest.birthdate = self.currentBirthdate
+        self.onboardingPageViewController.updateUserRequest.gender = self.currentGender?.rawValue.lowercased()
+        self.onboardingPageViewController.updateUserRequest.height = self.currentHeight
+        self.onboardingPageViewController.updateUserRequest.weight = self.currentWeight
+    }
+    
     // MARK: - Control events
     
     @IBAction private func selectionButtonTapped(_ sender: UIButton) {
@@ -177,12 +184,12 @@ final class SecondOnboardingViewController: UIViewController {
     }
     
     @IBAction private func nextButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.updateUpdateUserRequest()
         self.jumpToTheNextViewController()
     }
     
     @IBAction private func skipButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.updateUpdateUserRequest()
         self.jumpToTheNextViewController()
     }
 }

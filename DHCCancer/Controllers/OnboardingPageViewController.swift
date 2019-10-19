@@ -21,6 +21,8 @@ final class OnboardingPageViewController: UIPageViewController, KeyboardDucking 
     private let pageControl = UIPageControl()
     private var controllers = [UIViewController]()
     
+    var updateUserRequest: UpdateUserRequest = UpdateUserRequest()
+    
     // MARK: - Initialization
     
     init(networking: Networking, currentUserProvider: CurrentUserProviderProtocol, container: Container) {

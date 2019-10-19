@@ -97,6 +97,11 @@ final class ThirdOnboardingViewController: UIViewController {
         self.onboardingPageViewController.jumpToViewControllerAt(3)
     }
     
+    private func updateUpdateUserRequest() {
+        self.onboardingPageViewController.updateUserRequest.typeOfCancer = self.currentCancer
+        self.onboardingPageViewController.updateUserRequest.currentStage = self.currentStage
+    }
+    
     // MARK: - Control events
     
     @IBAction private func selectionButtonTapped(_ sender: UIButton) {
@@ -117,12 +122,12 @@ final class ThirdOnboardingViewController: UIViewController {
     }
     
     @IBAction private func nextButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.updateUpdateUserRequest()
         self.jumpToTheNextViewController()
     }
     
     @IBAction private func skipButtonTapped(_ sender: UIButton) {
-        // TODO
+        self.updateUpdateUserRequest()
         self.jumpToTheNextViewController()
     }
 }

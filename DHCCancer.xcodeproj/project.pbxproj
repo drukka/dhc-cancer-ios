@@ -132,6 +132,8 @@
 		70E0E45B235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */; };
 		70E0E45D235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
 		70E0E45E235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
+		70E0E460235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */; };
+		70E0E461235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */; };
 		AC29BDEF235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
@@ -213,6 +215,7 @@
 		70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstOnboardingViewController.xib; sourceTree = "<group>"; };
 		70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthOnboardingViewController.swift; sourceTree = "<group>"; };
 		70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthOnboardingViewController.xib; sourceTree = "<group>"; };
+		70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRequest.swift; sourceTree = "<group>"; };
 		7C2DA47C687ED737044C633A /* Pods-DHCCancer-mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.release.xcconfig"; sourceTree = "<group>"; };
 		AC29BDED235B40FD00C8208B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC29BDEE235B40FD00C8208B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -378,6 +381,7 @@
 			children = (
 				70859C02235B27F000628DFC /* AuthenticationResponse.swift */,
 				70859BBA235B223300628DFC /* User.swift */,
+				70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -720,6 +724,7 @@
 				70859BE0235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
 				70E0E45A235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */,
+				70E0E460235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
 				7045FA58235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */,
@@ -765,6 +770,7 @@
 				70859BE1235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
 				70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
 				70E0E45B235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */,
+				70E0E461235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
 				7045FA59235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */,
