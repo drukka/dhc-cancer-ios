@@ -8,8 +8,9 @@
 
 import UIKit
 import Swinject
+import KeyboardDucker
 
-final class OnboardingPageViewController: UIPageViewController {
+final class OnboardingPageViewController: UIPageViewController, KeyboardDucking {
 
     // MARK: - Properties
     
@@ -43,6 +44,16 @@ final class OnboardingPageViewController: UIPageViewController {
         self.setupControllers()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.startDuckingKeyboard()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.stopDuckingKeyboard()
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -63,6 +74,8 @@ final class OnboardingPageViewController: UIPageViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         self.navigationController?.navigationBar.barStyle = .black
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     private func setupPageControl() {

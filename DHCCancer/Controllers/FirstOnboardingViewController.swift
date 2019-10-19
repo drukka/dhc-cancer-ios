@@ -14,6 +14,9 @@ final class FirstOnboardingViewController: UIViewController {
     
     private let onboardingPageViewController: OnboardingPageViewController
     
+    @IBOutlet private weak var nameTextField: UITextField!
+    @IBOutlet private weak var nicknameTextField: UITextField!
+    
     // MARK: - Initialization
     
     init(onboardingPageViewController: OnboardingPageViewController) {
@@ -33,4 +36,42 @@ final class FirstOnboardingViewController: UIViewController {
     
     // MARK: - Private methods
 
+    private func jumpToTheNextViewController() {
+        // TODO
+    }
+    
+    // MARK: - Control events
+    
+    @IBAction private func nextButtonTapped(_ sender: UIButton) {
+        // TODO
+        self.jumpToTheNextViewController()
+    }
+    
+    @IBAction private func skipButtonTapped(_ sender: UIButton) {
+        // TODO
+        self.jumpToTheNextViewController()
+    }
+    
+    // MARK: - UIResponder methods
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+}
+
+// MARK: - UITextFieldDelegate methods
+
+extension FirstOnboardingViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case self.nameTextField:
+            return self.nicknameTextField.becomeFirstResponder()
+        case self.nicknameTextField:
+            return self.nicknameTextField.resignFirstResponder()
+        default:
+            return false
+        }
+    }
+    
 }
