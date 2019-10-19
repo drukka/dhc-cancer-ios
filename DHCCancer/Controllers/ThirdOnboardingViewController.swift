@@ -14,6 +14,7 @@ final class ThirdOnboardingViewController: UIViewController {
     // MARK: - Properties
     
     private let onboardingPageViewController: OnboardingPageViewController
+    private let container: Container
     
     @IBOutlet private weak var cancerTypeButton: UIButton!
     @IBOutlet private weak var stageButton: UIButton!
@@ -34,6 +35,15 @@ final class ThirdOnboardingViewController: UIViewController {
             self.stageButton.setTitle(stage, for: .normal)
         }
     }
+    private var currentCancer: String? {
+        didSet {
+            guard let cancer = self.currentCancer else {
+                self.cancerTypeButton.setTitle(NSLocalizedString("Select", comment: ""), for: .normal)
+                return
+            }
+            self.cancerTypeButton.setTitle(cancer, for: .normal)
+        }
+    }
     
     private let stageTextField: UITextField = UITextField()
     
@@ -42,8 +52,9 @@ final class ThirdOnboardingViewController: UIViewController {
     
     // MARK: - Initialization
     
-        init(onboardingPageViewController: OnboardingPageViewController) {
+    init(onboardingPageViewController: OnboardingPageViewController, container: Container) {
         self.onboardingPageViewController = onboardingPageViewController
+        self.container = container
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -91,7 +102,9 @@ final class ThirdOnboardingViewController: UIViewController {
     @IBAction private func selectionButtonTapped(_ sender: UIButton) {
         switch sender {
         case self.cancerTypeButton:
-            print("cancerTypeButton")
+            let cancerSelectionViewController = self.container.resolve(CancerSelectionViewController.self)!
+            cancerSelectionViewController.delegate = self
+            self.present(UINavigationController(rootViewController: cancerSelectionViewController), animated: true, completion: nil)
         case self.stageButton:
             self.stageTextField.becomeFirstResponder()
         default:
@@ -132,5 +145,14 @@ extension ThirdOnboardingViewController: UIPickerViewDataSource, UIPickerViewDel
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.currentStage = self.possibleStages[row]
+    }
+}
+
+// MARK: - CancerSelectionViewController methods
+
+extension ThirdOnboardingViewController: CancerSelectionViewControllerDelegate {
+    
+    func cancerSelectionViewController(_ viewController: CancerSelectionViewController, didSelectCancer cancer: String) {
+        self.currentCancer = cancer
     }
 }

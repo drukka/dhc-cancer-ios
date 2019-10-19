@@ -62,19 +62,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupDefaultNavigationBarAppearance() {
-        /*UINavigationBar.appearance().barStyle = .black
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().backgroundColor = UIColor(named: "Shark")
-        UINavigationBar.appearance().barTintColor = UIColor(named: "Shark")
-        UINavigationBar.appearance().tintColor = UIColor(named: "Twine")
+        /*UINavigationBar.appearance().barStyle = .default
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().backgroundColor = UIColor.clear
+        UINavigationBar.appearance().barTintColor = UIColor.clear
+        UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor(named: "White") ?? UIColor.white,
-            NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 17) ?? UIFont.systemFont(ofSize: 17, weight: .regular)
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 20) ?? UIFont.systemFont(ofSize: 20, weight: .medium)
         ]
         UINavigationBar.appearance().largeTitleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor(named: "Twine") ?? UIColor.white,
-            NSAttributedString.Key.font: UIFont(name: "PlayfairDisplay-Regular", size: 40) ?? UIFont.systemFont(ofSize: 17, weight: .regular)
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 34) ?? UIFont.systemFont(ofSize: 34, weight: .medium)
         ]*/
     }
 
