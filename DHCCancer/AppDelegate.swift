@@ -99,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }*/
         
-        self.window?.rootViewController = UINavigationController(rootViewController: self.appContainer.resolve(OnboardingPageViewController.self)!)
+        self.window?.rootViewController = UINavigationController(rootViewController: self.appContainer.resolve(LoginViewController.self)!)
         self.window?.makeKeyAndVisible()
     }
 

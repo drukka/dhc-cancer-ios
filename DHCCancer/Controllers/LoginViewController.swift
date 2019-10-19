@@ -43,7 +43,8 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.assignDelegates()
         self.setupValidator()
     }
     
@@ -57,6 +58,13 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
         super.viewWillDisappear(animated)
         
         self.stopDuckingKeyboard()
+    }
+    
+    // MARK: - Private methods
+    
+    private func assignDelegates() {
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
     }
     
     private func setupValidator() {
@@ -85,8 +93,8 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
         }).done({ [weak self] authenticationResponse in
             guard let self = self else { return }
             self.currentUserProvider.save(with: authenticationResponse.user, authenticationToken: authenticationResponse.token)
-//            let onboardingPageViewController = self.container.resolve(OnboardingPageViewController.self)!
-//            self.present(onboardingPageViewController, animated: true, completion: nil)
+            let onboardingPageViewController = self.container.resolve(OnboardingPageViewController.self)!
+            self.present(onboardingPageViewController, animated: true, completion: nil)
         }).catch({ [weak self] error in
             guard let networkingError = error as? NetworkingError, case .serviceError(let status) = networkingError else {
                 self?.handleError(error)
@@ -114,5 +122,19 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+}
+
+// MARK: - UITextFieldDelegate
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.emailTextField {
+            self.passwordTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        
+        return true
     }
 }
