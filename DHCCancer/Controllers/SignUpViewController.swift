@@ -12,7 +12,6 @@ import PromiseKit
 import NVActivityIndicatorView
 import KeyboardDucker
 
-
 final class SignUpViewController: UIViewController, KeyboardDucking, NVActivityIndicatorViewable {
     @IBOutlet private  weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
@@ -106,7 +105,7 @@ final class SignUpViewController: UIViewController, KeyboardDucking, NVActivityI
             self.currentUserProvider.save(with: authenticationResponse.user, authenticationToken: authenticationResponse.token)
             
             let onboardingPageViewController = self.container.resolve(OnboardingPageViewController.self)!
-            self.present(onboardingPageViewController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(onboardingPageViewController, animated: true)
         }).catch({ [weak self] error in
             guard let networkingError = error as? NetworkingError, case .serviceError(let status) = networkingError else {
                 self?.handleError(error)
