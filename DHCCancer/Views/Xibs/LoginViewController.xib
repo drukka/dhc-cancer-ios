@@ -19,6 +19,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="DHCCancer" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="IeX-Un-1Xy" id="LJQ-4Q-2qw"/>
+                <outlet property="passwordTextField" destination="n0G-Ah-lZJ" id="6k0-7x-dCn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,7 +33,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ivX-Nc-rqM">
-                    <rect key="frame" x="20" y="309" width="374" height="278.5"/>
+                    <rect key="frame" x="20" y="309.5" width="374" height="277.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-MAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IeX-Un-1Xy">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
@@ -50,7 +52,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="AEn-0I-Fey">
-                            <rect key="frame" x="0.0" y="124" width="374" height="154.5"/>
+                            <rect key="frame" x="0.0" y="124" width="374" height="153.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po1-kJ-gjM" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
                                     <rect key="frame" x="126" y="0.0" width="122" height="36"/>
@@ -68,15 +70,18 @@
                                             <real key="value" value="18"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="logInTapped:" destination="-1" eventType="touchUpInside" id="Nk7-SY-dfV"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account yet?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3v-mz-HL6">
-                                    <rect key="frame" x="85" y="68" width="204.5" height="18.5"/>
+                                    <rect key="frame" x="95" y="68" width="184.5" height="17.5"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xq6-Ws-gfj" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
-                                    <rect key="frame" x="126" y="118.5" width="122" height="36"/>
+                                    <rect key="frame" x="126" y="117.5" width="122" height="36"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="36" id="94t-Og-MhH"/>
                                         <constraint firstAttribute="width" constant="122" id="rbY-vB-ERy"/>
@@ -96,6 +101,9 @@
                                             <real key="value" value="18"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="signUpTapped:" destination="-1" eventType="touchUpInside" id="DRj-U1-w1R"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>

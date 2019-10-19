@@ -263,7 +263,7 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
+				AC3D784D235B540C00CEED61 /* Xibs */,
 				70859BAC235B206300628DFC /* Views.swift */,
 				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
 			);
@@ -299,6 +299,14 @@
 				AC3D7847235B492D00CEED61 /* Montserrat-Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AC3D784D235B540C00CEED61 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		F1E0258D1AEA33D98665FAE6 /* Frameworks */ = {
