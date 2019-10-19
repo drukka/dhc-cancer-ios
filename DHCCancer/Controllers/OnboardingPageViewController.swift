@@ -94,11 +94,20 @@ final class OnboardingPageViewController: UIPageViewController, KeyboardDucking 
     
     private func setupControllers() {
         self.controllers = [
-            self.container.resolve(FirstOnboardingViewController.self, argument: self)!
+            self.container.resolve(FirstOnboardingViewController.self, argument: self)!,
+            self.container.resolve(SecondOnboardingViewController.self, argument: self)!
         ]
         
         self.setViewControllers([self.controllers.first!], direction: .forward, animated: false, completion: nil)
         self.pageControl.currentPage = 0
+    }
+    
+    // MARK: - Public methods
+    
+    func jumpToViewControllerAt(_ index: Int) {
+        guard let viewController = self.controllers[safe: index] else { return }
+        self.setViewControllers([viewController], direction: .forward, animated: true, completion: nil)
+        self.pageControl.currentPage = index
     }
 
 }

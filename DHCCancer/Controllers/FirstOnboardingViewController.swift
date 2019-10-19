@@ -37,7 +37,7 @@ final class FirstOnboardingViewController: UIViewController {
     // MARK: - Private methods
 
     private func jumpToTheNextViewController() {
-        // TODO
+        self.onboardingPageViewController.jumpToViewControllerAt(1)
     }
     
     // MARK: - Control events
