@@ -14,8 +14,6 @@
 		70859B90235B1C9600628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
 		70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
 		70859B94235B1C9600628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
-		70859BAD235B206300628DFC /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BAC235B206300628DFC /* Views.swift */; };
-		70859BAE235B206300628DFC /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BAC235B206300628DFC /* Views.swift */; };
 		70859BB5235B21C500628DFC /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BB4235B21C500628DFC /* Networking.swift */; };
 		70859BB6235B21C500628DFC /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BB4235B21C500628DFC /* Networking.swift */; };
 		70859BB8235B220600628DFC /* CurrentUserProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BB7235B220600628DFC /* CurrentUserProviderProtocol.swift */; };
@@ -72,6 +70,10 @@
 		70859C04235B27F000628DFC /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C02235B27F000628DFC /* AuthenticationResponse.swift */; };
 		70859C06235B44B800628DFC /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C05235B44B800628DFC /* OnboardingPageViewController.swift */; };
 		70859C07235B44B800628DFC /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C05235B44B800628DFC /* OnboardingPageViewController.swift */; };
+		70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
+		70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
+		70859C0C235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */; };
+		70859C0D235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */; };
 		CBCFCAF47715C675F6AA3FF4 /* Pods_DHCCancer_mock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +86,6 @@
 		70859B86235B168900628DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70859B88235B168900628DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70859B98235B1C9600628DFC /* DHCCancer-mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DHCCancer-mock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70859BAC235B206300628DFC /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		70859BB4235B21C500628DFC /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		70859BB7235B220600628DFC /* CurrentUserProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProviderProtocol.swift; sourceTree = "<group>"; };
 		70859BBA235B223300628DFC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -113,6 +114,8 @@
 		70859BFF235B246A00628DFC /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		70859C02235B27F000628DFC /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 		70859C05235B44B800628DFC /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		70859C08235B467300628DFC /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
+		70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstOnboardingScreenViewController.xib; sourceTree = "<group>"; };
 		7C2DA47C687ED737044C633A /* Pods-DHCCancer-mock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.release.xcconfig"; sourceTree = "<group>"; };
 		AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer_mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5955B669A6395C4BEEBDF19 /* Pods_DHCCancer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				70859C05235B44B800628DFC /* OnboardingPageViewController.swift */,
+				70859C08235B467300628DFC /* FirstOnboardingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -247,7 +251,7 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				70859BAC235B206300628DFC /* Views.swift */,
+				70859C0B235B46EB00628DFC /* FirstOnboardingScreenViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70859C0C235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */,
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
 				70859B84235B168900628DFC /* Assets.xcassets in Resources */,
 			);
@@ -371,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70859C0D235B46EB00628DFC /* FirstOnboardingScreenViewController.xib in Resources */,
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
 				70859B94235B1C9600628DFC /* Assets.xcassets in Resources */,
 			);
@@ -480,11 +486,11 @@
 				70859BEE235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
 				70859BDC235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE0235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
+				70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				70859BB5235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCC235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBB235B223300628DFC /* User.swift in Sources */,
-				70859BAD235B206300628DFC /* Views.swift in Sources */,
 				70859BF1235B236900628DFC /* AppDependencies.swift in Sources */,
 				70859C06235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
 				70859BE8235B235700628DFC /* Validator.swift in Sources */,
@@ -517,11 +523,11 @@
 				70859BEF235B236300628DFC /* HTTPStatusCodes.swift in Sources */,
 				70859BDD235B230100628DFC /* UITextField+Validatable.swift in Sources */,
 				70859BE1235B230100628DFC /* Collection+SafeSubscript.swift in Sources */,
+				70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
 				70859BB6235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCD235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
 				70859BBC235B223300628DFC /* User.swift in Sources */,
-				70859BAE235B206300628DFC /* Views.swift in Sources */,
 				70859BF2235B236900628DFC /* AppDependencies.swift in Sources */,
 				70859C07235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
 				70859BE9235B235700628DFC /* Validator.swift in Sources */,
