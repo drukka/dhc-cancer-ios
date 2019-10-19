@@ -17,6 +17,8 @@ class MyInformationViewController: UIViewController {
     private let currentUserProvider: CurrentUserProviderProtocol
     private let container: Container
     
+    private var tableHeaderView = MyInformationHeaderView()
+    
     // MARK: - Initialization
     
     init(networking: Networking, currentUserProvider: CurrentUserProviderProtocol, container: Container) {
@@ -33,19 +35,69 @@ class MyInformationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "My information"
 
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: nil)]
+        self.navigationItem.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: nil)]
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        self.tableView.register(UINib(nibName: String(describing: MyInformationTableViewCell.self), bundle: nil), forCellReuseIdentifier: MyInformationTableViewCell.reuseIdentifier)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
-    */
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        setUpTableHeaderView()
+    }
+    
+    private func setUpTableHeaderView() {
+        tableView.layoutIfNeeded()
+        
+        tableHeaderView = Bundle.main.loadNibNamed(String(describing: MyInformationHeaderView.self), owner: nil, options: nil)?.first as! MyInformationHeaderView
+        tableHeaderView.frame.size = CGSize(width: view.bounds.width, height: MyInformationHeaderView.height)
+        self.tableView.tableHeaderView = tableHeaderView
+    }
+}
 
+extension MyInformationViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        6
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: MyInformationTableViewCell.reuseIdentifier, for: indexPath) as! MyInformationTableViewCell
+        
+        switch indexPath.row {
+        case 0:
+            cell.textLabel?.text = "Full name"
+            cell.detailTextLabel?.text = "Jane Doe"
+        case 1:
+            cell.textLabel?.text = "Nickname"
+            cell.detailTextLabel?.text = "Jane"
+        case 2:
+            cell.textLabel?.text = "Age"
+            cell.detailTextLabel?.text = "25"
+        case 3:
+            cell.textLabel?.text = "Gender"
+            cell.detailTextLabel?.text = "Female"
+        case 4:
+            cell.textLabel?.text = "Cancer type"
+            cell.detailTextLabel?.text = "Breast cancer"
+        case 5:
+            cell.textLabel?.text = "Current stage"
+            cell.detailTextLabel?.text = "Stage 2"
+        default:
+            break
+        }
+        
+        return cell
+    }
 }

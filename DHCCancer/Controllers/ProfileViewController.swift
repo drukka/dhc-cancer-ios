@@ -37,13 +37,18 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "Profile"
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
         self.tableView.register(UINib(nibName: String(describing: ProfileTableViewCell.self), bundle: nil), forCellReuseIdentifier: ProfileTableViewCell.reuseIdentifier)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func viewWillLayoutSubviews() {
@@ -88,11 +93,14 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            // Navigate to my information
+            let myInformationViewController = self.container.resolve(MyInformationViewController.self)!
+            self.navigationController?.pushViewController(myInformationViewController, animated: true)
         } else if indexPath.section == 1 {
             // Navigate to medical documents
         } else {
             // Navigate to log history
         }
+        
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
 }
