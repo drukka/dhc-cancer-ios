@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F48B17D1887EA9031F51912 /* Pods_DHCCancer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5955B669A6395C4BEEBDF19 /* Pods_DHCCancer.framework */; };
+		70280980235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028097F235BC6A800E1D362 /* FirstOnboardingViewController.xib */; };
+		70280981235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028097F235BC6A800E1D362 /* FirstOnboardingViewController.xib */; };
 		7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */; };
@@ -130,8 +132,6 @@
 		70859C07235B44B800628DFC /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C05235B44B800628DFC /* OnboardingPageViewController.swift */; };
 		70859C09235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
 		70859C0A235B467300628DFC /* FirstOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859C08235B467300628DFC /* FirstOnboardingViewController.swift */; };
-		70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
-		70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */; };
 		70E0E45A235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */; };
 		70E0E45B235BA4E4003C7A69 /* FifthOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */; };
 		70E0E45D235BA634003C7A69 /* FifthOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */; };
@@ -144,8 +144,6 @@
 		AC29BDF0235B40FD00C8208B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDED235B40FD00C8208B /* LoginViewController.swift */; };
 		AC29BDF1235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
 		AC29BDF2235B40FD00C8208B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC29BDEE235B40FD00C8208B /* LoginViewController.xib */; };
-		AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
-		AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29BDF3235B45F400C8208B /* BorderedButton.swift */; };
 		AC365EA2235B9D6E003922EA /* MyInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC365EA0235B9D6E003922EA /* MyInformationTableViewCell.swift */; };
 		AC365EA3235B9D6E003922EA /* MyInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC365EA0235B9D6E003922EA /* MyInformationTableViewCell.swift */; };
 		AC365EA4235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC365EA1235B9D6E003922EA /* MyInformationTableViewCell.xib */; };
@@ -194,6 +192,7 @@
 /* Begin PBXFileReference section */
 		0CDBEBE5276D6DB6CEFD85F6 /* Pods-DHCCancer-mock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer-mock.debug.xcconfig"; path = "Target Support Files/Pods-DHCCancer-mock/Pods-DHCCancer-mock.debug.xcconfig"; sourceTree = "<group>"; };
 		5F0FE5E8A488E521DF464F4D /* Pods-DHCCancer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DHCCancer.release.xcconfig"; path = "Target Support Files/Pods-DHCCancer/Pods-DHCCancer.release.xcconfig"; sourceTree = "<group>"; };
+		7028097F235BC6A800E1D362 /* FirstOnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstOnboardingViewController.xib; sourceTree = "<group>"; };
 		7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -258,7 +257,6 @@
 		70859C02235B27F000628DFC /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 		70859C05235B44B800628DFC /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		70859C08235B467300628DFC /* FirstOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingViewController.swift; sourceTree = "<group>"; };
-		70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstOnboardingViewController.xib; sourceTree = "<group>"; };
 		70E0E459235BA4E4003C7A69 /* FifthOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthOnboardingViewController.swift; sourceTree = "<group>"; };
 		70E0E45C235BA634003C7A69 /* FifthOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthOnboardingViewController.xib; sourceTree = "<group>"; };
 		70E0E45F235BA90C003C7A69 /* UpdateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRequest.swift; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 		AC210199235B811000918539 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		AC29BDED235B40FD00C8208B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AC29BDEE235B40FD00C8208B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		AC29BDF3235B45F400C8208B /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		AC365EA0235B9D6E003922EA /* MyInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationTableViewCell.swift; sourceTree = "<group>"; };
 		AC365EA1235B9D6E003922EA /* MyInformationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInformationTableViewCell.xib; sourceTree = "<group>"; };
 		AC365EAB235BAE67003922EA /* LogHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHistoryViewController.swift; sourceTree = "<group>"; };
@@ -327,6 +324,11 @@
 		7045FA09235B599900675101 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				AC53B661235BBB18000221BE /* LogTableViewCell */,
+				AC365E9F235B9D44003922EA /* MyInformationTableViewCell */,
+				AC52A8B9235B9AAA009D56C7 /* MyInformationHeaderView */,
+				AC52A8AC235B9364009D56C7 /* ProfileTableViewCell */,
+				AC52A8AB235B88C8009D56C7 /* ProfileHeaderView */,
 				7045FA50235B946200675101 /* BorderedButton */,
 				7045FA4F235B945900675101 /* CancerCell */,
 			);
@@ -461,16 +463,8 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AC3D784D235B540C00CEED61 /* Xibs */,
 				7045FA09235B599900675101 /* UIElements */,
-				AC53B661235BBB18000221BE /* LogTableViewCell */,
-				AC365E9F235B9D44003922EA /* MyInformationTableViewCell */,
-				AC52A8B9235B9AAA009D56C7 /* MyInformationHeaderView */,
-				AC52A8AC235B9364009D56C7 /* ProfileTableViewCell */,
-				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
 				AC3D784D235B540C00CEED61 /* Xibs */,
-				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
-				AC52A8AB235B88C8009D56C7 /* ProfileHeaderView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -536,7 +530,7 @@
 		AC3D784D235B540C00CEED61 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
+				7028097F235BC6A800E1D362 /* FirstOnboardingViewController.xib */,
 				7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */,
 				7045FA43235B7FDF00675101 /* ThirdOnboardingViewController.xib */,
 				7045FA46235B85E900675101 /* CancerSelectionViewController.xib */,
@@ -680,7 +674,6 @@
 				7045FA5B235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				AC365EA4235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
-				70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				7045FA4D235B932F00675101 /* Cancers.json in Resources */,
 				7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
 				7045FA24235B5A7000675101 /* Montserrat-Italic.ttf in Resources */,
@@ -688,6 +681,7 @@
 				7045FA2C235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
 				AC7BE755235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
+				70280980235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */,
 				AC365EAF235BAE67003922EA /* LogHistoryViewController.xib in Resources */,
 				AC52A8B7235B9788009D56C7 /* MyInformationViewController.xib in Resources */,
 				AC3D7852235B5B4500CEED61 /* SignUpViewController.xib in Resources */,
@@ -726,7 +720,6 @@
 				7045FA5C235B9DA900675101 /* FourthOnboardingViewController.xib in Resources */,
 				7045FA1D235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */,
 				AC365EA5235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
-				70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				7045FA4E235B932F00675101 /* Cancers.json in Resources */,
 				7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
 				7045FA25235B5A7000675101 /* Montserrat-Italic.ttf in Resources */,
@@ -734,6 +727,7 @@
 				7045FA2D235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
 				AC7BE756235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
+				70280981235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */,
 				AC365EB0235BAE67003922EA /* LogHistoryViewController.xib in Resources */,
 				AC52A8B8235B9788009D56C7 /* MyInformationViewController.xib in Resources */,
 				AC365EAA235BAC97003922EA /* ProfileHeaderView.xib in Resources */,
@@ -884,7 +878,6 @@
 				70E0E460235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
 				7045FA58235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDE235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
-				AC29BDF4235B45F400C8208B /* BorderedButton.swift in Sources */,
 				AC52A8AF235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */,
 				70859BB5235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCC235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,
@@ -943,7 +936,6 @@
 				70E0E461235BA90C003C7A69 /* UpdateUserRequest.swift in Sources */,
 				7045FA59235B9D9600675101 /* FourthOnboardingViewController.swift in Sources */,
 				70859BDF235B230100628DFC /* UIImage+InitFromColor.swift in Sources */,
-				AC29BDF5235B45F400C8208B /* BorderedButton.swift in Sources */,
 				AC52A8B0235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */,
 				70859BB6235B21C500628DFC /* Networking.swift in Sources */,
 				70859BCD235B230100628DFC /* Array+ParameterEncoding.swift in Sources */,

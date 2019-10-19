@@ -21,18 +21,15 @@ final class AppDependencies {
         self.registerFirstOnboardingViewController(to: container)
         self.registerLoginViewController(to: container)
         self.registerSignUpViewController(to: container)
-<<<<<<< HEAD
         self.registerSecondOnboardingViewController(to: container)
         self.registerThirdOnboardingViewController(to: container)
         self.registerCancerSelectionViewController(to: container)
         self.registerFourthOnboardingViewController(to: container)
         self.registerFifthOnboardingViewController(to: container)
         self.registerMainTabBarController(to: container)
-=======
         self.registerProfileViewController(to: container)
         self.registerMyInformationViewController(to: container)
         self.registerLogHistoryViewController(to: container)
->>>>>>> profile
     }
     
     // MARK: - Private methods
