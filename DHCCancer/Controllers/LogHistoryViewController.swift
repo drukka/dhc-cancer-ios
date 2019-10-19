@@ -11,12 +11,14 @@ import Swinject
 import PromiseKit
 import NVActivityIndicatorView
 
-class LogHistoryViewController: UIViewController {
+class LogHistoryViewController: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var tableView: UITableView!
     
     private let networking: Networking
     private let currentUserProvider: CurrentUserProviderProtocol
     private let container: Container
+    
+    var entries = [Entry]()
     
     // MARK: - Initialization
     
@@ -42,6 +44,8 @@ class LogHistoryViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        self.fetchEntries()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,16 +53,29 @@ class LogHistoryViewController: UIViewController {
         
         self.navigationController?.navigationBar.prefersLargeTitles = false
     }
+    
+    private func fetchEntries() {
+        guard let authenticationToken = self.currentUserProvider.authenticationToken else { return }
+
+        firstly(execute: {
+            self.networking.fetchEntries(token: authenticationToken)
+        }).done({ [weak self] entries in
+            guard let self = self else { return }
+            
+            self.entries = entries
+            self.tableView.reloadData()
+        }).cauterize()
+    }
 }
 
 extension LogHistoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        entries.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LogTableViewCell.reuseIdentifier, for: indexPath) as! LogTableViewCell
-        
+        cell.entry = entries[indexPath.row]
         return cell
     }
 }

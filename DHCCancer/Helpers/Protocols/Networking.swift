@@ -14,4 +14,5 @@ protocol Networking {
     func signUp(email: String, password: String) -> Promise<AuthenticationResponse>
     func updateUserData(request: UpdateUserRequest, token: String) -> Promise<Void?>
     func fetchUserData(token: String) -> Promise<User>
+    func fetchEntries(token: String) -> Promise<[Entry]>
 }
