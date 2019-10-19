@@ -11,13 +11,15 @@ import Swinject
 import PromiseKit
 import NVActivityIndicatorView
 
-class MyInformationViewController: UIViewController {
+class MyInformationViewController: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var tableView: UITableView!
     private let networking: Networking
     private let currentUserProvider: CurrentUserProviderProtocol
     private let container: Container
     
     private var tableHeaderView = MyInformationHeaderView()
+    
+    var user: User?
     
     // MARK: - Initialization
     
@@ -44,6 +46,8 @@ class MyInformationViewController: UIViewController {
         self.tableView.dataSource = self
         
         self.tableView.register(UINib(nibName: String(describing: MyInformationTableViewCell.self), bundle: nil), forCellReuseIdentifier: MyInformationTableViewCell.reuseIdentifier)
+        
+        self.fetchProfileDetails()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,6 +60,31 @@ class MyInformationViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         setUpTableHeaderView()
+    }
+    
+    private func fetchProfileDetails() {
+        guard let authenticationToken = self.currentUserProvider.authenticationToken else { return }
+        self.startAnimating()
+        
+        firstly(execute: {
+            self.networking.fetchUserData(token: authenticationToken)
+        }).done({ [weak self] user in
+            guard let self = self else { return }
+            
+            self.user = user
+            self.tableView.reloadData()
+        }).catch({ [weak self] error in
+            guard let networkingError = error as? NetworkingError, case .serviceError(let status) = networkingError else {
+                self?.handleError(error)
+                return
+            }
+            switch status {
+            case .unauthorized: self?.issueAlert(withTitle: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Bad email or password", comment: ""))
+            default: self?.handleError(networkingError)
+            }
+        }).finally {
+            self.stopAnimating()
+        }
     }
     
     private func setUpTableHeaderView() {
@@ -78,22 +107,22 @@ extension MyInformationViewController: UITableViewDelegate, UITableViewDataSourc
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = "Full name"
-            cell.detailTextLabel?.text = "Jane Doe"
+            cell.detailTextLabel?.text = user?.fullname
         case 1:
             cell.textLabel?.text = "Nickname"
-            cell.detailTextLabel?.text = "Jane"
+            cell.detailTextLabel?.text = user?.username
         case 2:
             cell.textLabel?.text = "Age"
             cell.detailTextLabel?.text = "25"
         case 3:
             cell.textLabel?.text = "Gender"
-            cell.detailTextLabel?.text = "Female"
+            cell.detailTextLabel?.text = user?.gender
         case 4:
             cell.textLabel?.text = "Cancer type"
-            cell.detailTextLabel?.text = "Breast cancer"
+            cell.detailTextLabel?.text = user?.typeOfCancer
         case 5:
             cell.textLabel?.text = "Current stage"
-            cell.detailTextLabel?.text = "Stage 2"
+            cell.detailTextLabel?.text = user?.currentStage
         default:
             break
         }

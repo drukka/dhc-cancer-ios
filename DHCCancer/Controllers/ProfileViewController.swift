@@ -11,7 +11,7 @@ import Swinject
 import PromiseKit
 import NVActivityIndicatorView
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var tableView: UITableView!
     
     private var tableHeaderView = ProfileHeaderView()
@@ -19,6 +19,14 @@ class ProfileViewController: UIViewController {
     private let networking: Networking
     private let currentUserProvider: CurrentUserProviderProtocol
     private let container: Container
+    
+    var user: User? {
+        didSet {
+            guard let user = user else { return }
+            
+            tableHeaderView.user = user
+        }
+    }
     
     // MARK: - Initialization
     
@@ -43,6 +51,8 @@ class ProfileViewController: UIViewController {
         self.tableView.dataSource = self
         
         self.tableView.register(UINib(nibName: String(describing: ProfileTableViewCell.self), bundle: nil), forCellReuseIdentifier: ProfileTableViewCell.reuseIdentifier)
+        
+        fetchProfileDetails()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,8 +65,30 @@ class ProfileViewController: UIViewController {
         super.viewWillLayoutSubviews()
         
         setUpTableHeaderView()
+    }
+    
+    private func fetchProfileDetails() {
+        guard let authenticationToken = self.currentUserProvider.authenticationToken else { return }
+        self.startAnimating()
         
-        
+        firstly(execute: {
+            self.networking.fetchUserData(token: authenticationToken)
+        }).done({ [weak self] user in
+            guard let self = self else { return }
+            
+            self.user = user
+        }).catch({ [weak self] error in
+            guard let networkingError = error as? NetworkingError, case .serviceError(let status) = networkingError else {
+                self?.handleError(error)
+                return
+            }
+            switch status {
+            case .unauthorized: self?.issueAlert(withTitle: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Bad email or password", comment: ""))
+            default: self?.handleError(networkingError)
+            }
+        }).finally {
+            self.stopAnimating()
+        }
     }
     
     private func setUpTableHeaderView() {

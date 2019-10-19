@@ -60,8 +60,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="profilePhotoImageView" destination="TrQ-Hp-RS9" id="1ds-uG-EFU"/>
-                <outlet property="welcomingLabel" destination="w0q-LL-sIa" id="c7r-CI-ist"/>
+                <outlet property="welcomingLabel" destination="w0q-LL-sIa" id="Q1x-qu-Iv0"/>
             </connections>
             <point key="canvasLocation" x="107.24637681159422" y="-141.29464285714286"/>
         </view>

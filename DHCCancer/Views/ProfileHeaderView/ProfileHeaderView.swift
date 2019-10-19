@@ -9,13 +9,15 @@
 import UIKit
 
 final class ProfileHeaderView: UIView {
-    @IBOutlet weak var profilePhotoImageView: UIImageView!
-    @IBOutlet private weak var welcomingLabel: UILabel!
+    @IBOutlet weak var welcomingLabel: UILabel!
     
     static let height: CGFloat = 158
     
-    override func draw(_ rect: CGRect) {
-        profilePhotoImageView.layer.cornerRadius = 118 / 2
-        profilePhotoImageView.layer.masksToBounds = true
+    var user: User? {
+        didSet {
+            guard let user = user else { return }
+            
+            self.welcomingLabel.text = "Hello, \(user.username ?? "")!"
+        }
     }
 }

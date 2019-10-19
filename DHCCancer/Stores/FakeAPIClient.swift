@@ -11,7 +11,7 @@ import PromiseKit
 
 final class FakeAPIClient: Networking {
     private let authenticationToken = "mockToken"
-    private let user = User(id: 0, email: "john.doe@mail.com")
+    private let user = User(id: 4, email: "john.doe@mail.com", fullname: "John Doe", username: "Doe", typeOfCancer: "Breast cancer", currentStage: "2", birthdate: Date(), gender: "male", anonymousShare: true)
     private let email = "john.doe@mail.com"
     private let password = "mockPassword"
     
@@ -31,5 +31,13 @@ final class FakeAPIClient: Networking {
         }
         
         return Promise(error: NetworkingError.serviceError(.conflict))
+    }
+    
+    func fetchUserData(token: String) -> Promise<User> {
+        if token == authenticationToken {
+            return Promise.value(self.user)
+        }
+        
+        return Promise(error: NetworkingError.serviceError(.unauthorized))
     }
 }
