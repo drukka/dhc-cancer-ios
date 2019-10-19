@@ -32,8 +32,8 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Qeh-31-8wY">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ivX-Nc-rqM">
-                    <rect key="frame" x="20" y="309.5" width="374" height="277.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ivX-Nc-rqM">
+                    <rect key="frame" x="20" y="311.5" width="374" height="273.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-MAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IeX-Un-1Xy">
                             <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
@@ -44,7 +44,7 @@
                             <textInputTraits key="textInputTraits" returnKeyType="next"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0G-Ah-lZJ">
-                            <rect key="frame" x="0.0" y="62" width="374" height="44"/>
+                            <rect key="frame" x="0.0" y="60" width="374" height="44"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="8MB-Da-4Dh"/>
                             </constraints>
@@ -52,7 +52,7 @@
                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
                         </textField>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="AEn-0I-Fey">
-                            <rect key="frame" x="0.0" y="124" width="374" height="153.5"/>
+                            <rect key="frame" x="0.0" y="120" width="374" height="153.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Po1-kJ-gjM" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
                                     <rect key="frame" x="126" y="0.0" width="122" height="36"/>

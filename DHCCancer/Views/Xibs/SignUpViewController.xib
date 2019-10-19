@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="DHCCancer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="X0R-SD-KIt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="S7P-gB-ewa">
+                    <rect key="frame" x="20" y="281" width="374" height="334.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-MAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zla-CU-al2">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="4Vn-VY-V8b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rGh-Uw-x6x">
+                            <rect key="frame" x="0.0" y="60" width="374" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="bVI-wy-cjM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD CONFIRMATION" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8b-GC-Umc">
+                            <rect key="frame" x="0.0" y="120" width="374" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="TWg-RI-Hch"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="FeM-7I-h8I">
+                            <rect key="frame" x="0.0" y="180" width="374" height="154.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDN-aP-mxY" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
+                                    <rect key="frame" x="126" y="0.0" width="122" height="36"/>
+                                    <color key="backgroundColor" name="SweetCorn"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="122" id="L4Y-tr-cQl"/>
+                                        <constraint firstAttribute="height" constant="36" id="TpE-vl-tMR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                    <state key="normal" title="Sign up">
+                                        <color key="titleColor" name="CabSav"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWE-dV-CmU">
+                                    <rect key="frame" x="90.5" y="68" width="193" height="18.5"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-Gr-Nfk" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
+                                    <rect key="frame" x="126" y="118.5" width="122" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="KoF-EJ-n9m"/>
+                                        <constraint firstAttribute="width" constant="122" id="eWB-iD-JpB"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                                    <color key="tintColor" name="SweetCorn"/>
+                                    <state key="normal" title="Log in"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" name="SweetCorn"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X0R-SD-KIt" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8wn-q6-0dv"/>
+                <constraint firstItem="S7P-gB-ewa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AAc-ag-0o3"/>
+                <constraint firstAttribute="bottom" secondItem="X0R-SD-KIt" secondAttribute="bottom" id="N3q-fw-irY"/>
+                <constraint firstItem="S7P-gB-ewa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Ujk-5t-mEc"/>
+                <constraint firstItem="S7P-gB-ewa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZGh-MU-Et1"/>
+                <constraint firstItem="X0R-SD-KIt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZbG-YD-mSI"/>
+                <constraint firstItem="X0R-SD-KIt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wh2-Nw-G35"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S7P-gB-ewa" secondAttribute="trailing" constant="20" id="ysQ-rc-YfZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackgroundImage" width="375" height="812"/>
+        <namedColor name="CabSav">
+            <color red="0.25882352941176473" green="0.031372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SweetCorn">
+            <color red="0.97647058823529409" green="0.8784313725490196" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
