@@ -24,6 +24,10 @@ final class SecondOnboardingViewController: UIViewController {
     private let heightTextField: UITextField = UITextField()
     private let weightTextField: UITextField = UITextField()
     
+    private let genderPickerView: UIPickerView = UIPickerView()
+    
+    private let possibleGenders: [Gender] = [.male, .female, .other]
+    
     private var currentBirthdate: Date? {
         didSet {
             guard let date = self.currentBirthdate else {
@@ -36,7 +40,15 @@ final class SecondOnboardingViewController: UIViewController {
             self.birthdateButton.setTitle(formatter.string(from: date), for: .normal)
         }
     }
-    private var currentGender: Gender?
+    private var currentGender: Gender? {
+        didSet {
+            guard let gender = self.currentGender else {
+                self.genderButton.setTitle(NSLocalizedString("Select", comment: ""), for: .normal)
+                return
+            }
+            self.genderButton.setTitle(gender.rawValue, for: .normal)
+        }
+    }
     private var currentHeight: Double?
     private var currentWeight: Double?
     
@@ -87,7 +99,10 @@ final class SecondOnboardingViewController: UIViewController {
         self.birthdateTextField.inputView = birthdateDatePicker
         self.birthdateTextField.inputAccessoryView = toolbar
         
-        
+        self.genderPickerView.dataSource = self
+        self.genderPickerView.delegate = self
+        self.genderTextField.inputView = self.genderPickerView
+        self.genderTextField.inputAccessoryView = toolbar
     }
     
     // MARK: - Control events
@@ -116,5 +131,35 @@ final class SecondOnboardingViewController: UIViewController {
     
     @objc private func birthdateDatePickerValueChanged(_ sender: UIDatePicker) {
         self.currentBirthdate = sender.date
+    }
+}
+
+// MARK: - Picker view data source and delegate
+
+extension SecondOnboardingViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        switch pickerView {
+        case self.genderPickerView: return self.possibleGenders.count
+        default: return 0
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        switch pickerView {
+        case self.genderPickerView: return possibleGenders[row].rawValue
+        default: return nil
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        switch pickerView {
+        case self.genderPickerView: self.currentGender = self.possibleGenders[row]
+        default: break
+        }
     }
 }
