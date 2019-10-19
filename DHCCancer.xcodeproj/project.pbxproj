@@ -168,6 +168,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7045FA09235B599900675101 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
 		70859B6E235B168800628DFC = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +214,6 @@
 			children = (
 				70859C05235B44B800628DFC /* OnboardingPageViewController.swift */,
 				70859C08235B467300628DFC /* FirstOnboardingViewController.swift */,
-				70859B9B235B1F7700628DFC /* Controllers.swift */,
 				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 			);
 			path = Controllers;
@@ -268,10 +275,8 @@
 		70859BAB235B205700628DFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
 				AC3D784D235B540C00CEED61 /* Xibs */,
-				70859BAC235B206300628DFC /* Views.swift */,
-				AC29BDF3235B45F400C8208B /* BorderedButton.swift */,
+				7045FA09235B599900675101 /* UIElements */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 		AC3D784D235B540C00CEED61 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
 				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 			);
 			path = Xibs;
