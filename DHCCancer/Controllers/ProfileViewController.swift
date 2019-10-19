@@ -85,4 +85,14 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            // Navigate to my information
+        } else if indexPath.section == 1 {
+            // Navigate to medical documents
+        } else {
+            // Navigate to log history
+        }
+    }
 }

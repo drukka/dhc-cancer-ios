@@ -98,6 +98,10 @@
 		AC52A8B0235B938A009D56C7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */; };
 		AC52A8B1235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */; };
 		AC52A8B2235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */; };
+		AC52A8B5235B9788009D56C7 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */; };
+		AC52A8B6235B9788009D56C7 /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */; };
+		AC52A8B7235B9788009D56C7 /* MyInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */; };
+		AC52A8B8235B9788009D56C7 /* MyInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */; };
 		AC7BE753235B7CD600D617B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */; };
 		AC7BE754235B7CD600D617B6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */; };
 		AC7BE755235B7CD600D617B6 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */; };
@@ -157,6 +161,8 @@
 		AC52A8A8235B86AE009D56C7 /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
 		AC52A8AD235B938A009D56C7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		AC52A8AE235B938A009D56C7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
+		AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInformationViewController.xib; sourceTree = "<group>"; };
 		AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		AFBF877A516CB8CE808F1BE3 /* Pods_DHCCancer_mock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DHCCancer_mock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +242,7 @@
 				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
 				AC3D784E235B5B4500CEED61 /* SignUpViewController.swift */,
 				AC7BE751235B7CD600D617B6 /* ProfileViewController.swift */,
+				AC52A8B3235B9788009D56C7 /* MyInformationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -343,6 +350,7 @@
 				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
 				AC3D784F235B5B4500CEED61 /* SignUpViewController.xib */,
 				AC7BE752235B7CD600D617B6 /* ProfileViewController.xib */,
+				AC52A8B4235B9788009D56C7 /* MyInformationViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -457,6 +465,7 @@
 				70859C0C235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
 				AC7BE755235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
+				AC52A8B7235B9788009D56C7 /* MyInformationViewController.xib in Resources */,
 				AC3D7852235B5B4500CEED61 /* SignUpViewController.xib in Resources */,
 				AC3D784B235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				AC21019A235B811000918539 /* Montserrat-Light.otf in Resources */,
@@ -475,6 +484,7 @@
 				70859C0D235B46EB00628DFC /* FirstOnboardingViewController.xib in Resources */,
 				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
 				AC7BE756235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
+				AC52A8B8235B9788009D56C7 /* MyInformationViewController.xib in Resources */,
 				AC3D7853235B5B4500CEED61 /* SignUpViewController.xib in Resources */,
 				AC3D784C235B493800CEED61 /* Montserrat-Medium.otf in Resources */,
 				AC21019B235B811000918539 /* Montserrat-Light.otf in Resources */,
@@ -579,6 +589,7 @@
 				70859BCE235B230100628DFC /* Date+TimePassedSince.swift in Sources */,
 				70859BDA235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
 				70859C00235B246A00628DFC /* Errors.swift in Sources */,
+				AC52A8B5235B9788009D56C7 /* MyInformationViewController.swift in Sources */,
 				70859BB8235B220600628DFC /* CurrentUserProviderProtocol.swift in Sources */,
 				70859BFB235B23BF00628DFC /* CurrentUserProvider.swift in Sources */,
 				70859BE2235B230100628DFC /* NetworkingError+LocalizedError.swift in Sources */,
@@ -622,6 +633,7 @@
 				70859BCF235B230100628DFC /* Date+TimePassedSince.swift in Sources */,
 				70859BDB235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
 				70859C01235B246A00628DFC /* Errors.swift in Sources */,
+				AC52A8B6235B9788009D56C7 /* MyInformationViewController.swift in Sources */,
 				70859BB9235B220600628DFC /* CurrentUserProviderProtocol.swift in Sources */,
 				70859BFC235B23BF00628DFC /* CurrentUserProvider.swift in Sources */,
 				70859BE3235B230100628DFC /* NetworkingError+LocalizedError.swift in Sources */,
