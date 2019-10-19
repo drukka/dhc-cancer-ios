@@ -40,6 +40,10 @@
 		7045FA37235B5A7100675101 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA18235B5A7000675101 /* Montserrat-ThinItalic.ttf */; };
 		7045FA38235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA19235B5A7000675101 /* Montserrat-MediumItalic.ttf */; };
 		7045FA39235B5A7100675101 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA19235B5A7000675101 /* Montserrat-MediumItalic.ttf */; };
+		7045FA3B235B603D00675101 /* SecondOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */; };
+		7045FA3C235B603D00675101 /* SecondOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */; };
+		7045FA3E235B609200675101 /* SecondOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */; };
+		7045FA3F235B609200675101 /* SecondOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */; };
 		70859B7B235B168800628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
 		70859B84235B168900628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 		70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
@@ -138,6 +142,8 @@
 		7045FA17235B5A7000675101 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		7045FA18235B5A7000675101 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		7045FA19235B5A7000675101 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnboardingViewController.swift; sourceTree = "<group>"; };
+		7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondOnboardingViewController.xib; sourceTree = "<group>"; };
 		70859B77235B168800628DFC /* DHCCancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHCCancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70859B7A235B168800628DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70859B83235B168900628DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -263,6 +269,7 @@
 				70859C05235B44B800628DFC /* OnboardingPageViewController.swift */,
 				70859C08235B467300628DFC /* FirstOnboardingViewController.swift */,
 				AC29BDED235B40FD00C8208B /* LoginViewController.swift */,
+				7045FA3A235B603D00675101 /* SecondOnboardingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -381,6 +388,7 @@
 			children = (
 				70859C0B235B46EB00628DFC /* FirstOnboardingViewController.xib */,
 				AC29BDEE235B40FD00C8208B /* LoginViewController.xib */,
+				7045FA3D235B609200675101 /* SecondOnboardingViewController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -495,6 +503,7 @@
 				AC3D7848235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
 				7045FA1E235B5A7000675101 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				7045FA34235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				7045FA3E235B609200675101 /* SecondOnboardingViewController.xib in Resources */,
 				7045FA20235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +533,7 @@
 				AC3D7849235B492D00CEED61 /* Montserrat-Regular.otf in Resources */,
 				7045FA1F235B5A7000675101 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				7045FA35235B5A7100675101 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				7045FA3F235B609200675101 /* SecondOnboardingViewController.xib in Resources */,
 				7045FA21235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70859BD4235B230100628DFC /* Encodable+ParametersDictionary.swift in Sources */,
+				7045FA3B235B603D00675101 /* SecondOnboardingViewController.swift in Sources */,
 				70859BCE235B230100628DFC /* Date+TimePassedSince.swift in Sources */,
 				70859BDA235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
 				70859C00235B246A00628DFC /* Errors.swift in Sources */,
@@ -656,6 +667,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70859BD5235B230100628DFC /* Encodable+ParametersDictionary.swift in Sources */,
+				7045FA3C235B603D00675101 /* SecondOnboardingViewController.swift in Sources */,
 				70859BCF235B230100628DFC /* Date+TimePassedSince.swift in Sources */,
 				70859BDB235B230100628DFC /* UIDevice+HasNotch.swift in Sources */,
 				70859C01235B246A00628DFC /* Errors.swift in Sources */,
