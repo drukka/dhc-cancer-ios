@@ -58,7 +58,15 @@ final class SecondOnboardingViewController: UIViewController {
             self.heightButton.setTitle("\(height) cm", for: .normal)
         }
     }
-    private var currentWeight: Double?
+    private var currentWeight: Int? {
+        didSet {
+            guard let weight = self.currentWeight else {
+                self.weightButton.setTitle(NSLocalizedString("Select", comment: ""), for: .normal)
+                return
+            }
+            self.weightButton.setTitle("\(weight) kg", for: .normal)
+        }
+    }
     
     // MARK: - Initialization
     
@@ -80,12 +88,17 @@ final class SecondOnboardingViewController: UIViewController {
     }
     
     // MARK: - Private methods
-
+    
     private func setupTextFields() {
-        self.birthdateTextField.frame = CGRect.zero
-        self.genderTextField.frame = CGRect.zero
-        self.heightTextField.frame = CGRect.zero
-        self.weightTextField.frame = CGRect.zero
+        self.birthdateTextField.frame = self.birthdateButton.superview!.convert(self.birthdateButton.frame, to: self.view)
+        self.genderTextField.frame = self.genderButton.superview!.convert(self.genderButton.frame, to: self.view)
+        self.heightTextField.frame = self.heightButton.superview!.convert(self.heightButton.frame, to: self.view)
+        self.weightTextField.frame = self.weightButton.superview!.convert(self.weightButton.frame, to: self.view)
+        
+        self.birthdateTextField.isHidden = true
+        self.genderTextField.isHidden = true
+        self.heightTextField.isHidden = true
+        self.weightTextField.isHidden = true
         
         self.view.addSubview(self.birthdateTextField)
         self.view.addSubview(self.genderTextField)
@@ -112,9 +125,13 @@ final class SecondOnboardingViewController: UIViewController {
         self.genderTextField.inputView = self.genderPickerView
         self.genderTextField.inputAccessoryView = toolbar
         
-        self.heightTextField.keyboardType = .decimalPad
+        self.heightTextField.keyboardType = .numberPad
         self.heightTextField.inputAccessoryView = toolbar
         self.heightTextField.addTarget(self, action: #selector(heightTextFieldEditingChanged(_:)), for: .editingChanged)
+        
+        self.weightTextField.keyboardType = .numberPad
+        self.weightTextField.inputAccessoryView = toolbar
+        self.weightTextField.addTarget(self, action: #selector(weightTextFieldEditingChanged(_:)), for: .editingChanged)
     }
     
     // MARK: - Control events
@@ -148,6 +165,11 @@ final class SecondOnboardingViewController: UIViewController {
     @objc private func heightTextFieldEditingChanged(_ sender: UITextField) {
         guard let height = Int(sender.text ?? "0") else { return }
         self.currentHeight = height
+    }
+    
+    @objc private func weightTextFieldEditingChanged(_ sender: UITextField) {
+        guard let weight = Int(sender.text ?? "0") else { return }
+        self.currentWeight = weight
     }
 }
 
