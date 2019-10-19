@@ -1,0 +1,66 @@
+PODS:
+  - Alamofire (4.9.0)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - EmptyDataSet-Swift (4.2.0)
+  - ImageSlideshow/Core (1.8.1)
+  - ImageSlideshow/Kingfisher (1.8.1):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - KeyboardDucker (0.1.1)
+  - Kingfisher (5.8.3):
+    - Kingfisher/Core (= 5.8.3)
+  - Kingfisher/Core (5.8.3)
+  - Locksmith (4.0.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - PromiseKit/Alamofire (6.11.0):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.11.0)
+  - SwiftyAttributes (5.1.1)
+  - Swinject (2.7.1)
+
+DEPENDENCIES:
+  - AlamofireNetworkActivityIndicator (~> 2.4)
+  - EmptyDataSet-Swift (~> 4.2.0)
+  - ImageSlideshow/Kingfisher
+  - KeyboardDucker
+  - Kingfisher
+  - Locksmith
+  - NVActivityIndicatorView
+  - PromiseKit/Alamofire
+  - SwiftyAttributes
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - EmptyDataSet-Swift
+    - ImageSlideshow
+    - KeyboardDucker
+    - Kingfisher
+    - Locksmith
+    - NVActivityIndicatorView
+    - PromiseKit
+    - SwiftyAttributes
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  EmptyDataSet-Swift: 1fa0b35f530a35f852ecb2b53564728b0c300aaf
+  ImageSlideshow: 634865d7d4e96f21e3830a31b51bde768cc94cea
+  KeyboardDucker: 8e8d37ffccb5b6c6b04f1d0c62ac16fea88bc0b1
+  Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
+  Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
+  SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+
+PODFILE CHECKSUM: d15f95ed5497c94196008a08b5845d006692365a
+
+COCOAPODS: 1.8.4
