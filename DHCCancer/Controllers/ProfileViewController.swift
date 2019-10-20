@@ -59,6 +59,7 @@ class ProfileViewController: UIViewController, NVActivityIndicatorViewable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.navigationController?.navigationBar.barStyle = .default
         self.navigationItem.largeTitleDisplayMode = .always
     }
     

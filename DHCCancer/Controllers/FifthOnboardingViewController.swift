@@ -54,7 +54,7 @@ final class FifthOnboardingViewController: UIViewController, NVActivityIndicator
             guard let self = self else { return }
             
             let mainNavigationController = UINavigationController(rootViewController: self.container.resolve(MainTabBarController.self)!)
-            mainNavigationController.modalPresentationStyle = .fullScreen
+            mainNavigationController.modalPresentationStyle = .currentContext
             self.present(mainNavigationController, animated: true, completion: nil)
         }).cauterize()
     }
