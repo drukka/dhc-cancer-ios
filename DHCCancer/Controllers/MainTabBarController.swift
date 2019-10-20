@@ -39,7 +39,7 @@ final class MainTabBarController: UITabBarController {
     private func setupControllers() {
         self.tabBar.tintColor = UIColor(named: "Hibiscus")
         
-        let profileViewController = UINavigationController(rootViewController: UIViewController())
+        let profileViewController = UINavigationController(rootViewController: self.container.resolve(ProfileViewController.self)!)
         profileViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Profile", comment: ""), image: UIImage(named: "Profile"), selectedImage: nil)
         
         let calendarViewController = UINavigationController(rootViewController: UIViewController())

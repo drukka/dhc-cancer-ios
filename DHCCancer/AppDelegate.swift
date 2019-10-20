@@ -30,10 +30,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setupNetworkActivityIndicator()
         self.setupNotifications()
         self.setupCurrentUserProvider()
+        
+        self.currentUserProvider.destroy()
+        
         self.setupNetworking()
         self.updateUser()
         self.setupDefaultNavigationBarAppearance()
         self.setupWindow()
+        
+        //self.currentUserProvider.destroy()
+        
         return true
     }
 
@@ -89,17 +95,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupWindow() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        /*if self.currentUserProvider.authenticationToken != nil {
-            self.window?.rootViewController = self.appContainer.resolve(MainMenuViewController.self)
+        if self.currentUserProvider.authenticationToken != nil {
+            self.window?.rootViewController = self.appContainer.resolve(MainTabBarController.self)
         } else {
-            if UserDefaults.standard.isFirstLaunch {
-                self.window?.rootViewController = self.appContainer.resolve(OnboardingViewController.self)
-            } else {
-                self.window?.rootViewController = UINavigationController(rootViewController: self.appContainer.resolve(LoginViewController.self)!)
-            }
-        }*/
+            self.window?.rootViewController = UINavigationController(rootViewController: self.appContainer.resolve(LoginViewController.self)!)
+        }
         
-        self.window?.rootViewController = UINavigationController(rootViewController: self.appContainer.resolve(MainTabBarController.self)!)
         self.window?.makeKeyAndVisible()
     }
 

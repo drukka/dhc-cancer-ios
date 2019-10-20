@@ -9,6 +9,7 @@
 import UIKit
 import PromiseKit
 import NVActivityIndicatorView
+import Swinject
 
 final class FifthOnboardingViewController: UIViewController, NVActivityIndicatorViewable {
 
@@ -17,13 +18,15 @@ final class FifthOnboardingViewController: UIViewController, NVActivityIndicator
     private let onboardingPageViewController: OnboardingPageViewController
     private let networking: Networking
     private let currentUserProvider: CurrentUserProviderProtocol
+    private let container: Container
     
     // MARK: - Initialization
     
-    init(onboardingPageViewController: OnboardingPageViewController, networking: Networking, currentUserProvider: CurrentUserProviderProtocol) {
+    init(onboardingPageViewController: OnboardingPageViewController, networking: Networking, currentUserProvider: CurrentUserProviderProtocol, container: Container) {
         self.onboardingPageViewController = onboardingPageViewController
         self.networking = networking
         self.currentUserProvider = currentUserProvider
+        self.container = container
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -49,7 +52,10 @@ final class FifthOnboardingViewController: UIViewController, NVActivityIndicator
             self.stopAnimating()
         }).done({ [weak self] _ in
             guard let self = self else { return }
-            self.dismiss(animated: true, completion: nil)
+            
+            let mainNavigationController = UINavigationController(rootViewController: self.container.resolve(MainTabBarController.self)!)
+            mainNavigationController.modalPresentationStyle = .fullScreen
+            self.present(mainNavigationController, animated: true, completion: nil)
         }).cauterize()
     }
     

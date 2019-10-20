@@ -45,6 +45,7 @@ class ProfileViewController: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.setupNavigationBar()
         self.title = "Profile"
         
         self.tableView.delegate = self
@@ -58,13 +59,23 @@ class ProfileViewController: UIViewController, NVActivityIndicatorViewable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.largeTitleDisplayMode = .always
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         setUpTableHeaderView()
+    }
+    
+    private func setupNavigationBar() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        self.navigationController?.navigationBar.barStyle = .black
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func fetchProfileDetails() {

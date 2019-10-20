@@ -145,7 +145,7 @@ final class AppDependencies {
     
     private func registerFifthOnboardingViewController(to container: Container) {
         container.register(FifthOnboardingViewController.self, factory: { _, onboardingPageViewController in
-            return FifthOnboardingViewController(onboardingPageViewController: onboardingPageViewController, networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!)
+            return FifthOnboardingViewController(onboardingPageViewController: onboardingPageViewController, networking: container.resolve(Networking.self)!, currentUserProvider: container.resolve(CurrentUserProviderProtocol.self)!, container: container)
         })
     }
     

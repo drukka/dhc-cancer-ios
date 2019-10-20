@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="S32-tf-d9C">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="separatorColor" name="Roman"/>
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -33,13 +33,13 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="S32-tf-d9C" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="1eJ-MN-hKz"/>
+                <constraint firstItem="S32-tf-d9C" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="1eJ-MN-hKz"/>
                 <constraint firstItem="8To-RI-rh1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CHp-MG-HPd"/>
                 <constraint firstAttribute="bottom" secondItem="8To-RI-rh1" secondAttribute="bottom" id="Hgy-rh-KfS"/>
                 <constraint firstItem="8To-RI-rh1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kf5-Ss-e5j"/>
-                <constraint firstItem="S32-tf-d9C" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="SA2-8s-wLq"/>
+                <constraint firstItem="S32-tf-d9C" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="SA2-8s-wLq"/>
                 <constraint firstItem="8To-RI-rh1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="a9A-jx-tnP"/>
-                <constraint firstItem="S32-tf-d9C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aHB-cm-Sup"/>
+                <constraint firstItem="S32-tf-d9C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aHB-cm-Sup"/>
                 <constraint firstItem="S32-tf-d9C" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sd8-xO-yW3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

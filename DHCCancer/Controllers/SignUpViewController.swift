@@ -105,7 +105,9 @@ final class SignUpViewController: UIViewController, KeyboardDucking, NVActivityI
             self.currentUserProvider.save(with: authenticationResponse.user, authenticationToken: authenticationResponse.token)
             
             let onboardingPageViewController = self.container.resolve(OnboardingPageViewController.self)!
-            self.navigationController?.pushViewController(onboardingPageViewController, animated: true)
+            let onboardingNavigationController = UINavigationController(rootViewController: onboardingPageViewController)
+            onboardingNavigationController.modalPresentationStyle = .fullScreen
+            self.present(onboardingNavigationController, animated: true, completion: nil)
         }).catch({ [weak self] error in
             guard let networkingError = error as? NetworkingError, case .serviceError(let status) = networkingError else {
                 self?.handleError(error)

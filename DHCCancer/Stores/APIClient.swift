@@ -108,7 +108,7 @@ final class APIClient: Networking {
     private func createHeaders(withToken token: String? = nil) -> HTTPHeaders {
         var headers: HTTPHeaders = [:]
         if let token = token {
-            headers["Authorization"] = "bearer \(token)"
+            headers["Authorization"] = "Bearer \(token)"
         }
         return headers
     }
@@ -117,16 +117,16 @@ final class APIClient: Networking {
 
     func logIn(email: String, password: String) -> Promise<AuthenticationResponse> {
         let parameters: Parameters = ["email": email, "password": password]
-        return self.buildPromiseWithResponse(url: self.createURL(withEndpoint: "/auth/login"), method: .post, successStatus: .OK, headers: self.createHeaders(), parameters: parameters)
+        return self.buildPromiseWithResponse(url: self.createURL(withEndpoint: "/auth/local"), method: .post, successStatus: .OK, headers: self.createHeaders(), parameters: parameters)
     }
     
     func signUp(email: String, password: String) -> Promise<AuthenticationResponse> {
         let parameters: Parameters = ["email": email, "password": password]
-        return self.buildPromiseWithResponse(url: self.createURL(withEndpoint: "/auth/signUp"), method: .post, successStatus: .OK, headers: self.createHeaders(), parameters: parameters)
+        return self.buildPromiseWithResponse(url: self.createURL(withEndpoint: "/auth/local/sign-up"), method: .post, successStatus: .created, headers: self.createHeaders(), parameters: parameters)
     }
     
     func fetchUserData(token: String) -> Promise<User> {
-        let url = self.createURL(withEndpoint: "/docs/#/user/getProfile")
+        let url = self.createURL(withEndpoint: "/users/me")
         return self.buildPromiseWithResponse(url: url, method: .get, successStatus: .OK, headers: self.createHeaders(withToken: token))
     }
     
@@ -135,7 +135,7 @@ final class APIClient: Networking {
         return self.buildPromiseWithResponse(url: url, method: .get, successStatus: .OK, headers: self.createHeaders(withToken: token))
     }
 
-        func updateUserData(request: UpdateUserRequest, token: String) -> Promise<Void?> {
+    func updateUserData(request: UpdateUserRequest, token: String) -> Promise<Void?> {
         let parameters: Parameters = request.parametersDictionary
         return self.buildPromiseWithoutResponse(url: self.createURL(withEndpoint: "/users/me"), method: .put, successStatus: .OK, headers: self.createHeaders(withToken: token), parameters: parameters)
     }

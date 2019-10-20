@@ -51,7 +51,7 @@ class LogHistoryViewController: UIViewController, NVActivityIndicatorViewable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationItem.largeTitleDisplayMode = .never
     }
     
     private func fetchEntries() {

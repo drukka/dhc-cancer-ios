@@ -61,6 +61,10 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
         self.stopDuckingKeyboard()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     // MARK: - Private methods
     
     private func assignDelegates() {
@@ -99,8 +103,9 @@ final class LoginViewController: UIViewController, KeyboardDucking, NVActivityIn
             guard let self = self else { return }
             self.currentUserProvider.save(with: authenticationResponse.user, authenticationToken: authenticationResponse.token)
             
-            let onboardingPageViewController = self.container.resolve(OnboardingPageViewController.self)!
-            self.navigationController?.pushViewController(onboardingPageViewController, animated: true)
+            let mainNavigationController = UINavigationController(rootViewController: self.container.resolve(MainTabBarController.self)!)
+            mainNavigationController.modalPresentationStyle = .fullScreen
+            self.present(mainNavigationController, animated: true, completion: nil)
         }).catch({ [weak self] error in
             guard let networkingError = error as? NetworkingError, case .serviceError(let status) = networkingError else {
                 self?.handleError(error)
