@@ -30,16 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setupNetworkActivityIndicator()
         self.setupNotifications()
         self.setupCurrentUserProvider()
-        
-        //self.currentUserProvider.destroy()
-        
         self.setupNetworking()
         self.updateUser()
         self.setupDefaultNavigationBarAppearance()
         self.setupWindow()
-        
-        //self.currentUserProvider.destroy()
-        
         return true
     }
 

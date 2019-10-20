@@ -60,6 +60,7 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
         self.setupCollectionView()
         self.setupAddQuickLogView()
         self.setupOverlayView()
+        self.setupNavigationBar()
         self.title = NSLocalizedString("Quick log", comment: "")
     }
 
@@ -136,6 +137,11 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
         self.view.bringSubviewToFront(self.addQuickLogView)
     }
     
+    private func setupNavigationItem() {
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped(_:)))
+        self.navigationItem.rightBarButtonItem = doneButton
+    }
+    
     // MARK: - UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -171,6 +177,10 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
     
     @objc private func overlayViewDidTapped(_ sender: UIGestureRecognizer) {
         self.hideAddQuickLogView()
+    }
+    
+    @objc private func doneButtonTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
 
 }
