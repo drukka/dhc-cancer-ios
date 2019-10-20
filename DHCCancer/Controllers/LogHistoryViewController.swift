@@ -40,6 +40,7 @@ class LogHistoryViewController: UIViewController, NVActivityIndicatorViewable {
         self.title = "Log history"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .plain, target: self, action: nil)
         
+        self.tableView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
         self.tableView.register(UINib(nibName: String(describing: LogTableViewCell.self), bundle: nil), forCellReuseIdentifier: LogTableViewCell.reuseIdentifier)
         
         self.tableView.delegate = self

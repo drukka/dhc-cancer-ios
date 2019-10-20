@@ -38,6 +38,7 @@ class MedicalDocumentsViewController: UIViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
+        self.collectionView.contentInset = UIEdgeInsets(top: 16, left: 8, bottom: 16, right: 8)
         self.collectionView.register(UINib(nibName: "DocumentCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DocumentCollectionViewCell")
         
         self.title = "Medical documents"
