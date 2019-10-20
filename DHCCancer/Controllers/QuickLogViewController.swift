@@ -61,6 +61,7 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
         self.setupAddQuickLogView()
         self.setupOverlayView()
         self.setupNavigationBar()
+        self.setupNavigationItem()
         self.title = NSLocalizedString("Quick log", comment: "")
     }
 
@@ -94,6 +95,8 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
         
         let bottomSafeAreaHeight = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0.0
         self.addQuickLogViewTopConstraint = self.addQuickLogView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 200)
+        
+        self.addQuickLogView.logDataButton.addTarget(self, action: #selector(logDataButtonTapped(_:)), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             self.addQuickLogView.heightAnchor.constraint(equalToConstant: bottomSafeAreaHeight + 300),
@@ -167,8 +170,20 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath == IndexPath(item: 0, section: 0) {
+            self.addQuickLogView.titleLabel.text = "Temperature"
+            self.addQuickLogView.stepper.minimumValue = 34.0
+            self.addQuickLogView.stepper.maximumValue = 45.0
+            self.addQuickLogView.stepper.value = 37.0
+            self.addQuickLogView.imageView.image = UIImage(named: "temp")
+            self.addQuickLogView.entryType = .temperature
             self.showAddQuickLogView()
         } else if indexPath == IndexPath(item: 1, section: 0) {
+            self.addQuickLogView.titleLabel.text = "Weight"
+            self.addQuickLogView.stepper.minimumValue = 20.0
+            self.addQuickLogView.stepper.maximumValue = 150.0
+            self.addQuickLogView.stepper.value = 60.0
+            self.addQuickLogView.imageView.image = UIImage(named: "weightNoBorder")
+            self.addQuickLogView.entryType = .weight
             self.showAddQuickLogView()
         }
     }
@@ -181,6 +196,21 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
     
     @objc private func doneButtonTapped(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc private func logDataButtonTapped(_ sender: UIButton) {
+        guard let token = self.currentUserProvider.authenticationToken else { return }
+        switch self.addQuickLogView.entryType {
+        case .temperature:
+            self.networking.logTemperature(value: self.addQuickLogView.stepper.value, token: token).done({ [weak self] _ in
+                self?.hideAddQuickLogView()
+            }).cauterize()
+        case .weight:
+            self.networking.logWeight(value: Int(self.addQuickLogView.stepper.value), token: token).done({ [weak self] _ in
+                self?.hideAddQuickLogView()
+            }).cauterize()
+        default: break
+        }
     }
 
 }

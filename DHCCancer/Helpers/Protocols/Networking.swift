@@ -15,4 +15,6 @@ protocol Networking {
     func updateUserData(request: UpdateUserRequest, token: String) -> Promise<Void?>
     func fetchUserData(token: String) -> Promise<User>
     func fetchEntries(token: String) -> Promise<[Entry]>
+    func logTemperature(value: Double, token: String) -> Promise<Void?>
+    func logWeight(value: Int, token: String) -> Promise<Void?>
 }
