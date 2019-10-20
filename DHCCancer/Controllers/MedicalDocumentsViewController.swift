@@ -42,6 +42,8 @@ class MedicalDocumentsViewController: UIViewController {
         
         self.title = "Medical documents"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .plain, target: self, action: nil)
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
     
     override func viewWillAppear(_ animated: Bool) {
