@@ -53,6 +53,7 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
         self.setupBackground()
         self.setupNavigationBar()
         self.setupCollectionView()
+        self.setupAddQuickLogView()
         self.title = NSLocalizedString("Quick log", comment: "")
     }
 
@@ -77,6 +78,12 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
     
     private func setupCollectionView() {
         self.collectionView.register(UINib(nibName: "QuickLogCell", bundle: nil), forCellWithReuseIdentifier: "QuickLogCell")
+    }
+    
+    private func setupAddQuickLogView() {
+        let quickLogView = Bundle.main.loadNibNamed("AddQuickLogView", owner: nil, options: nil)?.first as! AddQuickLogView
+        quickLogView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
+        self.view.addSubview(quickLogView)
     }
     
     // MARK: - UICollectionViewDataSource

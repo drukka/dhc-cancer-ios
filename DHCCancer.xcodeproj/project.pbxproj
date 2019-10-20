@@ -18,6 +18,10 @@
 		7028098B235BD22E00E1D362 /* QuickLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280989235BD22E00E1D362 /* QuickLogCell.swift */; };
 		7028098D235BD24100E1D362 /* QuickLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028098C235BD24100E1D362 /* QuickLogCell.xib */; };
 		7028098E235BD24100E1D362 /* QuickLogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028098C235BD24100E1D362 /* QuickLogCell.xib */; };
+		70280991235BEADC00E1D362 /* AddQuickLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70280990235BEADC00E1D362 /* AddQuickLogView.xib */; };
+		70280992235BEADC00E1D362 /* AddQuickLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70280990235BEADC00E1D362 /* AddQuickLogView.xib */; };
+		70280994235BEAF100E1D362 /* AddQuickLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280993235BEAF100E1D362 /* AddQuickLogView.swift */; };
+		70280995235BEAF100E1D362 /* AddQuickLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280993235BEAF100E1D362 /* AddQuickLogView.swift */; };
 		7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */; };
@@ -205,6 +209,8 @@
 		70280985235BCC3F00E1D362 /* QuickLogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogViewController.xib; sourceTree = "<group>"; };
 		70280989235BD22E00E1D362 /* QuickLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogCell.swift; sourceTree = "<group>"; };
 		7028098C235BD24100E1D362 /* QuickLogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogCell.xib; sourceTree = "<group>"; };
+		70280990235BEADC00E1D362 /* AddQuickLogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddQuickLogView.xib; sourceTree = "<group>"; };
+		70280993235BEAF100E1D362 /* AddQuickLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuickLogView.swift; sourceTree = "<group>"; };
 		7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -342,9 +348,19 @@
 			path = QuickLogCell;
 			sourceTree = "<group>";
 		};
+		7028098F235BEAC800E1D362 /* AddQuickLogView */ = {
+			isa = PBXGroup;
+			children = (
+				70280990235BEADC00E1D362 /* AddQuickLogView.xib */,
+				70280993235BEAF100E1D362 /* AddQuickLogView.swift */,
+			);
+			path = AddQuickLogView;
+			sourceTree = "<group>";
+		};
 		7045FA09235B599900675101 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				7028098F235BEAC800E1D362 /* AddQuickLogView */,
 				70280988235BD20A00E1D362 /* QuickLogCell */,
 				AC53B661235BBB18000221BE /* LogTableViewCell */,
 				AC365E9F235B9D44003922EA /* MyInformationTableViewCell */,
@@ -735,6 +751,7 @@
 				7045FA20235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
 				AC52A8B1235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */,
 				AC52A8A9235B86AE009D56C7 /* ProfileHeaderView.xib in Resources */,
+				70280991235BEADC00E1D362 /* AddQuickLogView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +800,7 @@
 				7045FA3F235B609200675101 /* SecondOnboardingViewController.xib in Resources */,
 				7045FA21235B5A7000675101 /* Montserrat-ExtraLight.ttf in Resources */,
 				AC52A8B2235B938A009D56C7 /* ProfileTableViewCell.xib in Resources */,
+				70280992235BEADC00E1D362 /* AddQuickLogView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,6 +932,7 @@
 				70859BF1235B236900628DFC /* AppDependencies.swift in Sources */,
 				70742279235BB70900B30C5C /* MainTabBarController.swift in Sources */,
 				70859C06235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
+				70280994235BEAF100E1D362 /* AddQuickLogView.swift in Sources */,
 				70859BE8235B235700628DFC /* Validator.swift in Sources */,
 				70859BFD235B23BF00628DFC /* FakeCurrentUserProvider.swift in Sources */,
 				70859BE5235B232000628DFC /* ValidatorProtocol.swift in Sources */,
@@ -973,6 +992,7 @@
 				AC7BE754235B7CD600D617B6 /* ProfileViewController.swift in Sources */,
 				70859BF2235B236900628DFC /* AppDependencies.swift in Sources */,
 				7074227A235BB70900B30C5C /* MainTabBarController.swift in Sources */,
+				70280995235BEAF100E1D362 /* AddQuickLogView.swift in Sources */,
 				70859C07235B44B800628DFC /* OnboardingPageViewController.swift in Sources */,
 				70859BE9235B235700628DFC /* Validator.swift in Sources */,
 				70859BFE235B23BF00628DFC /* FakeCurrentUserProvider.swift in Sources */,
