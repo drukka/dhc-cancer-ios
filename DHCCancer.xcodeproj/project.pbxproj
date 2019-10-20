@@ -22,6 +22,8 @@
 		70280992235BEADC00E1D362 /* AddQuickLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70280990235BEADC00E1D362 /* AddQuickLogView.xib */; };
 		70280994235BEAF100E1D362 /* AddQuickLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280993235BEAF100E1D362 /* AddQuickLogView.swift */; };
 		70280995235BEAF100E1D362 /* AddQuickLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70280993235BEAF100E1D362 /* AddQuickLogView.swift */; };
+		70280997235C564300E1D362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70280996235C564300E1D362 /* LaunchScreen.storyboard */; };
+		70280998235C564300E1D362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70280996235C564300E1D362 /* LaunchScreen.storyboard */; };
 		7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */; };
 		7045FA1C235B5A7000675101 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */; };
@@ -82,9 +84,7 @@
 		7074227A235BB70900B30C5C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70742278235BB70900B30C5C /* MainTabBarController.swift */; };
 		70859B7B235B168800628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
 		70859B84235B168900628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
-		70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
 		70859B90235B1C9600628DFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859B7A235B168800628DFC /* AppDelegate.swift */; };
-		70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70859B85235B168900628DFC /* LaunchScreen.storyboard */; };
 		70859B94235B1C9600628DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70859B83235B168900628DFC /* Assets.xcassets */; };
 		70859BB5235B21C500628DFC /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BB4235B21C500628DFC /* Networking.swift */; };
 		70859BB6235B21C500628DFC /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70859BB4235B21C500628DFC /* Networking.swift */; };
@@ -219,6 +219,7 @@
 		7028098C235BD24100E1D362 /* QuickLogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickLogCell.xib; sourceTree = "<group>"; };
 		70280990235BEADC00E1D362 /* AddQuickLogView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddQuickLogView.xib; sourceTree = "<group>"; };
 		70280993235BEAF100E1D362 /* AddQuickLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuickLogView.swift; sourceTree = "<group>"; };
+		70280996235C564300E1D362 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7045FA0A235B5A6F00675101 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0B235B5A6F00675101 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7045FA0C235B5A6F00675101 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -251,7 +252,6 @@
 		70859B77235B168800628DFC /* DHCCancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DHCCancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70859B7A235B168800628DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70859B83235B168900628DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		70859B86235B168900628DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70859B88235B168900628DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70859B98235B1C9600628DFC /* DHCCancer-mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DHCCancer-mock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70859BB4235B21C500628DFC /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
@@ -537,8 +537,8 @@
 			isa = PBXGroup;
 			children = (
 				AC3D7846235B48DA00CEED61 /* Fonts */,
-				70859B85235B168900628DFC /* LaunchScreen.storyboard */,
 				70859B83235B168900628DFC /* Assets.xcassets */,
+				70280996235C564300E1D362 /* LaunchScreen.storyboard */,
 				70859B88235B168900628DFC /* Info.plist */,
 				7045FA4C235B932F00675101 /* Cancers.json */,
 			);
@@ -743,10 +743,10 @@
 				AC365EA4235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
 				7045FA4D235B932F00675101 /* Cancers.json in Resources */,
 				7045FA1A235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
+				70280997235C564300E1D362 /* LaunchScreen.storyboard in Resources */,
 				7045FA24235B5A7000675101 /* Montserrat-Italic.ttf in Resources */,
 				7045FA44235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
 				7045FA2C235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
-				70859B87235B168900628DFC /* LaunchScreen.storyboard in Resources */,
 				AC7BE755235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
 				70280980235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */,
 				AC365EAF235BAE67003922EA /* LogHistoryViewController.xib in Resources */,
@@ -794,10 +794,10 @@
 				AC365EA5235B9D6E003922EA /* MyInformationTableViewCell.xib in Resources */,
 				7045FA4E235B932F00675101 /* Cancers.json in Resources */,
 				7045FA1B235B5A7000675101 /* Montserrat-BlackItalic.ttf in Resources */,
+				70280998235C564300E1D362 /* LaunchScreen.storyboard in Resources */,
 				7045FA25235B5A7000675101 /* Montserrat-Italic.ttf in Resources */,
 				7045FA45235B7FDF00675101 /* ThirdOnboardingViewController.xib in Resources */,
 				7045FA2D235B5A7000675101 /* Montserrat-Light.ttf in Resources */,
-				70859B93235B1C9600628DFC /* LaunchScreen.storyboard in Resources */,
 				AC7BE756235B7CD600D617B6 /* ProfileViewController.xib in Resources */,
 				70280981235BC6A800E1D362 /* FirstOnboardingViewController.xib in Resources */,
 				AC365EB0235BAE67003922EA /* LogHistoryViewController.xib in Resources */,
@@ -1041,17 +1041,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		70859B85235B168900628DFC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				70859B86235B168900628DFC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		70859B89235B168900628DFC /* Debug */ = {

@@ -94,7 +94,7 @@ class ProfileViewController: UIViewController, NVActivityIndicatorViewable {
                 return
             }
             switch status {
-            case .unauthorized: self?.issueAlert(withTitle: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Bad email or password", comment: ""))
+            case .unauthorized: AppDelegate.shared.handleSessionExpired()
             default: self?.handleError(networkingError)
             }
         }).finally {
