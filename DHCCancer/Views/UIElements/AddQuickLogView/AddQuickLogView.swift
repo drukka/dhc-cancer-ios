@@ -10,5 +10,9 @@ import UIKit
 
 class AddQuickLogView: UIView {
 
+    override func draw(_ rect: CGRect) {
+        self.layer.cornerRadius = 37.0
+        self.clipsToBounds = true
+    }
 
 }

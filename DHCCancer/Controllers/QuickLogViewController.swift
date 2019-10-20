@@ -18,6 +18,11 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
     private let currentUserProvider: CurrentUserProviderProtocol
     private let container: Container
     
+    private var addQuickLogView: AddQuickLogView!
+    private var addQuickLogViewTopConstraint: NSLayoutConstraint!
+    private var isAddQuckLogViewVisible: Bool = false
+    private var overlayView: UIView!
+    
     private let items: [(imageName: String, title: String)] = [
         (imageName: "temperature", title: "Temperature"),
         (imageName: "weight", title: "Weight"),
@@ -54,6 +59,7 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
         self.setupNavigationBar()
         self.setupCollectionView()
         self.setupAddQuickLogView()
+        self.setupOverlayView()
         self.title = NSLocalizedString("Quick log", comment: "")
     }
 
@@ -81,9 +87,53 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
     }
     
     private func setupAddQuickLogView() {
-        let quickLogView = Bundle.main.loadNibNamed("AddQuickLogView", owner: nil, options: nil)?.first as! AddQuickLogView
-        quickLogView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
-        self.view.addSubview(quickLogView)
+        self.addQuickLogView = Bundle.main.loadNibNamed("AddQuickLogView", owner: nil, options: nil)?.first as? AddQuickLogView
+        self.addQuickLogView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(self.addQuickLogView)
+        
+        let bottomSafeAreaHeight = UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0.0
+        self.addQuickLogViewTopConstraint = self.addQuickLogView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: 200)
+        
+        NSLayoutConstraint.activate([
+            self.addQuickLogView.heightAnchor.constraint(equalToConstant: bottomSafeAreaHeight + 300),
+            addQuickLogViewTopConstraint,
+            self.addQuickLogView.widthAnchor.constraint(equalToConstant: self.view.frame.width)
+        ])
+    }
+    
+    private func showAddQuickLogView() {
+        guard !self.isAddQuckLogViewVisible else { return }
+        self.overlayView.isUserInteractionEnabled = true
+        UIView.animate(withDuration: 0.3, animations: {
+            self.addQuickLogViewTopConstraint.constant = -200
+            self.overlayView.alpha = 1.0
+            self.view.layoutIfNeeded()
+        }, completion: { _ in
+            self.isAddQuckLogViewVisible = true
+        })
+    }
+    
+    private func hideAddQuickLogView() {
+        guard self.isAddQuckLogViewVisible else { return }
+        self.overlayView.isUserInteractionEnabled = false
+        UIView.animate(withDuration: 0.3, animations: {
+            self.addQuickLogViewTopConstraint.constant = 200
+            self.overlayView.alpha = 0.0
+            self.view.layoutIfNeeded()
+        }, completion: { _ in
+            self.isAddQuckLogViewVisible = false
+        })
+    }
+    
+    private func setupOverlayView() {
+        self.overlayView = UIView(frame: self.view.bounds)
+        self.overlayView.isUserInteractionEnabled = false
+        self.overlayView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.8)
+        self.overlayView.alpha = 0.0
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(overlayViewDidTapped(_:)))
+        self.overlayView.addGestureRecognizer(tapGesture)
+        self.view.addSubview(self.overlayView)
+        self.view.bringSubviewToFront(self.addQuickLogView)
     }
     
     // MARK: - UICollectionViewDataSource
@@ -111,11 +161,16 @@ class QuickLogViewController: UICollectionViewController, UICollectionViewDelega
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath == IndexPath(item: 0, section: 0) {
-            print("temp")
+            self.showAddQuickLogView()
         } else if indexPath == IndexPath(item: 1, section: 0) {
-            print("weight")
+            self.showAddQuickLogView()
         }
     }
 
+    // MARK: - Control events
+    
+    @objc private func overlayViewDidTapped(_ sender: UIGestureRecognizer) {
+        self.hideAddQuickLogView()
+    }
 
 }
