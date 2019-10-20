@@ -57,6 +57,10 @@ final class SignUpViewController: UIViewController, KeyboardDucking, NVActivityI
         self.stopDuckingKeyboard()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     // MARK: - Private methods
     
     private func assignDelegates() {

@@ -8,21 +8,104 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddQuickLogView" customModule="DHCCancer" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="379"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ9-jM-Khv">
+                    <rect key="frame" x="20" y="60" width="374" height="23.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eVR-sx-tUi">
+                    <rect key="frame" x="20" y="91.5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="h49-6L-8Zf"/>
+                        <constraint firstAttribute="height" constant="80" id="tiv-S6-xBs"/>
+                    </constraints>
+                </imageView>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" autorepeat="NO" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-cS-0Co">
+                    <rect key="frame" x="300" y="115" width="94" height="32"/>
+                    <color key="backgroundColor" name="SweetCorn"/>
+                    <color key="tintColor" name="SweetCorn"/>
+                    <connections>
+                        <action selector="stepperChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="L18-5W-OAi"/>
+                    </connections>
+                </stepper>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrH-PV-Ua5">
+                    <rect key="frame" x="108" y="112" width="184" height="35"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SX-FN-OYU" customClass="BorderedButton" customModule="DHCCancer" customModuleProvider="target">
+                    <rect key="frame" x="132" y="179.5" width="150" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ByS-RQ-9g5"/>
+                        <constraint firstAttribute="height" constant="36" id="aO6-8I-ek4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
+                    <state key="normal" title="Log data">
+                        <color key="titleColor" name="CabSav"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" name="SweetCorn"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
             <color key="backgroundColor" name="Hibiscus"/>
+            <constraints>
+                <constraint firstItem="Qcj-cS-0Co" firstAttribute="leading" secondItem="xrH-PV-Ua5" secondAttribute="trailing" constant="8" id="0eH-6N-ecW"/>
+                <constraint firstItem="lQ9-jM-Khv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="4nB-q6-pAY"/>
+                <constraint firstItem="eVR-sx-tUi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="6a5-TC-iNE"/>
+                <constraint firstItem="eVR-sx-tUi" firstAttribute="top" secondItem="lQ9-jM-Khv" secondAttribute="bottom" constant="8" id="AyU-hk-DiW"/>
+                <constraint firstItem="xrH-PV-Ua5" firstAttribute="leading" secondItem="eVR-sx-tUi" secondAttribute="trailing" constant="8" id="CUf-eL-gEZ"/>
+                <constraint firstItem="9SX-FN-OYU" firstAttribute="top" secondItem="eVR-sx-tUi" secondAttribute="bottom" constant="8" id="Dh7-Ng-wTs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Qcj-cS-0Co" secondAttribute="trailing" constant="20" id="Odl-tl-yWU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lQ9-jM-Khv" secondAttribute="trailing" constant="20" id="h1r-Vg-te1"/>
+                <constraint firstItem="lQ9-jM-Khv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="oRI-9E-GLe"/>
+                <constraint firstItem="xrH-PV-Ua5" firstAttribute="top" secondItem="lQ9-jM-Khv" secondAttribute="bottom" constant="28.5" id="rU5-xI-39R"/>
+                <constraint firstItem="9SX-FN-OYU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ts2-3A-b2Y"/>
+                <constraint firstItem="Qcj-cS-0Co" firstAttribute="top" secondItem="lQ9-jM-Khv" secondAttribute="bottom" constant="31.5" id="zSu-Bp-o9a"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="eVR-sx-tUi" id="3Mi-ah-94s"/>
+                <outlet property="logDataButton" destination="9SX-FN-OYU" id="BLk-fW-rs9"/>
+                <outlet property="stepper" destination="Qcj-cS-0Co" id="V8T-hI-biz"/>
+                <outlet property="titleLabel" destination="lQ9-jM-Khv" id="bPw-Tk-cmy"/>
+                <outlet property="valueLabel" destination="xrH-PV-Ua5" id="wpg-ae-MKT"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="-59.263392857142854"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="CabSav">
+            <color red="0.25882352941176473" green="0.031372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Hibiscus">
             <color red="0.65490196078431373" green="0.14117647058823529" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SweetCorn">
+            <color red="0.97647058823529409" green="0.8784313725490196" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

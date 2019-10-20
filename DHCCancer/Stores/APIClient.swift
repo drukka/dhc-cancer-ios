@@ -139,4 +139,36 @@ final class APIClient: Networking {
         let parameters: Parameters = request.parametersDictionary
         return self.buildPromiseWithoutResponse(url: self.createURL(withEndpoint: "/users/me"), method: .put, successStatus: .OK, headers: self.createHeaders(withToken: token), parameters: parameters)
     }
+    
+    func logTemperature(value: Double, token: String) -> Promise<Void?> {
+        let parameters: Parameters = [
+            "type": "temperature",
+            "time": "2017-07-21T17:32:28Z",
+            "temperature": value,
+            "weight": 0,
+            "startTime": 0,
+            "length": 0,
+            "awake": 0,
+            "rem": 0,
+            "light": 0,
+            "deep": 0
+        ]
+        return self.buildPromiseWithoutResponse(url: self.createURL(withEndpoint: "/time-entries"), method: .post, successStatus: .created, headers: self.createHeaders(withToken: token), parameters: parameters)
+    }
+    
+    func logWeight(value: Int, token: String) -> Promise<Void?> {
+        let parameters: Parameters = [
+            "type": "weight",
+            "time": "2017-07-21T17:32:28Z",
+            "weight": value,
+            "temperature": 0,
+            "startTime": 0,
+            "length": 0,
+            "awake": 0,
+            "rem": 0,
+            "light": 0,
+            "deep": 0
+        ]
+        return self.buildPromiseWithoutResponse(url: self.createURL(withEndpoint: "/time-entries"), method: .post, successStatus: .created, headers: self.createHeaders(withToken: token), parameters: parameters)
+    }
 }

@@ -56,4 +56,12 @@ final class FakeAPIClient: Networking {
         
         return Promise(error: NetworkingError.serviceError(.unauthorized))
     }
+    
+    func logTemperature(value: Double, token: String) -> Promise<Void?> {
+        return Promise.value(nil)
+    }
+    
+    func logWeight(value: Int, token: String) -> Promise<Void?> {
+        return Promise.value(nil)
+    }
 }
