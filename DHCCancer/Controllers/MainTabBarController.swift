@@ -9,7 +9,7 @@
 import UIKit
 import Swinject
 
-final class MainTabBarController: UITabBarController {
+final class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     // MARK: - Properties
     
@@ -31,6 +31,7 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupControllers()
+        self.delegate = self
         
     }
     
@@ -77,4 +78,12 @@ final class MainTabBarController: UITabBarController {
         self.present(quickLogView, animated: true, completion: nil)
         
     }
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if viewController == self.viewControllers?.last {
+            AppDelegate.shared.currentUserProvider.destroy()
+            AppDelegate.shared.assignLoginViewControllerAsRootViewController()
+        }
+    }
+    
 }

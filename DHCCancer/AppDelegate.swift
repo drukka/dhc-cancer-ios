@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let shared: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     private let appContainer: Container = Container()
     private let appDependencies: AppDependencies = AppDependencies()
-    private var currentUserProvider: CurrentUserProviderProtocol!
+    var currentUserProvider: CurrentUserProviderProtocol!
     private var networking: Networking!
     
     // MARK: - Application life cycle
@@ -99,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func assignLoginViewControllerAsRootViewController() {
-        //self.window?.rootViewController = UINavigationController(rootViewController: self.appContainer.resolve(LoginViewController.self)!)
+        self.window?.rootViewController = UINavigationController(rootViewController: self.appContainer.resolve(LoginViewController.self)!)
     }
     
     func handleSessionExpired() {
