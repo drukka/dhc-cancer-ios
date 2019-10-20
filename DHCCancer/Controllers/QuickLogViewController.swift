@@ -10,13 +10,28 @@ import UIKit
 import Swinject
 import PromiseKit
 
-class QuickLogViewController: UICollectionViewController {
+class QuickLogViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     // MARK: - Properties
     
     private let networking: Networking
     private let currentUserProvider: CurrentUserProviderProtocol
     private let container: Container
+    
+    private let items: [(imageName: String, title: String)] = [
+        (imageName: "temperature", title: "Temperature"),
+        (imageName: "weight", title: "Weight"),
+        (imageName: "sleep", title: "Sleep"),
+        (imageName: "bloodPressure", title: "Blood pressure"),
+        (imageName: "mood", title: "Mood"),
+        (imageName: "water", title: "Water"),
+        (imageName: "hairLoss", title: "Hair loss"),
+        (imageName: "otherSymptoms", title: "Other symptons"),
+        (imageName: "pain", title: "Pain"),
+        (imageName: "meal", title: "Meal"),
+        (imageName: "medication", title: "Medication"),
+        (imageName: "appointment", title: "Appointment")
+    ]
     
     // MARK: - Initialization
     
@@ -37,6 +52,8 @@ class QuickLogViewController: UICollectionViewController {
         super.viewDidLoad()
         self.setupBackground()
         self.setupNavigationBar()
+        self.setupCollectionView()
+        self.setupAddQuickLogView()
         self.title = NSLocalizedString("Quick log", comment: "")
     }
 
@@ -59,6 +76,16 @@ class QuickLogViewController: UICollectionViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    private func setupCollectionView() {
+        self.collectionView.register(UINib(nibName: "QuickLogCell", bundle: nil), forCellWithReuseIdentifier: "QuickLogCell")
+    }
+    
+    private func setupAddQuickLogView() {
+        let quickLogView = Bundle.main.loadNibNamed("AddQuickLogView", owner: nil, options: nil)?.first as! AddQuickLogView
+        quickLogView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
+        self.view.addSubview(quickLogView)
+    }
+    
     // MARK: - UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -66,15 +93,28 @@ class QuickLogViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return self.items.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuickLogCell", for: indexPath) as? QuickLogCell else { fatalError() }
+        cell.imageView.image = UIImage(named: self.items[indexPath.row].imageName)
+        cell.label.text = self.items[indexPath.row].title
+        return cell
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width
+        let cellWidth = (width - 30) / 3
+        return CGSize(width: cellWidth, height: 145.0)
+    }
     
-        // Configure the cell
-    
-        return UICollectionViewCell()
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath == IndexPath(item: 0, section: 0) {
+            print("temp")
+        } else if indexPath == IndexPath(item: 1, section: 0) {
+            print("weight")
+        }
     }
 
 

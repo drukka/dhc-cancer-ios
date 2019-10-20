@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setupNotifications()
         self.setupCurrentUserProvider()
         
-        self.currentUserProvider.destroy()
+        //self.currentUserProvider.destroy()
         
         self.setupNetworking()
         self.updateUser()
