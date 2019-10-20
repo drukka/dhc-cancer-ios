@@ -68,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupDefaultNavigationBarAppearance() {
-        /*UINavigationBar.appearance().barStyle = .default
+        UINavigationBar.appearance().barStyle = .default
         UINavigationBar.appearance().isTranslucent = true
         UINavigationBar.appearance().backgroundColor = UIColor.clear
         UINavigationBar.appearance().barTintColor = UIColor.clear
@@ -81,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().largeTitleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 34) ?? UIFont.systemFont(ofSize: 34, weight: .medium)
-        ]*/
+        ]
     }
 
     // MARK: - Public methods
