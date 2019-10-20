@@ -139,7 +139,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             let myInformationViewController = self.container.resolve(MyInformationViewController.self)!
             self.navigationController?.pushViewController(myInformationViewController, animated: true)
         } else if indexPath.section == 1 {
-            // Navigate to medical documents
+            let medicalDocumentsViewController = self.container.resolve(MedicalDocumentsViewController.self)!
+            self.navigationController?.pushViewController(medicalDocumentsViewController, animated: true)
         } else {
             let logHistoryViewController = self.container.resolve(LogHistoryViewController.self)!
             self.navigationController?.pushViewController(logHistoryViewController, animated: true)
